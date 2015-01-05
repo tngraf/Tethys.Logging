@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7304531-0144-48F9-AC6A-057F7CA00DD5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tethys.Logging.Controls</RootNamespace>
+    <AssemblyName>Tethys.Logging.Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\export\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\export\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\export\Release\Tethys.Logging.Controls.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>TethysLibKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Tethys.Logging\Properties\MainAssemblyInfo.cs">
+      <Link>Properties\MainAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="DebugLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DebugLogForm.designer.cs">
+      <DependentUpon>DebugLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NamespaceDoc.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RtfLogView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RtfLogView.designer.cs">
+      <DependentUpon>RtfLogView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableLogView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TableLogView.designer.cs">
+      <DependentUpon>TableLogView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DebugLogForm.resx">
+      <DependentUpon>DebugLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RtfLogView.resx">
+      <DependentUpon>RtfLogView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableLogView.resx">
+      <DependentUpon>TableLogView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\ClearAll.png" />
+    <Content Include="images\Copy.png" />
+    <Content Include="images\Cut.png" />
+    <Content Include="images\Delete.png" />
+    <Content Include="images\Error.png" />
+    <Content Include="images\ExcelTable.png" />
+    <Content Include="images\Filter.png" />
+    <Content Include="images\Heartbeat.png" />
+    <Content Include="images\Information.png" />
+    <Content Include="images\Paste.png" />
+    <Content Include="images\save.png" />
+    <Content Include="images\Warning.png" />
+    <Content Include="RtfLogViewToolBoxBitmap.bmp" />
+    <Content Include="TableLogViewToolBoxBitmap.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Settings.StyleCop" />
+    <None Include="TethysLibKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tethys.Logging\Tethys.Logging.csproj">
+      <Project>{8ad903ff-c316-489a-9ae0-f59e5ad158d8}</Project>
+      <Name>Tethys.Logging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

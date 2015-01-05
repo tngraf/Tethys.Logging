@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="groupControlRtf.Text" xml:space="preserve">
+    <value> Control </value>
+  </data>
+  <data name="&gt;&gt;lblType.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabPageRtf.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupPropertiesRtf.Name" xml:space="preserve">
+    <value>groupPropertiesRtf</value>
+  </data>
+  <data name="&gt;&gt;btnAddEvent.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtEventText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageRtf.Name" xml:space="preserve">
+    <value>tabPageRtf</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupControlRtf.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;groupAddEvent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAddEvent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>375, 16</value>
+  </data>
+  <data name="&gt;&gt;radioDefaultText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupControlRtf.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioCustomText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 66</value>
+  </data>
+  <data name="&gt;&gt;propertyGridRtf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PropertyGrid, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPageLogForm.Text" xml:space="preserve">
+    <value>DebugLogForm</value>
+  </data>
+  <data name="&gt;&gt;radioCustomText.Parent" xml:space="preserve">
+    <value>groupAddEvent</value>
+  </data>
+  <data name="checkShowDebugLogForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 17</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupControlRtf.Name" xml:space="preserve">
+    <value>groupControlRtf</value>
+  </data>
+  <data name="&gt;&gt;tabPageLogForm.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;simpleRtfLogView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtEventText.Name" xml:space="preserve">
+    <value>txtEventText</value>
+  </data>
+  <data name="lblText.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="tabPageLogForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 396</value>
+  </data>
+  <data name="btnAddAllEvents.Text" xml:space="preserve">
+    <value>Add All Events</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupPropertiesRtf.Text" xml:space="preserve">
+    <value> Control Properties </value>
+  </data>
+  <data name="tableLogView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;comboEventType.Parent" xml:space="preserve">
+    <value>groupAddEvent</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>tabPageTable</value>
+  </data>
+  <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>641, 422</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>TgLib.Logging.Controls Test Application</value>
+  </data>
+  <data name="&gt;&gt;lblText.Parent" xml:space="preserve">
+    <value>groupAddEvent</value>
+  </data>
+  <data name="btnAddAllEvents.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 48</value>
+  </data>
+  <data name="&gt;&gt;comboEventType.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="groupControlRtf.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;propertyGridTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PropertyGrid, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupAddEvent.Text" xml:space="preserve">
+    <value> Add Event </value>
+  </data>
+  <data name="lblLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 15</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="tabPageLogForm.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="txtEventText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 20</value>
+  </data>
+  <data name="btnAddAllEvents.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;lblText.Name" xml:space="preserve">
+    <value>lblText</value>
+  </data>
+  <data name="tabPageRtf.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="radioDefaultText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 43</value>
+  </data>
+  <data name="&gt;&gt;groupAddEvent.Name" xml:space="preserve">
+    <value>groupAddEvent</value>
+  </data>
+  <data name="&gt;&gt;btnAddAllEvents.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLogView.Type" xml:space="preserve">
+    <value>Tethys.Logging.Controls.TableLogView, Tethys.Logging.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5fae225d9529f881</value>
+  </data>
+  <data name="tabPageTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="simpleRtfLogView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="txtEventText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 89</value>
+  </data>
+  <data name="tabPageLogForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;groupControlRtf.Parent" xml:space="preserve">
+    <value>tabPageRtf</value>
+  </data>
+  <data name="&gt;&gt;tabPageTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="propertyGridRtf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>605, 235</value>
+  </data>
+  <data name="&gt;&gt;propertyGridRtf.Name" xml:space="preserve">
+    <value>propertyGridRtf</value>
+  </data>
+  <data name="&gt;&gt;simpleRtfLogView.Parent" xml:space="preserve">
+    <value>groupControlRtf</value>
+  </data>
+  <data name="tableLogView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>611, 102</value>
+  </data>
+  <data name="groupAddEvent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>641, 133</value>
+  </data>
+  <data name="&gt;&gt;radioDefaultText.Parent" xml:space="preserve">
+    <value>groupAddEvent</value>
+  </data>
+  <data name="&gt;&gt;propertyGridRtf.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnAddAllEvents.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="simpleRtfLogView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="propertyGridTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 16</value>
+  </data>
+  <data name="groupPropertiesRtf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;propertyGridRtf.Parent" xml:space="preserve">
+    <value>groupPropertiesRtf</value>
+  </data>
+  <data name="groupControlRtf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 269</value>
+  </data>
+  <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="radioDefaultText.Text" xml:space="preserve">
+    <value>Use default text</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 56</value>
+  </data>
+  <data name="comboEventType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 16</value>
+  </data>
+  <data name="&gt;&gt;simpleRtfLogView.Name" xml:space="preserve">
+    <value>simpleRtfLogView</value>
+  </data>
+  <data name="&gt;&gt;groupPropertiesRtf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkShowDebugLogForm.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;tabPageTable.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="checkShowDebugLogForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 18</value>
+  </data>
+  <data name="&gt;&gt;radioDefaultText.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="lblType.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="tableLogView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblLanguage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupControlRtf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>617, 121</value>
+  </data>
+  <data name="&gt;&gt;tableLogView.Name" xml:space="preserve">
+    <value>tableLogView</value>
+  </data>
+  <data name="&gt;&gt;tableLogView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupPropertiesRtf.Parent" xml:space="preserve">
+    <value>tabPageRtf</value>
+  </data>
+  <data name="groupPropertiesRtf.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>tabPageTable</value>
+  </data>
+  <data name="radioCustomText.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lblText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="radioDefaultText.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;lblLanguage.Name" xml:space="preserve">
+    <value>lblLanguage</value>
+  </data>
+  <data name="tableLogView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="groupAddEvent.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="tabPageLogForm.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="btnAddEvent.Text" xml:space="preserve">
+    <value>Add New Event</value>
+  </data>
+  <data name="tabPageTable.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPageRtf.Text" xml:space="preserve">
+    <value>RtfLogView</value>
+  </data>
+  <data name="&gt;&gt;txtEventText.Parent" xml:space="preserve">
+    <value>groupAddEvent</value>
+  </data>
+  <data name="radioCustomText.Text" xml:space="preserve">
+    <value>Use customized text:</value>
+  </data>
+  <data name="&gt;&gt;tabPageRtf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="propertyGridRtf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 16</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="propertyGridRtf.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="btnAddEvent.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="propertyGridTable.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupAddEvent.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioCustomText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupControlRtf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioDefaultText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 17</value>
+  </data>
+  <data name="&gt;&gt;tabPageLogForm.Name" xml:space="preserve">
+    <value>tabPageLogForm</value>
+  </data>
+  <data name="&gt;&gt;lblText.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="propertyGridTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="groupPropertiesRtf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>617, 257</value>
+  </data>
+  <data name="&gt;&gt;comboEventType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAddAllEvents.Name" xml:space="preserve">
+    <value>btnAddAllEvents</value>
+  </data>
+  <data name="&gt;&gt;tabPageLogForm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;simpleRtfLogView.Type" xml:space="preserve">
+    <value>Tethys.Logging.Controls.RtfLogView, Tethys.Logging.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5fae225d9529f881</value>
+  </data>
+  <data name="&gt;&gt;radioCustomText.Name" xml:space="preserve">
+    <value>radioCustomText</value>
+  </data>
+  <data name="&gt;&gt;txtEventText.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnAddEvent.Parent" xml:space="preserve">
+    <value>groupAddEvent</value>
+  </data>
+  <data name="&gt;&gt;tabPageRtf.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtEventText.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lblText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 20</value>
+  </data>
+  <data name="&gt;&gt;radioCustomText.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupAddEvent.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblType.Parent" xml:space="preserve">
+    <value>groupAddEvent</value>
+  </data>
+  <data name="&gt;&gt;checkShowDebugLogForm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblText.Text" xml:space="preserve">
+    <value>Text:</value>
+  </data>
+  <data name="checkShowDebugLogForm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tableLogView.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupAddEvent</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAddEvent.Name" xml:space="preserve">
+    <value>btnAddEvent</value>
+  </data>
+  <data name="&gt;&gt;btnAddEvent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAddAllEvents.Parent" xml:space="preserve">
+    <value>groupAddEvent</value>
+  </data>
+  <data name="&gt;&gt;propertyGridTable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblType.Name" xml:space="preserve">
+    <value>lblType</value>
+  </data>
+  <data name="lblType.Text" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="lblType.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="simpleRtfLogView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>611, 102</value>
+  </data>
+  <data name="tabPageTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 396</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 269</value>
+  </data>
+  <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 151</value>
+  </data>
+  <data name="&gt;&gt;tabPageRtf.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="groupAddEvent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="lblLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="&gt;&gt;checkShowDebugLogForm.Name" xml:space="preserve">
+    <value>checkShowDebugLogForm</value>
+  </data>
+  <data name="&gt;&gt;propertyGridTable.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;lblType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnAddAllEvents.Location" type="System.Drawing.Point, System.Drawing">
+    <value>375, 74</value>
+  </data>
+  <data name="btnAddEvent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 48</value>
+  </data>
+  <data name="&gt;&gt;radioDefaultText.Name" xml:space="preserve">
+    <value>radioDefaultText</value>
+  </data>
+  <data name="&gt;&gt;tabPageTable.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="propertyGridRtf.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="comboEventType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="groupPropertiesRtf.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="propertyGridTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>605, 235</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>665, 585</value>
+  </data>
+  <data name="lblText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 89</value>
+  </data>
+  <data name="&gt;&gt;propertyGridTable.Name" xml:space="preserve">
+    <value>propertyGridTable</value>
+  </data>
+  <data name="simpleRtfLogView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="radioCustomText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkShowDebugLogForm.Text" xml:space="preserve">
+    <value>Show DebugLogForm</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>617, 257</value>
+  </data>
+  <data name="&gt;&gt;checkShowDebugLogForm.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radioDefaultText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;comboEventType.Name" xml:space="preserve">
+    <value>comboEventType</value>
+  </data>
+  <data name="&gt;&gt;checkShowDebugLogForm.Parent" xml:space="preserve">
+    <value>tabPageLogForm</value>
+  </data>
+  <data name="&gt;&gt;groupAddEvent.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPageRtf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 396</value>
+  </data>
+  <data name="&gt;&gt;tabPageTable.Name" xml:space="preserve">
+    <value>tabPageTable</value>
+  </data>
+  <data name="&gt;&gt;tabPageLogForm.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="lblType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value> Control </value>
+  </data>
+  <data name="radioCustomText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 17</value>
+  </data>
+  <data name="comboEventType.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>617, 121</value>
+  </data>
+  <data name="tabPageTable.Text" xml:space="preserve">
+    <value>TableLogView</value>
+  </data>
+  <data name="&gt;&gt;lblLanguage.Parent" xml:space="preserve">
+    <value>groupAddEvent</value>
+  </data>
+  <data name="tabPageTable.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value> Control Properties </value>
+  </data>
+  <data name="lblLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="tabPageRtf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;groupPropertiesRtf.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>de</value>
+  </metadata>
+</root>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="Tethys.Logging.Controls.Wpf.DebugLogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Tethys.Logging.Controls.Wpf"
+        Title="DebugLogWindow"
+        Width="525"
+        Height="300"
+        Closing="OnWindowClosing">
+  <Grid Margin="4">
+    <local:RtfLogView x:Name="_logView"
+                      AddAtTail="True"
+                      ShowDebugCheckBox="true"
+                      ShowDebugEvents="true"
+                      ShowToolButtons="true" />
+  </Grid>
+</Window>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Tethys.Logging</id>
+    <version>4.1</version>
+    <title>Tethys.Logging</title>
+    <authors>Thomas Graf</authors>
+    <owners>Thomas Graf</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>http://www.4wp7.de/tethys</projectUrl>
+    <iconUrl>http://www.4wp7.de/tethys/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Basic logging facade.</description>
+    <releaseNotes>First version with NuGet support.</releaseNotes>
+    <copyright>Copyright (C) 2013 T. Graf</copyright>
+    <language>en-US</language>
+    <tags>Tethys</tags>
+  </metadata>
+</package>

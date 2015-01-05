@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <!-- The configuration and platform will be used to determine which
+         assemblies to include from solution and project documentation
+         sources -->
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0a0f5adc-1acd-4f41-a9c1-5cb5d67855b5}</ProjectGuid>
+    <SHFBSchemaVersion>1.9.5.0</SHFBSchemaVersion>
+    <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual
+         Studio adds them anyway -->
+    <AssemblyName>Documentation</AssemblyName>
+    <RootNamespace>Documentation</RootNamespace>
+    <Name>Documentation</Name>
+    <!-- SHFB properties -->
+    <OutputPath>.\Help\</OutputPath>
+    <HtmlHelpName>TgLib.Logging</HtmlHelpName>
+    <DocumentationSources>
+      <DocumentationSource sourceFile="export\release\Tethys.Logging.Common.Logging.dll" />
+<DocumentationSource sourceFile="export\release\Tethys.Logging.Common.Logging.xml" />
+<DocumentationSource sourceFile="export\release\Tethys.Logging.Controls.dll" />
+<DocumentationSource sourceFile="export\release\Tethys.Logging.Controls.Wpf.dll" />
+<DocumentationSource sourceFile="export\release\Tethys.Logging.Controls.Wpf.xml" />
+<DocumentationSource sourceFile="export\release\Tethys.Logging.Controls.xml" />
+<DocumentationSource sourceFile="export\release\Tethys.Logging.dll" />
+<DocumentationSource sourceFile="export\release\Tethys.Logging.Log4Net.dll" />
+<DocumentationSource sourceFile="export\release\Tethys.Logging.Log4Net.xml" />
+<DocumentationSource sourceFile="export\release\Tethys.Logging.NLog.dll" />
+<DocumentationSource sourceFile="export\release\Tethys.Logging.NLog.xml" />
+<DocumentationSource sourceFile="export\release\Tethys.Logging.xml" /></DocumentationSources>
+    <ProjectSummary>TgLib.Logging.Controls contains controls to view log4net logging events.
+
+This library contains common code of .Net projects of Thomas Graf.</ProjectSummary>
+    <CopyrightText>%28c%29 2003-2013 by T. Graf</CopyrightText>
+    <FeedbackEMailAddress>
+    </FeedbackEMailAddress>
+    <HelpTitle>TgLib.Logging Class Library</HelpTitle>
+    <VisibleItems>Protected, SealedProtected</VisibleItems>
+    <NamespaceSummaries>
+      <NamespaceSummaryItem name="TgLib.Logging.Controls" isDocumented="True" xmlns="">TgLib.Logging.Controls contains controls to display log4net logging output at runtime at the application UI.</NamespaceSummaryItem>
+    </NamespaceSummaries>
+    <SyntaxFilters>CSharp</SyntaxFilters>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
+    <RootNamespaceContainer>False</RootNamespaceContainer>
+    <PresentationStyle>VS2005</PresentationStyle>
+    <Preliminary>False</Preliminary>
+    <NamingMethod>Guid</NamingMethod>
+    <Language>en-US</Language>
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+  </PropertyGroup>
+  <!-- There are no properties for these two groups but they need to appear in
+       order for Visual Studio to perform the build. -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>import\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.NLog20">
+      <HintPath>import\Common.Logging.NLog20.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>import\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>import\NLog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <!-- Import the SHFB build targets -->
+  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
+</Project>

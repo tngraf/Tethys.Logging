@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="Tethys.Logging.Controls.Wpf.RtfLogView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Name="_root"
+             d:DesignHeight="200"
+             d:DesignWidth="450"
+             Loaded="UserControlLoaded"
+             mc:Ignorable="d">
+  <Grid DataContext="this">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <DockPanel Grid.Row="0" RenderOptions.BitmapScalingMode="NearestNeighbor">
+      <TextBlock x:Name="_lblLabelText"
+                 HorizontalAlignment="Stretch"
+                 VerticalAlignment="Center"
+                 DockPanel.Dock="Left"
+                 Text="{Binding LabelText,
+                                ElementName=_root}" />
+      <Button x:Name="_btnSave"
+              Margin="1,2,0,2"
+              HorizontalAlignment="Right"
+              Click="BtnSaveClick"
+              DockPanel.Dock="Right">
+        <Image Width="16" Height="16" Stretch="Fill">
+          <Image.Source>
+            <BitmapImage UriSource="Resources/Save.png" />
+          </Image.Source>
+        </Image>
+      </Button>
+      <Button x:Name="_btnCopy"
+              Margin="1,2"
+              HorizontalAlignment="Right"
+              Click="BtnCopyClick"
+              DockPanel.Dock="Right">
+        <Image Width="16" Height="16" Stretch="Fill">
+          <Image.Source>
+            <BitmapImage UriSource="Resources/Copy.png" />
+          </Image.Source>
+        </Image>
+      </Button>
+
+      <Button x:Name="_btnClear"
+              Margin="1,2"
+              HorizontalAlignment="Right"
+              Click="BtnClearClick"
+              DockPanel.Dock="Right"
+              IsEnabled="{Binding ShowToolButtons}">
+        <Image Width="16" Height="16" Stretch="Fill">
+          <Image.Source>
+            <BitmapImage UriSource="Resources/ClearAll_modern.png" />
+          </Image.Source>
+        </Image>
+      </Button>
+      <CheckBox x:Name="_checkShowDebugMessages"
+                Margin="0,0,8,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Content="Show Debug Messages"
+                DockPanel.Dock="Right" />
+    </DockPanel>
+    <RichTextBox x:Name="_rtfBox"
+                 Grid.Row="1"
+                 AcceptsReturn="False"
+                 AllowDrop="False"
+                 HorizontalScrollBarVisibility="Auto"
+                 IsReadOnly="True"
+                 VerticalScrollBarVisibility="Auto" />
+  </Grid>
+</UserControl>
