@@ -12,7 +12,7 @@
 //            All rights reserved.
 // </copyright>
 // 
-// Version .. 1.00.00.00 of 13May30
+// Version .. 1.00.00.01 of 13Oct12
 // System ... Portable Library
 // Tools .... Microsoft Visual Studio 2012
 //
@@ -35,7 +35,9 @@ using System.Reflection;
 [assembly: AssemblyCulture("")]
 
 // Version information
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.1.0")]
+[assembly: AssemblyFileVersion("1.0.1.0")]
+// AssemblyInformationalVersionAttribute is used for NuGet
+[assembly: AssemblyInformationalVersionAttribute("1.0.1")]
 
 // =================================

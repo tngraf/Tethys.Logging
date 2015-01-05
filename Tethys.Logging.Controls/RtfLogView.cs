@@ -276,26 +276,27 @@ namespace Tethys.Logging.Controls
     } // btnSave_Click()
 
     /// <summary>
-    /// Called when the debug check has changed.
-    /// </summary>
-    /// <param name="sender">The sender.</param>
-    /// <param name="e">The <see cref="System.EventArgs"/> instance containing
-    /// the event data.</param>
-    private void OnDebugCheckedChanged(object sender, EventArgs e)
-    {
-    } // OnDebugCheckedChanged()
-
-    /// <summary>
-    /// Handles the Resize event of the RtfLogView control.
+    /// Handles the Layout event of the RtfLogView control.
     /// </summary>
     /// <param name="sender">The source of the event.</param>
-    /// <param name="e">The <see cref="EventArgs"/> instance containing the
-    /// event data.</param>
-    private void RtfLogView_Resize(object sender, EventArgs e)
+    /// <param name="e">The <see cref="LayoutEventArgs"/> instance containing 
+    /// the event data.</param>
+    private void RtfLogViewOnLayout(object sender, LayoutEventArgs e)
     {
-      ResumeLayout(true);
-      PerformLayout();
-    } // 
+      int width = btnSave.Width;
+      int height = btnSave.Height;
+
+      btnSave.Location = new Point(Width - width, 1);
+      btnCopy.Location = new Point(Width - (2 * width), 1);
+      btnClear.Location = new Point(Width - (3 * width), 1);
+
+      checkDebug.Location = new Point(Width - 
+        ((3 * width) + 6 + checkDebug.Width), 5);
+      
+      // manual layout of all child controls
+      rtfView.Bounds = new Rectangle(1, height + 1, Width - 1, 
+        Height - height - 2);
+    } // RtfLogViewOnLayout()
     #endregion // UI MANAGEMENT
 
     //// ---------------------------------------------------------------------
@@ -524,6 +525,7 @@ namespace Tethys.Logging.Controls
       {
         return;
       } // if
+
       // use BeginInvoke to execute the method asynchronously on the thread
       // that the control's underlying handle was created on.
       BeginInvoke(new AppendTextDelegate(AppendTextInternal),

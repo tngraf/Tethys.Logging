@@ -1,6 +1,12 @@
 Tethys.Logging Change Log
 =========================
 
+## V1.0.1	(2013-10-12) ##
+* NuGet support added and Nuget packages released.
+* System.Diagnostics.Debug.WriteLine can be used in a portable library, but System.Diagnostics.Trace.WriteLine not => to have a trace logger a new library for Windows is needed and we will have no support for Windows Phone and WinRT.
+* Again fixes for displays with non-100% display resolutions.
+* Version 1.00.01.00 of Tethys.Logging released.
+
 ## V1.0.0	(2013-05-30) ##
 * Version 1.0.0 of Tethys.Logging released on SourceForge.
 

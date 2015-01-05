@@ -484,16 +484,25 @@ namespace Tethys.Logging.Controls
     } // btnExportExcel_Click()
 
     /// <summary>
-    /// Handles the Resize event of the TableLogView control.
+    /// Handles the Layout event of the TableLogView control.
     /// </summary>
     /// <param name="sender">The source of the event.</param>
-    /// <param name="e">The <see cref="EventArgs"/> instance containing the
-    /// event data.</param>
-    private void TableLogView_Resize(object sender, EventArgs e)
+    /// <param name="e">The <see cref="LayoutEventArgs"/> instance containing 
+    /// the event data.</param>
+    private void TableLogViewOnLayout(object sender, LayoutEventArgs e)
     {
-      ResumeLayout(true);
-      PerformLayout();
-    } // ()
+      int width = btnSave.Width;
+      int height = btnSave.Height;
+
+      btnExportExcel.Location = new Point(Width - width, 1);
+      btnSave.Location = new Point(Width - (2 * width), 1);
+      btnCopy.Location = new Point(Width - (3 * width), 1);
+      btnClear.Location = new Point(Width - (4 * width), 1);
+
+      // manual layout of all child controls
+      listView.Bounds = new Rectangle(1, height + 1, Width - 1,
+        Height - height - 2);
+    } // TableLogViewOnLayout()
     #endregion // UI MANAGEMENT
 
     //// ---------------------------------------------------------------------

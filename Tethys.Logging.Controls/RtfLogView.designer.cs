@@ -44,10 +44,9 @@
       this.rtfView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-      this.rtfView.Location = new System.Drawing.Point(0, 31);
-      this.rtfView.Margin = new System.Windows.Forms.Padding(4);
+      this.rtfView.Location = new System.Drawing.Point(0, 25);
       this.rtfView.Name = "rtfView";
-      this.rtfView.Size = new System.Drawing.Size(620, 237);
+      this.rtfView.Size = new System.Drawing.Size(300, 74);
       this.rtfView.TabIndex = 0;
       this.rtfView.Text = "";
       // 
@@ -56,10 +55,9 @@
       this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
       this.btnSave.ImageIndex = 0;
       this.btnSave.ImageList = this.imageList;
-      this.btnSave.Location = new System.Drawing.Point(588, 1);
-      this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+      this.btnSave.Location = new System.Drawing.Point(275, 1);
       this.btnSave.Name = "btnSave";
-      this.btnSave.Size = new System.Drawing.Size(32, 28);
+      this.btnSave.Size = new System.Drawing.Size(24, 23);
       this.btnSave.TabIndex = 27;
       this.btnSave.Click += new System.EventHandler(this.BtnSaveClick);
       // 
@@ -79,10 +77,9 @@
       this.btnCopy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
       this.btnCopy.ImageIndex = 1;
       this.btnCopy.ImageList = this.imageList;
-      this.btnCopy.Location = new System.Drawing.Point(556, 1);
-      this.btnCopy.Margin = new System.Windows.Forms.Padding(4);
+      this.btnCopy.Location = new System.Drawing.Point(251, 1);
       this.btnCopy.Name = "btnCopy";
-      this.btnCopy.Size = new System.Drawing.Size(32, 28);
+      this.btnCopy.Size = new System.Drawing.Size(24, 23);
       this.btnCopy.TabIndex = 26;
       this.btnCopy.Click += new System.EventHandler(this.BtnCopyClick);
       // 
@@ -91,20 +88,18 @@
       this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
       this.btnClear.ImageIndex = 3;
       this.btnClear.ImageList = this.imageList;
-      this.btnClear.Location = new System.Drawing.Point(524, 1);
-      this.btnClear.Margin = new System.Windows.Forms.Padding(4);
+      this.btnClear.Location = new System.Drawing.Point(227, 1);
       this.btnClear.Name = "btnClear";
-      this.btnClear.Size = new System.Drawing.Size(32, 28);
+      this.btnClear.Size = new System.Drawing.Size(24, 23);
       this.btnClear.TabIndex = 25;
       this.btnClear.Click += new System.EventHandler(this.BtnClearClick);
       // 
       // lblStatus
       // 
       this.lblStatus.AutoSize = true;
-      this.lblStatus.Location = new System.Drawing.Point(4, 7);
-      this.lblStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.lblStatus.Location = new System.Drawing.Point(3, 6);
       this.lblStatus.Name = "lblStatus";
-      this.lblStatus.Size = new System.Drawing.Size(52, 17);
+      this.lblStatus.Size = new System.Drawing.Size(40, 13);
       this.lblStatus.TabIndex = 28;
       this.lblStatus.Text = "Status:";
       // 
@@ -112,18 +107,16 @@
       // 
       this.checkDebug.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
       this.checkDebug.AutoSize = true;
-      this.checkDebug.Location = new System.Drawing.Point(336, 6);
-      this.checkDebug.Margin = new System.Windows.Forms.Padding(4);
+      this.checkDebug.Location = new System.Drawing.Point(82, 5);
       this.checkDebug.Name = "checkDebug";
-      this.checkDebug.Size = new System.Drawing.Size(178, 21);
+      this.checkDebug.Size = new System.Drawing.Size(138, 17);
       this.checkDebug.TabIndex = 29;
       this.checkDebug.Text = "Show Debug messages";
       this.checkDebug.UseVisualStyleBackColor = true;
-      this.checkDebug.CheckedChanged += new System.EventHandler(this.OnDebugCheckedChanged);
       // 
       // RtfLogView
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.Controls.Add(this.checkDebug);
       this.Controls.Add(this.lblStatus);
@@ -131,10 +124,9 @@
       this.Controls.Add(this.btnCopy);
       this.Controls.Add(this.btnClear);
       this.Controls.Add(this.rtfView);
-      this.Margin = new System.Windows.Forms.Padding(4);
       this.Name = "RtfLogView";
-      this.Size = new System.Drawing.Size(621, 265);
-      this.Resize += new System.EventHandler(this.RtfLogView_Resize);
+      this.Size = new System.Drawing.Size(300, 100);
+      this.Layout += new System.Windows.Forms.LayoutEventHandler(this.RtfLogViewOnLayout);
       this.ResumeLayout(false);
       this.PerformLayout();
 

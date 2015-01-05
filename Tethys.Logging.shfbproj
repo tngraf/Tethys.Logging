@@ -29,10 +29,18 @@
 <DocumentationSource sourceFile="export\release\Tethys.Logging.Log4Net.xml" />
 <DocumentationSource sourceFile="export\release\Tethys.Logging.NLog.dll" />
 <DocumentationSource sourceFile="export\release\Tethys.Logging.NLog.xml" />
+<DocumentationSource sourceFile="export\release\Tethys.Logging.Win.dll" />
+<DocumentationSource sourceFile="export\release\Tethys.Logging.Win.xml" />
 <DocumentationSource sourceFile="export\release\Tethys.Logging.xml" /></DocumentationSources>
-    <ProjectSummary>TgLib.Logging.Controls contains controls to view log4net logging events.
+    <ProjectSummary>Tethys.Logging is itself a very simple logging framework and adds some 
+enhancements to existing logging frameworks %28Common.Logging, NLog, log4net%29.
 
-This library contains common code of .Net projects of Thomas Graf.</ProjectSummary>
+Most of the enhancement target the simple display of log message. Yes, you 
+could write all log message to a file and then display them. But for 
+applications with a graphical user interface it&amp;#39%3bs often more easy to show log 
+messages in a %28separate%29 window. With proper configuration such message can be
+use as well for the user %28trace, audit trail%29 as for the developer. 
+</ProjectSummary>
     <CopyrightText>%28c%29 2003-2013 by T. Graf</CopyrightText>
     <FeedbackEMailAddress>
     </FeedbackEMailAddress>

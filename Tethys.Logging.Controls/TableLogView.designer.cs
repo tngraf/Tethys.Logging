@@ -37,11 +37,10 @@
       this.listView.FullRowSelect = true;
       this.listView.GridLines = true;
       this.listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-      this.listView.Location = new System.Drawing.Point(0, 30);
-      this.listView.Margin = new System.Windows.Forms.Padding(4);
+      this.listView.Location = new System.Drawing.Point(0, 24);
       this.listView.MultiSelect = false;
       this.listView.Name = "listView";
-      this.listView.Size = new System.Drawing.Size(685, 208);
+      this.listView.Size = new System.Drawing.Size(515, 170);
       this.listView.SmallImageList = this.imageList;
       this.listView.TabIndex = 0;
       this.listView.UseCompatibleStateImageBehavior = false;
@@ -73,10 +72,9 @@
       this.checkShowDebug.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
       this.checkShowDebug.ImageIndex = 3;
       this.checkShowDebug.ImageList = this.imageList;
-      this.checkShowDebug.Location = new System.Drawing.Point(360, 0);
-      this.checkShowDebug.Margin = new System.Windows.Forms.Padding(4);
+      this.checkShowDebug.Location = new System.Drawing.Point(270, 0);
       this.checkShowDebug.Name = "checkShowDebug";
-      this.checkShowDebug.Size = new System.Drawing.Size(120, 30);
+      this.checkShowDebug.Size = new System.Drawing.Size(90, 24);
       this.checkShowDebug.TabIndex = 29;
       this.checkShowDebug.Text = "Debug";
       this.checkShowDebug.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -89,10 +87,9 @@
       this.checkShowInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
       this.checkShowInfo.ImageIndex = 0;
       this.checkShowInfo.ImageList = this.imageList;
-      this.checkShowInfo.Location = new System.Drawing.Point(240, 0);
-      this.checkShowInfo.Margin = new System.Windows.Forms.Padding(4);
+      this.checkShowInfo.Location = new System.Drawing.Point(180, 0);
       this.checkShowInfo.Name = "checkShowInfo";
-      this.checkShowInfo.Size = new System.Drawing.Size(120, 30);
+      this.checkShowInfo.Size = new System.Drawing.Size(90, 24);
       this.checkShowInfo.TabIndex = 28;
       this.checkShowInfo.Text = "Info";
       this.checkShowInfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -105,10 +102,9 @@
       this.checkShowWarnings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
       this.checkShowWarnings.ImageIndex = 4;
       this.checkShowWarnings.ImageList = this.imageList;
-      this.checkShowWarnings.Location = new System.Drawing.Point(120, 0);
-      this.checkShowWarnings.Margin = new System.Windows.Forms.Padding(4);
+      this.checkShowWarnings.Location = new System.Drawing.Point(90, 0);
       this.checkShowWarnings.Name = "checkShowWarnings";
-      this.checkShowWarnings.Size = new System.Drawing.Size(120, 30);
+      this.checkShowWarnings.Size = new System.Drawing.Size(90, 24);
       this.checkShowWarnings.TabIndex = 27;
       this.checkShowWarnings.Text = "Warnings";
       this.checkShowWarnings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -118,10 +114,9 @@
       this.btnExportExcel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
       this.btnExportExcel.ImageIndex = 8;
       this.btnExportExcel.ImageList = this.imageList;
-      this.btnExportExcel.Location = new System.Drawing.Point(655, 0);
-      this.btnExportExcel.Margin = new System.Windows.Forms.Padding(4);
+      this.btnExportExcel.Location = new System.Drawing.Point(491, 0);
       this.btnExportExcel.Name = "btnExportExcel";
-      this.btnExportExcel.Size = new System.Drawing.Size(32, 28);
+      this.btnExportExcel.Size = new System.Drawing.Size(24, 23);
       this.btnExportExcel.TabIndex = 26;
       this.btnExportExcel.Click += new System.EventHandler(this.BtnExportExcelClick);
       // 
@@ -130,10 +125,9 @@
       this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
       this.btnSave.ImageIndex = 5;
       this.btnSave.ImageList = this.imageList;
-      this.btnSave.Location = new System.Drawing.Point(623, 0);
-      this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+      this.btnSave.Location = new System.Drawing.Point(467, 0);
       this.btnSave.Name = "btnSave";
-      this.btnSave.Size = new System.Drawing.Size(32, 28);
+      this.btnSave.Size = new System.Drawing.Size(24, 23);
       this.btnSave.TabIndex = 25;
       this.btnSave.Click += new System.EventHandler(this.BtnSaveClick);
       // 
@@ -142,10 +136,9 @@
       this.btnCopy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
       this.btnCopy.ImageIndex = 9;
       this.btnCopy.ImageList = this.imageList;
-      this.btnCopy.Location = new System.Drawing.Point(591, 0);
-      this.btnCopy.Margin = new System.Windows.Forms.Padding(4);
+      this.btnCopy.Location = new System.Drawing.Point(443, 0);
       this.btnCopy.Name = "btnCopy";
-      this.btnCopy.Size = new System.Drawing.Size(32, 28);
+      this.btnCopy.Size = new System.Drawing.Size(24, 23);
       this.btnCopy.TabIndex = 24;
       this.btnCopy.Click += new System.EventHandler(this.BtnCopyClick);
       // 
@@ -158,9 +151,8 @@
       this.checkShowErrors.ImageIndex = 1;
       this.checkShowErrors.ImageList = this.imageList;
       this.checkShowErrors.Location = new System.Drawing.Point(0, 0);
-      this.checkShowErrors.Margin = new System.Windows.Forms.Padding(4);
       this.checkShowErrors.Name = "checkShowErrors";
-      this.checkShowErrors.Size = new System.Drawing.Size(120, 30);
+      this.checkShowErrors.Size = new System.Drawing.Size(90, 24);
       this.checkShowErrors.TabIndex = 23;
       this.checkShowErrors.Text = "Errors";
       this.checkShowErrors.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -170,16 +162,15 @@
       this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
       this.btnClear.ImageIndex = 11;
       this.btnClear.ImageList = this.imageList;
-      this.btnClear.Location = new System.Drawing.Point(559, 0);
-      this.btnClear.Margin = new System.Windows.Forms.Padding(4);
+      this.btnClear.Location = new System.Drawing.Point(419, 0);
       this.btnClear.Name = "btnClear";
-      this.btnClear.Size = new System.Drawing.Size(32, 28);
+      this.btnClear.Size = new System.Drawing.Size(24, 23);
       this.btnClear.TabIndex = 22;
       this.btnClear.Click += new System.EventHandler(this.BtnClearClick);
       // 
       // TableLogView
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.Controls.Add(this.checkShowDebug);
       this.Controls.Add(this.checkShowInfo);
@@ -190,10 +181,9 @@
       this.Controls.Add(this.checkShowErrors);
       this.Controls.Add(this.btnClear);
       this.Controls.Add(this.listView);
-      this.Margin = new System.Windows.Forms.Padding(4);
       this.Name = "TableLogView";
-      this.Size = new System.Drawing.Size(686, 239);
-      this.Resize += new System.EventHandler(this.TableLogView_Resize);
+      this.Size = new System.Drawing.Size(514, 194);
+      this.Layout += new System.Windows.Forms.LayoutEventHandler(this.TableLogViewOnLayout);
       this.ResumeLayout(false);
 
     }

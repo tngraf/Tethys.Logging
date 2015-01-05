@@ -24,7 +24,6 @@
 
 using System;
 using System.Reflection;
-using System.Resources;
 
 [assembly: AssemblyTitle("Tethys.Logging")]
 [assembly: AssemblyDescription("Tethys logging library")]

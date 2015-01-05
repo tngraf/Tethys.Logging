@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Tethys.Logging</id>
+    <id>Tethys.Logging.Win</id>
     <version>1.0.1</version>
-    <title>Tethys.Logging</title>
+    <title>Tethys.Logging.Win</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
 	<copyright>Copyright (C) 2003-2013 T. Graf</copyright>
@@ -15,9 +15,12 @@
     <releaseNotes>First version with NuGet support.</releaseNotes>
     <language>en-US</language>
     <tags>Tethys Logging</tags>
+	<dependencies> 
+	  <dependency id="Tethys.Logging" version="1.0.1" /> 
+    </dependencies> 
   </metadata>
   <files>
-    <file src="..\Export\Release\Tethys.Logging.xml" target="lib\portable-win+net40+sl40+wp" />
-	<file src="..\Export\Release\Tethys.Logging.pdb" target="lib\portable-win+net40+sl40+wp" />
+    <file src="..\Export\Release\Tethys.Logging.Win.xml" target="lib\net40-Client" />
+	<file src="..\Export\Release\Tethys.Logging.Win.pdb" target="lib\net40-Client" />
   </files> 
 </package>

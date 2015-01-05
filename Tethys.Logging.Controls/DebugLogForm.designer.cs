@@ -28,35 +28,33 @@
     /// </summary>
     private void InitializeComponent()
     {
-            this.rtfLogView = new Tethys.Logging.Controls.RtfLogView();
-            this.SuspendLayout();
-            // 
-            // rtfLogView
-            // 
-            this.rtfLogView.AddAtTail = true;
-            this.rtfLogView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtfLogView.LabelText = "Application Log";
-            this.rtfLogView.Location = new System.Drawing.Point(0, 0);
-            this.rtfLogView.Margin = new System.Windows.Forms.Padding(4);
-            this.rtfLogView.MaxLogLength = -1;
-            this.rtfLogView.Name = "rtfLogView";
-            this.rtfLogView.ShowDebugEvents = false;
-            this.rtfLogView.Size = new System.Drawing.Size(907, 231);
-            this.rtfLogView.TabIndex = 0;
-            this.rtfLogView.TextColor = System.Drawing.Color.Black;
-            // 
-            // DebugLogForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(907, 231);
-            this.Controls.Add(this.rtfLogView);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MinimumSize = new System.Drawing.Size(500, 75);
-            this.Name = "DebugLogForm";
-            this.Text = "DebugLogForm";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DebugLogFormFormClosing);
-            this.ResumeLayout(false);
+      this.rtfLogView = new Tethys.Logging.Controls.RtfLogView();
+      this.SuspendLayout();
+      // 
+      // rtfLogView
+      // 
+      this.rtfLogView.AddAtTail = true;
+      this.rtfLogView.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.rtfLogView.LabelText = "Application Log";
+      this.rtfLogView.Location = new System.Drawing.Point(0, 0);
+      this.rtfLogView.MaxLogLength = -1;
+      this.rtfLogView.Name = "rtfLogView";
+      this.rtfLogView.ShowDebugEvents = false;
+      this.rtfLogView.Size = new System.Drawing.Size(546, 193);
+      this.rtfLogView.TabIndex = 0;
+      this.rtfLogView.TextColor = System.Drawing.Color.Black;
+      // 
+      // DebugLogForm
+      // 
+      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.ClientSize = new System.Drawing.Size(546, 193);
+      this.Controls.Add(this.rtfLogView);
+      this.MinimumSize = new System.Drawing.Size(379, 68);
+      this.Name = "DebugLogForm";
+      this.Text = "DebugLogForm";
+      this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DebugLogFormFormClosing);
+      this.ResumeLayout(false);
 
     }
 
