@@ -1,27 +1,24 @@
 ﻿#region Header
-// ---------------------------------------------------------------------------
+// --------------------------------------------------------------------------
 // Tethys.Logging.Controls
+// ==========================================================================
+//
+// A logging library for .NET Framework 4.
+//
 // ===========================================================================
 //
-// This library contains common code of .Net projects of Thomas Graf.
-//
-// ===========================================================================
 // <copyright file="DebugLogForm.cs" company="Tethys">
-// Copyright  2003 - 2013 by Thomas Graf
-//            See the file "License.txt" for information on usage and 
-//            redistribution of this file and for a 
-//            DISCLAIMER OF ALL WARRANTIES.
+// Copyright  2009-2015 by Thomas Graf
+//            All rights reserved.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
 // </copyright>
-// 
-// Version .. 1.00.00.00 of 13Mar09
-// Project .. TgLib.Logging.NLog
-// Creater .. Thomas Graf (tg)
-// System ... Microsoft .Net Framework 4
-// Tools .... Microsoft Visual Studio 2010
 //
-// Change Report
-// 09Nov29 1.00.00.00 tg: initial version of the tglib.logging.controls libray.
-// 09Dec22 1.00.00.01 tg: bugfix in SaveToTextFile().
+// System ... Microsoft .Net Framework 4
+// Tools .... Microsoft Visual Studio 2013
 //
 // ---------------------------------------------------------------------------
 #endregion

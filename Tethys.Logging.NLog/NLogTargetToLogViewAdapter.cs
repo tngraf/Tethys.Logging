@@ -1,28 +1,24 @@
 ﻿#region Header
-// ---------------------------------------------------------------------------
+// --------------------------------------------------------------------------
 // Tethys.Logging.NLog
+// ==========================================================================
+//
+// A logging library for .NET Framework 4.
+//
 // ===========================================================================
 //
-// This library contains common code of .Net projects of Thomas Graf.
-//
-// ===========================================================================
 // <copyright file="NLogTargetToLogViewAdapter.cs" company="Tethys">
-// Copyright  2003 - 2013 by Thomas Graf
+// Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
-//            See the file "License.txt" for information on usage and 
-//            redistribution of this file and for a 
-//            DISCLAIMER OF ALL WARRANTIES.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
 // </copyright>
-// 
-// Version .. 1.00.00.00 of 13Mar09
-// Project .. TgLib.Logging.NLog
-// Creater .. Thomas Graf (tg)
-// System ... Microsoft .Net Framework 4
-// Tools .... Microsoft Visual Studio 2010
 //
-// Change Report
-// 10Oct18 1.00.00.00 tg: initial version of the NLog support libray.
-// 12Jul20 1.00.01.00 tg: update for NLog 2.0.
+// System ... Microsoft .Net Framework 4
+// Tools .... Microsoft Visual Studio 2013
 //
 // ---------------------------------------------------------------------------
 #endregion
@@ -51,12 +47,12 @@ namespace Tethys.Logging.NLog
     /// <summary>
     /// Target log viewer.
     /// </summary>
-    private readonly ILogView _view;
+    private readonly ILogView view;
 
     /// <summary>
     /// Flag 'add CR/LF at the end of each text line'.
     /// </summary>
-    private readonly bool _addCrlf;
+    private readonly bool addCrlf;
     #endregion // PRIVATE PROPERTIES
 
     //// ---------------------------------------------------------------------
@@ -74,8 +70,8 @@ namespace Tethys.Logging.NLog
         throw new ArgumentNullException("view");
       } // if
 
-      _view = view;
-      this._addCrlf = true;
+      this.view = view;
+      this.addCrlf = true;
     } // NLogTargetToLogViewAdapter()
 
     /// <summary>
@@ -94,8 +90,8 @@ namespace Tethys.Logging.NLog
         throw new ArgumentNullException("view");
       } // if
 
-      _view = view;
-      this._addCrlf = addCRLF;
+      this.view = view;
+      this.addCrlf = addCRLF;
     } // NLogTargetToLogViewAdapter()
     #endregion // CONSTRUCTION
 
@@ -118,7 +114,7 @@ namespace Tethys.Logging.NLog
       }
       else
       {
-        if (this._addCrlf)
+        if (this.addCrlf)
         {
           logMessage = string.Format(CultureInfo.InvariantCulture, "{0}{1}\r\n{2}\r\n",
             Layout.Render(logEvent),
@@ -135,7 +131,7 @@ namespace Tethys.Logging.NLog
       LogEvent le = new LogEvent(ConvertLogLevel(logEvent.Level),
         logEvent.TimeStamp, logMessage);
 
-      _view.AddLogEvent(le);
+      this.view.AddLogEvent(le);
     } // Write()
 #else
     // for NLog 1.0

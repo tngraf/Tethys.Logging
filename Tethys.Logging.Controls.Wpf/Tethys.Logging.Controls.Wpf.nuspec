@@ -2,21 +2,21 @@
 <package >
   <metadata>
     <id>Tethys.Logging.Controls.Wpf</id>
-    <version>1.0.1</version>
+    <version>1.2.0</version>
     <title>Tethys.Logging.Controls.Wpf</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
-	<copyright>Copyright (C) 2003-2013 T. Graf</copyright>
+	<copyright>Copyright (C) 2009-2015 T. Graf</copyright>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
-    <projectUrl>http://sourceforge.net/projects/tethyslogging/</projectUrl>
+    <projectUrl>https://github.com/tngraf/Tethys.Logging/</projectUrl>
     <iconUrl>http://www.4wp7.de/tethys/tethyb32.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Simple logging and enhancements for existing logging frameworks.</description>
-    <releaseNotes>First version with NuGet support.</releaseNotes>
+    <releaseNotes>WPF controls for Tethys.Logging.</releaseNotes>
     <language>en-US</language>
     <tags>Tethys Logging WPF</tags>
 	<dependencies> 
-	  <dependency id="Tethys.Logging" version="1.0.1" /> 
+	  <dependency id="Tethys.Logging" version="1.2.0" /> 
     </dependencies> 
   </metadata>
   <files>

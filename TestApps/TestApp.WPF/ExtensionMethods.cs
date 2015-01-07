@@ -1,31 +1,28 @@
-﻿//// -------------------------------------------------------------------------
-// TestApplication.Wpf
-// ===========================================================================
-// ExtensionMethods.cs
+﻿#region Header
+// --------------------------------------------------------------------------
+// Tethys.Logging
+// ==========================================================================
+//
+// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and 
+// higher, Windows Phone 7 and higher and .NET for Windows Store apps.
+//
 // ===========================================================================
 //
-// This library contains common code of .Net projects of Thomas Graf.
-//
-// ===========================================================================
-//
-// <copyright file="ExtensionMethods.cs" company="TgSoft">
-// (c) 2003 - 2010 by Thomas Graf.
+// <copyright file="ExtensionMethods.cs" company="Tethys">
+// Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
-//            See the file "License.txt" for information on usage and 
-//            redistribution of this file and for a 
-//            DISCLAIMER OF ALL WARRANTIES.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
 // </copyright>
 //
-// Version .. 1.00.00.08 of 12May18
-// Project .. tglib.logging.controls
-// Author ... Thomas Graf (tg)
-// System ... Microsoft .Net framework 4.0
-// Tools .... Microsoft Visual Studio 2010
+// System ... Portable Library
+// Tools .... Microsoft Visual Studio 2013
 //
-// Change Report
-// 12May18 1.00.00.00 tg: initial version.
-//
-//// -------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+#endregion
 
 namespace TestApplication.WPF
 {

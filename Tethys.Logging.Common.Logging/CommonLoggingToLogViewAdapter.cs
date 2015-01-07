@@ -1,28 +1,22 @@
 ﻿#region Header
-// ---------------------------------------------------------------------------
+// --------------------------------------------------------------------------
 // Tethys.Logging.Common.Logging
+// ==========================================================================
+//
+// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and 
+// higher, Windows Phone 7 and higher and .NET for Windows Store apps.
+//
 // ===========================================================================
 //
-// Common.Logging support for Tethys.Logging.
-//
-// ===========================================================================
 // <copyright file="CommonLoggingToLogViewAdapter.cs" company="Tethys">
-// Copyright  2003 - 2013 by Thomas Graf
+// Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
-//            See the file "License.txt" for information on usage and 
-//            redistribution of this file and for a 
-//            DISCLAIMER OF ALL WARRANTIES.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
 // </copyright>
-// 
-// Version .. 1.00.00.00 of 13Mar09
-// Project .. TgLib.Logging.NLog
-// Creater .. Thomas Graf (tg)
-// System ... Microsoft .Net Framework 4
-// Tools .... Microsoft Visual Studio 2010
-//
-// Change Report
-// 10Oct18 1.00.00.00 tg: initial version of the Common.Logging support 
-// library.
 //
 // ---------------------------------------------------------------------------
 #endregion
@@ -43,12 +37,12 @@ namespace Tethys.Logging.Common.Logging
     /// <summary>
     /// Target log viewer.
     /// </summary>
-    private readonly ILogView _view;
+    private readonly ILogView view;
 
     /// <summary>
     /// Flag 'add CR/LF at the end of each text line'.
     /// </summary>
-    private readonly bool _addCrLf;
+    private readonly bool addCrLf;
     #endregion // PRIVATE PROPERTIES
 
     //// ---------------------------------------------------------------------
@@ -61,8 +55,8 @@ namespace Tethys.Logging.Common.Logging
     /// <param name="view">View where to add the adapter.</param>
     public CommonLoggingToLogViewAdapter(ILogView view) 
     {
-      _view = view;
-      _addCrLf = true;
+      this.view = view;
+      this.addCrLf = true;
     } // CommonLoggingToLogViewAdapter()
 
     /// <summary>
@@ -74,8 +68,8 @@ namespace Tethys.Logging.Common.Logging
     /// </param>
     public CommonLoggingToLogViewAdapter(ILogView view, bool addLineEnd)
     {
-      _view = view;
-      _addCrLf = addLineEnd;
+      this.view = view;
+      this.addCrLf = addLineEnd;
     } // CommonLoggingToLogViewAdapter()
     #endregion // CONSTRUCTION
 
@@ -93,7 +87,7 @@ namespace Tethys.Logging.Common.Logging
     /// </remarks>
     protected override ILog CreateLogger(string name)
     {
-      return new LogViewLogger(_view, _addCrLf);
+      return new LogViewLogger(this.view, this.addCrLf);
     } // CreateLogger()
     #endregion // OVERRIDES OF ABSTRACTCACHINGLOGGERFACTORYADAPTER
   } // CommonLoggingToLogViewAdapter

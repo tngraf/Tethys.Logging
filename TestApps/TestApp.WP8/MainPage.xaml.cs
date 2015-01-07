@@ -1,26 +1,25 @@
 ﻿#region Header
 // --------------------------------------------------------------------------
-// TestApplication.WP8
+// Tethys.Logging
 // ==========================================================================
 //
-// A portable logging library for .NET Framework 4.5, Silverlight 4 and 
+// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and 
 // higher, Windows Phone 7 and higher and .NET for Windows Store apps.
 //
-// ==========================================================================
-// <copyright file="MainPage.xaml.cs" company="Tethys">
-// Copyright  2003 - 2013 by Thomas Graf
-//            All rights reserved.
-//            See the file "License.txt" for information on usage and 
-//            redistribution of this file and for a 
-//            DISCLAIMER OF ALL WARRANTIES.
-// </copyright>
-// 
-// Version .. 1.00.00.00 of 13Mar26
-// System ... Portable Library
-// Tools .... Microsoft Visual Studio 2012
+// ===========================================================================
 //
-// Change Report
-// 13Mar26 1.00.00.00 tg: initial version.
+// <copyright file="MainPage.xaml.cs" company="Tethys">
+// Copyright  2009-2015 by Thomas Graf
+//            All rights reserved.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
+// </copyright>
+//
+// System ... Portable Library
+// Tools .... Microsoft Visual Studio 2013
 //
 // ---------------------------------------------------------------------------
 #endregion
@@ -43,7 +42,7 @@ namespace TestApp.WP8
     /// <summary>
     /// The view model.
     /// </summary>
-    private readonly MainWindowViewModel _viewmodel;
+    private readonly MainWindowViewModel viewmodel;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="MainPage"/> class.
@@ -55,8 +54,8 @@ namespace TestApp.WP8
       // initialize logging
       ConfigureLogging();
 
-      _viewmodel = new MainWindowViewModel();
-      DataContext = _viewmodel;
+      this.viewmodel = new MainWindowViewModel();
+      DataContext = this.viewmodel;
     } // MainPage()
 
     /// <summary>
@@ -78,15 +77,15 @@ namespace TestApp.WP8
     /// instance containing the event data.</param>
     private void BtnAddNewEventClick(object sender, RoutedEventArgs e)
     {
-      if (_viewmodel.UseDefaultText)
+      if (this.viewmodel.UseDefaultText)
       {
-        LogAppCore.AddEvent(_viewmodel.SelectedLevel.LevelText);
+        LogAppCore.AddEvent(this.viewmodel.SelectedLevel.LevelText);
       }
       else
       {
         LogAppCore.AddEvent(
-          _viewmodel.SelectedLevel.LevelText,
-          _viewmodel.CustomText);
+          this.viewmodel.SelectedLevel.LevelText,
+          this.viewmodel.CustomText);
       } // if
     } // BtnAddNewEventClick()
 

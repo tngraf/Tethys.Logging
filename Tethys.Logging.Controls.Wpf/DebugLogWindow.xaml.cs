@@ -1,28 +1,24 @@
 ﻿#region Header
-// ---------------------------------------------------------------------------
-// Tethys.Logging.Controls.Wpf
+// --------------------------------------------------------------------------
+// Tethys.Logging.Controls.WPF
+// ==========================================================================
+//
+// A logging library for .NET Framework 4.
+//
 // ===========================================================================
 //
-// This library contains common code of .Net projects of Thomas Graf.
-//
-// ===========================================================================
 // <copyright file="DebugLogWindow.xaml.cs" company="Tethys">
-// Copyright  2003 - 2013 by Thomas Graf
+// Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
-//            See the file "License.txt" for information on usage and 
-//            redistribution of this file and for a 
-//            DISCLAIMER OF ALL WARRANTIES.
-//            redistribution of this file and for a DISCLAIMER OF ALL WARRANTIES.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
 // </copyright>
-// 
-// Version .. 1.00.00.00 of 13Mar09
-// Project .. TgLib.Logging.NLog
-// Creater .. Thomas Graf (tg)
-// System ... Microsoft .Net Framework 4
-// Tools .... Microsoft Visual Studio 2010
 //
-// Change Report
-// 12May16 1.00.00.00 tg: initial version of the tglib.logging.controls.wpf.
+// System ... Microsoft .Net Framework 4
+// Tools .... Microsoft Visual Studio 2013
 //
 // ---------------------------------------------------------------------------
 #endregion

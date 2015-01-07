@@ -1,23 +1,21 @@
 ﻿#region Header
 // --------------------------------------------------------------------------
-// Tethys.Logging
+// Tethys.Logging.Win
 // ==========================================================================
 //
-// A portable logging library for .NET Framework 4.5, Silverlight 4 and 
-// higher, Windows Phone 7 and higher and .NET for Windows Store apps.
+// A logging library for .NET Framework 4.5.
 //
-// ==========================================================================
+// ===========================================================================
+//
 // <copyright file="TraceLogger.cs" company="Tethys">
-// Copyright  2013 by Thomas Graf
+// Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
 // </copyright>
-// 
-// Version .. 1.00.01.00 of 13Oct09
-// System ... Portable Library
-// Tools .... Microsoft Visual Studio 2012
-//
-// Change Report
-// 13Oct09 1.00.01.00 tg: initial version.
 //
 // ---------------------------------------------------------------------------
 #endregion
@@ -33,7 +31,7 @@ namespace Tethys.Logging.Win
     using System;
     using System.Text;
 
-    /// <summary>
+  /// <summary>
   /// A simple logger that writes all output to Trace.WriteLine.
   /// </summary>
   /// <remarks>
@@ -53,7 +51,7 @@ namespace Tethys.Logging.Win
     {
       // Use a StringBuilder for better performance
       var sb = new StringBuilder();
-      FormatOutput(sb, level, message, exception);
+      this.FormatOutput(sb, level, message, exception);
 
       // output formatted text
       System.Diagnostics.Trace.WriteLine(sb.ToString());

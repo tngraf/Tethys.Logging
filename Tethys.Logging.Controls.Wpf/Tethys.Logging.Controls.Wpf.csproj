@@ -35,7 +35,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>TethysLibKey.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\Tethys.Logging\TethysLibKey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
@@ -47,8 +47,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Tethys.Logging\Properties\MainAssemblyInfo.cs">
-      <Link>Properties\MainAssemblyInfo.cs</Link>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="DebugLogWindow.xaml.cs">
       <DependentUpon>DebugLogWindow.xaml</DependentUpon>
@@ -60,8 +60,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Tethys.Logging\TethysLibKey.snk">
+      <Link>TethysLibKey.snk</Link>
+    </None>
     <None Include="Settings.StyleCop" />
-    <None Include="TethysLibKey.snk" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tethys.Logging\Tethys.Logging.csproj">

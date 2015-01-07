@@ -1,30 +1,28 @@
 ﻿#region Header
-// ---------------------------------------------------------------------------
+// --------------------------------------------------------------------------
 // Tethys.Logging.Log4Net
+// ==========================================================================
+//
+// A logging library for .NET Framework 4.
+//
 // ===========================================================================
 //
-// This library contains common code of .Net projects of Thomas Graf.
-//
-// ===========================================================================
 // <copyright file="LogLevelFilter.cs" company="Tethys">
-// Copyright  2003 - 2013 by Thomas Graf
+// Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
-//            See the file "License.txt" for information on usage and 
-//            redistribution of this file and for a 
-//            DISCLAIMER OF ALL WARRANTIES.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
 // </copyright>
-// 
-// Version .. 1.00.00.00 of 13Mar09
-// Project .. TgLib.Logging.NLog
-// Creater .. Thomas Graf (tg)
-// System ... Microsoft .Net Framework 4
-// Tools .... Microsoft Visual Studio 2010
 //
-// Change Report
-// 10Oct18 1.00.00.00 tg: initial version of the NLog support libray.
+// System ... Microsoft .Net Framework 4
+// Tools .... Microsoft Visual Studio 2013
 //
 // ---------------------------------------------------------------------------
 #endregion
+
 
 namespace Tethys.Logging.Log4Net
 {
@@ -41,7 +39,7 @@ namespace Tethys.Logging.Log4Net
     /// <summary>
     /// The level to filter for.
     /// </summary>
-    private readonly Level _level;
+    private readonly Level level;
     #endregion // PRIVATE PROPERTIES
 
     //// ---------------------------------------------------------------------
@@ -62,7 +60,7 @@ namespace Tethys.Logging.Log4Net
     /// <param name="level">The level.</param>
     public LogLevelFilter(Level level)
     {
-      _level = level;
+      this.level = level;
     } // LogLevelFilter()
     #endregion // CONSTRUCTION
 
@@ -85,7 +83,7 @@ namespace Tethys.Logging.Log4Net
     /// </remarks>
     public FilterDecision Decide(LoggingEvent loggingEvent)
     {
-      if (loggingEvent.Level == _level)
+      if (loggingEvent.Level == this.level)
       {
         return FilterDecision.Accept;
       } // if

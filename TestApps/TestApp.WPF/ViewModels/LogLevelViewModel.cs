@@ -1,31 +1,28 @@
-﻿//// -------------------------------------------------------------------------
-// TgLib.Logging
-// ===========================================================================
-// LogLevelViewModel.cs
-// ===========================================================================
+﻿#region Header
+// --------------------------------------------------------------------------
+// Tethys.Logging
+// ==========================================================================
 //
-// This library contains common code of .Net projects of Thomas Graf.
+// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and 
+// higher, Windows Phone 7 and higher and .NET for Windows Store apps.
 //
 // ===========================================================================
 //
 // <copyright file="LogLevelViewModel.cs" company="Tethys">
-// (c) 2003 - 2010 by Thomas Graf.
+// Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
-//            See the file "License.txt" for information on usage and 
-//            redistribution of this file and for a 
-//            DISCLAIMER OF ALL WARRANTIES.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
 // </copyright>
 //
-// Version .. 1.00.00.08 of 12May18
-// Project .. tglib.logging.controls
-// Author ... Thomas Graf (tg)
-// System ... Microsoft .Net framework 4.0
-// Tools .... Microsoft Visual Studio 2010
+// System ... Portable Library
+// Tools .... Microsoft Visual Studio 2013
 //
-// Change Report
-// 12May18 1.00.00.08 tg: initial version.
-//
-//// -------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+#endregion
 
 namespace TestApplication.WPF.ViewModels
 {
@@ -70,15 +67,15 @@ namespace TestApplication.WPF.ViewModels
     /// <summary>
     /// PropertyChanged event handler.
     /// </summary>
-    private PropertyChangedEventHandler _propertyChanged;
+    private PropertyChangedEventHandler propertyChanged;
 
     /// <summary>
     /// This event is raised when a property has changed.
     /// </summary>
     public event PropertyChangedEventHandler PropertyChanged
     {
-      add { _propertyChanged += value; }
-      remove { _propertyChanged -= value; }
+      add { this.propertyChanged += value; }
+      remove { this.propertyChanged -= value; }
     } // PropertyChanged
 
     /// <summary>
@@ -99,9 +96,9 @@ namespace TestApplication.WPF.ViewModels
     /// containing the event data.</param>
     protected virtual void OnPropertyChanged(PropertyChangedEventArgs e)
     {
-      if (_propertyChanged != null)
+      if (this.propertyChanged != null)
       {
-        _propertyChanged(this, e);
+        this.propertyChanged(this, e);
       } // if
     } // OnPropertyChanged()
     #endregion // VIEWNMODEL BASE FUNCTIONALITY

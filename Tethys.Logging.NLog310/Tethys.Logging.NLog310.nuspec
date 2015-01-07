@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Tethys.Logging.NLog310</id>
+    <version>1.2.0</version>
+    <title>Tethys.Logging.NLog310</title>
+    <authors>Thomas Graf</authors>
+    <owners>Thomas Graf</owners>
+    <copyright>Copyright (C) 2009-2015 T. Graf</copyright>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <projectUrl>https://github.com/tngraf/Tethys.Logging/</projectUrl>
+    <iconUrl>http://www.4wp7.de/tethys/tethyb32.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple logging and enhancements for existing logging frameworks.</description>
+    <releaseNotes>Support for NLog 3.1.0.</releaseNotes>
+    <language>en-US</language>
+    <tags>Tethys Logging NLog</tags>
+    <dependencies> 
+      <dependency id="Tethys.Logging" version="1.2.0" /> 
+    </dependencies> 
+  </metadata>
+  <files>
+    <file src="..\Export\Release\Tethys.Logging.NLog310.xml" target="lib\net45" />
+    <file src="..\Export\Release\Tethys.Logging.NLog310.pdb" target="lib\net45" />
+    <file src="..\import\Nlog-3.1.0\NLog.dll" target="lib\net45" />
+    <file src="..\import\Nlog-3.1.0\NLog.xml" target="lib\net45" />
+  </files> 
+</package>

@@ -1,27 +1,24 @@
 ﻿#region Header
-// ---------------------------------------------------------------------------
+// --------------------------------------------------------------------------
 // Tethys.Logging.Log4Net
+// ==========================================================================
+//
+// A logging library for .NET Framework 4.
+//
 // ===========================================================================
 //
-// This library contains common code of .Net projects of Thomas Graf.
-//
-// ===========================================================================
 // <copyright file="Log4NetTargetToLogViewAdapter.cs" company="Tethys">
-// Copyright  2003 - 2013 by Thomas Graf
+// Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
-//            See the file "License.txt" for information on usage and 
-//            redistribution of this file and for a 
-//            DISCLAIMER OF ALL WARRANTIES.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
 // </copyright>
-// 
-// Version .. 1.00.00.00 of 13Mar09
-// Project .. TgLib.Logging.NLog
-// Creater .. Thomas Graf (tg)
-// System ... Microsoft .Net Framework 4
-// Tools .... Microsoft Visual Studio 2010
 //
-// Change Report
-// 10Oct18 1.00.00.00 tg: initial version of the NLog support libray.
+// System ... Microsoft .Net Framework 4
+// Tools .... Microsoft Visual Studio 2013
 //
 // ---------------------------------------------------------------------------
 #endregion
@@ -49,7 +46,7 @@ namespace Tethys.Logging.Log4Net
     /// <summary>
     /// Target log viewer.
     /// </summary>
-    private readonly ILogView _view;
+    private readonly ILogView view;
     #endregion // PRIVATE PROPERTIES
 
     //// ---------------------------------------------------------------------
@@ -67,7 +64,7 @@ namespace Tethys.Logging.Log4Net
         throw new ArgumentNullException("view");
       } // if
 
-      _view = view;
+      this.view = view;
     } // Log4NetTargetToLogViewAdapter()
     #endregion // CONSTRUCTION
 
@@ -102,10 +99,11 @@ namespace Tethys.Logging.Log4Net
     {
       if (!disposing)
       {
-        if (!_closed)
+        if (!this.closed)
         {
-          LogLog.Debug("RtfLogView: Finalizing appender named [" + _name + "].");
-          _renderWriter.Close();
+          LogLog.Debug(typeof(Log4NetTargetToLogViewAdapter), 
+              "RtfLogView: Finalizing appender named [" + this.name + "].");
+          this.renderWriter.Close();
           Close();
         } // if
       } // if
@@ -134,8 +132,8 @@ namespace Tethys.Logging.Log4Net
     /// </remarks>
     public Level Threshold 
     {
-      get { return _threshold; }
-      set { _threshold = value; }
+      get { return this.threshold; }
+      set { this.threshold = value; }
     }
 
     /// <summary>
@@ -152,7 +150,7 @@ namespace Tethys.Logging.Log4Net
     {
       get
       {
-        return _errorHandler;
+        return this.errorHandler;
       }
 
       set
@@ -163,11 +161,12 @@ namespace Tethys.Logging.Log4Net
           {
             // We do not throw exception here since the cause is probably a
             // bad config file.
-            LogLog.Warn("Log4NetTargetToLogViewAdapter: You have tried to set a null error-handler.");
+            LogLog.Warn(typeof(Log4NetTargetToLogViewAdapter),
+              "Log4NetTargetToLogViewAdapter: You have tried to set a null error-handler.");
           } 
           else 
           {
-            _errorHandler = value;
+            this.errorHandler = value;
           }
         }
       }
@@ -185,7 +184,7 @@ namespace Tethys.Logging.Log4Net
     /// </remarks>
     public virtual IFilter FilterHead
     {
-      get { return _headFilter; }
+      get { return this.headFilter; }
     }
 
     /// <summary>
@@ -200,8 +199,8 @@ namespace Tethys.Logging.Log4Net
     /// <seealso cref="RequiresLayout"/>
     public virtual ILayout Layout 
     {
-      get { return _layout; }
-      set { _layout = value; }
+      get { return this.layout; }
+      set { this.layout = value; }
     }
 
     /// <summary>
@@ -224,8 +223,8 @@ namespace Tethys.Logging.Log4Net
     /// </remarks>
     public bool ImmediateFlush
     {
-      get { return _immediateFlush; }
-      set { _immediateFlush = value; }
+      get { return this.immediateFlush; }
+      set { this.immediateFlush = value; }
     }
     #endregion // PUBLIC INSTANCE PROPERTIES
 
@@ -267,8 +266,8 @@ namespace Tethys.Logging.Log4Net
     /// </remarks>
     public string Name 
     {
-      get { return _name; }
-      set { _name = value; }
+      get { return this.name; }
+      set { this.name = value; }
     }
 
     /// <summary>
@@ -293,10 +292,10 @@ namespace Tethys.Logging.Log4Net
       // This lock prevents the appender being closed while it is still appending
       lock (this)
       {
-        if (!_closed)
+        if (!this.closed)
         {
           OnClose();
-          _closed = true;
+          this.closed = true;
         }
       }
     }
@@ -352,21 +351,21 @@ namespace Tethys.Logging.Log4Net
       // multiple thread contexts (like get the wrong thread ID).
       lock (this)
       {
-        if (_closed)
+        if (this.closed)
         {
-          ErrorHandler.Error("Attempted to append to closed appender named [" + _name + "].");
+          ErrorHandler.Error("Attempted to append to closed appender named [" + this.name + "].");
           return;
         }
 
         // prevent re-entry
-        if (_recursiveGuard)
+        if (this.recursiveGuard)
         {
           return;
         }
 
         try
         {
-          _recursiveGuard = true;
+          this.recursiveGuard = true;
 
           if (FilterEvent(loggingEvent) && PreAppendCheck())
           {
@@ -379,7 +378,7 @@ namespace Tethys.Logging.Log4Net
         }
         finally
         {
-          _recursiveGuard = false;
+          this.recursiveGuard = false;
         }
       }
     }
@@ -440,21 +439,21 @@ namespace Tethys.Logging.Log4Net
       // multiple thread contexts (like get the wrong thread ID).
       lock (this)
       {
-        if (_closed)
+        if (this.closed)
         {
-          ErrorHandler.Error("Attempted to append to closed appender named [" + _name + "].");
+          ErrorHandler.Error("Attempted to append to closed appender named [" + this.name + "].");
           return;
         }
 
         // prevent re-entry
-        if (_recursiveGuard)
+        if (this.recursiveGuard)
         {
           return;
         }
 
         try
         {
-          _recursiveGuard = true;
+          this.recursiveGuard = true;
 
           ArrayList filteredEvents = new ArrayList(loggingEvents.Length);
 
@@ -477,7 +476,7 @@ namespace Tethys.Logging.Log4Net
         }
         finally
         {
-          _recursiveGuard = false;
+          this.recursiveGuard = false;
         }
       }
     }
@@ -571,7 +570,7 @@ namespace Tethys.Logging.Log4Net
       LogEvent le = new LogEvent(ConvertLogLevel(loggingEvent.Level),
         loggingEvent.TimeStamp, RenderLoggingEvent(loggingEvent));
 
-      _view.AddLogEvent(le);
+      this.view.AddLogEvent(le);
     } // Append()
     #endregion // OVERRIDDEN APPENDERSKELETON METHODS
 
@@ -599,14 +598,14 @@ namespace Tethys.Logging.Log4Net
           "filter param must not be null");
       }
 
-      if (_headFilter == null) 
+      if (this.headFilter == null) 
       {
-        _headFilter = _tailFilter = filter;
+        this.headFilter = this.tailFilter = filter;
       } 
       else 
       {
-        _tailFilter.Next = filter;
-        _tailFilter = filter;  
+        this.tailFilter.Next = filter;
+        this.tailFilter = filter;  
       }
     }
 
@@ -620,7 +619,7 @@ namespace Tethys.Logging.Log4Net
     /// </remarks>
     public virtual void ClearFilters()
     {
-      _headFilter = _tailFilter = null;
+      this.headFilter = this.tailFilter = null;
     }
     #endregion // PUBLIC INSTANCE METHODS
 
@@ -642,7 +641,7 @@ namespace Tethys.Logging.Log4Net
     /// </returns>
     protected virtual bool IsAsSevereAsThreshold(Level level) 
     {
-      return (_threshold == null) || level >= _threshold;
+      return (this.threshold == null) || level >= this.threshold;
     }
 
     /// <summary>
@@ -705,11 +704,11 @@ namespace Tethys.Logging.Log4Net
     /// <returns><c>true</c> if the call to <see cref="Append(LoggingEvent)"/> should proceed.</returns>
     protected virtual bool PreAppendCheck()
     {
-      if ((_layout == null) && RequiresLayout)
+      if ((this.layout == null) && RequiresLayout)
       {
         ErrorHandler.Error(
           "Log4NetTargetToLogViewAdapter: No layout set for the appender named [" 
-          + _name + "].");
+          + this.name + "].");
         return false;
       }
 
@@ -743,16 +742,16 @@ namespace Tethys.Logging.Log4Net
     protected string RenderLoggingEvent(LoggingEvent loggingEvent)
     {
       // Create the render writer on first use
-      if (_renderWriter == null)
+      if (this.renderWriter == null)
       {
-        _renderWriter = new ReusableStringWriter(System.Globalization.CultureInfo.InvariantCulture);
+        this.renderWriter = new ReusableStringWriter(System.Globalization.CultureInfo.InvariantCulture);
       }
 
       // Reset the writer so we can reuse it
-      _renderWriter.Reset(RenderBufferMaxCapacity, RenderBufferSize);
+      this.renderWriter.Reset(RenderBufferMaxCapacity, RenderBufferSize);
 
-      RenderLoggingEvent(_renderWriter, loggingEvent);
-      return _renderWriter.ToString();
+      RenderLoggingEvent(this.renderWriter, loggingEvent);
+      return this.renderWriter.ToString();
     }
 
     /// <summary>
@@ -781,30 +780,30 @@ namespace Tethys.Logging.Log4Net
     /// </remarks>
     protected void RenderLoggingEvent(TextWriter writer, LoggingEvent loggingEvent)
     {
-      if (_layout == null) 
+      if (this.layout == null) 
       {
         throw new InvalidOperationException("A layout must be set");
       }
 
-      if (_layout.IgnoresException) 
+      if (this.layout.IgnoresException) 
       {
         string exceptionStr = loggingEvent.GetExceptionString();
         if (!string.IsNullOrEmpty(exceptionStr)) 
         {
           // render the event and the exception
-          _layout.Format(writer, loggingEvent);
+          this.layout.Format(writer, loggingEvent);
           writer.WriteLine(exceptionStr);
         }
         else 
         {
           // there is no exception to render
-          _layout.Format(writer, loggingEvent);
+          this.layout.Format(writer, loggingEvent);
         }
       }
       else 
       {
         // The layout will render the exception
-        _layout.Format(writer, loggingEvent);
+        this.layout.Format(writer, loggingEvent);
       }
     }
 
@@ -840,7 +839,7 @@ namespace Tethys.Logging.Log4Net
     /// <remarks>
     /// See <see cref="Layout"/> for more information.
     /// </remarks>
-    private ILayout _layout;
+    private ILayout layout;
 
     /// <summary>
     /// The name of this appender.
@@ -848,7 +847,7 @@ namespace Tethys.Logging.Log4Net
     /// <remarks>
     /// See <see cref="Name"/> for more information.
     /// </remarks>
-    private string _name;
+    private string name;
 
     /// <summary>
     /// The level threshold of this appender.
@@ -861,7 +860,7 @@ namespace Tethys.Logging.Log4Net
     /// See <see cref="Threshold"/> for more information.
     /// </para>
     /// </remarks>
-    private Level _threshold;
+    private Level threshold;
 
     /// <summary>
     /// It is assumed and enforced that errorHandler is never null.
@@ -874,7 +873,7 @@ namespace Tethys.Logging.Log4Net
     /// See <see cref="ErrorHandler"/> for more information.
     /// </para>
     /// </remarks>
-    private IErrorHandler _errorHandler;
+    private IErrorHandler errorHandler;
 
     /// <summary>
     /// The first filter in the filter chain.
@@ -887,7 +886,7 @@ namespace Tethys.Logging.Log4Net
     /// See <see cref="IFilter"/> for more information.
     /// </para>
     /// </remarks>
-    private IFilter _headFilter;
+    private IFilter headFilter;
 
     /// <summary>
     /// The last filter in the filter chain.
@@ -895,7 +894,7 @@ namespace Tethys.Logging.Log4Net
     /// <remarks>
     /// See <see cref="IFilter"/> for more information.
     /// </remarks>
-    private IFilter _tailFilter;
+    private IFilter tailFilter;
 
     /// <summary>
     /// Flag indicating if this appender is closed.
@@ -903,17 +902,17 @@ namespace Tethys.Logging.Log4Net
     /// <remarks>
     /// See <see cref="Close"/> for more information.
     /// </remarks>
-    private bool _closed;
+    private bool closed;
 
     /// <summary>
     /// The guard prevents an appender from repeatedly calling its own DoAppend method
     /// </summary>
-    private bool _recursiveGuard;
+    private bool recursiveGuard;
 
     /// <summary>
     /// StringWriter used to render events
     /// </summary>
-    private ReusableStringWriter _renderWriter;
+    private ReusableStringWriter renderWriter;
 
     /// <summary>
     /// Immediate flush means that the underlying writer or output stream
@@ -930,7 +929,7 @@ namespace Tethys.Logging.Log4Net
     /// <para>
     /// The default value is <c>true</c>.</para>
     /// </remarks>
-    private bool _immediateFlush = true;
+    private bool immediateFlush = true;
     #endregion // PRIVATE INSTANCE FIELDS
 
     //// ---------------------------------------------------------------------

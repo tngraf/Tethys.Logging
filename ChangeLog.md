@@ -1,6 +1,16 @@
 Tethys.Logging Change Log
 =========================
 
+## V1.2.0	(2015-01-07) ##
+* Upgrade to VS2013.
+* Header updated.
+* Readme and Change Log reworked.
+* Import folder reorganized.
+* Supports now only log4net 1.2.11 (signed).
+* Supports additionally Common.Logging, version 2.3.1.
+* Supports additionally NLog 3.1.0.
+* Published on Github.
+
 ## V1.0.1	(2013-10-12) ##
 * NuGet support added and Nuget packages released.
 * System.Diagnostics.Debug.WriteLine can be used in a portable library, but System.Diagnostics.Trace.WriteLine not => to have a trace logger a new library for Windows is needed and we will have no support for Windows Phone and WinRT.
@@ -79,7 +89,9 @@ Tethys.Logging Change Log
 * TableLogView added.
 * RtfLogView added.
 
-# Required Libraries #
+# Supported Logging Libraries #
 * Common.Logging 2.1.1
-* NLog 2.0
-* log4net 1.2.10
+* Common.Logging 2.3.1
+* NLog 2.0.0
+* NLog 3.1.0
+* log4net 1.2.11

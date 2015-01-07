@@ -1,26 +1,25 @@
 ﻿#region Header
 // --------------------------------------------------------------------------
-// TestApplication.Wpf
+// Tethys.Logging
 // ==========================================================================
 //
-// A portable logging library for .NET Framework 4.5, Silverlight 4 and 
+// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and 
 // higher, Windows Phone 7 and higher and .NET for Windows Store apps.
 //
-// ==========================================================================
-// <copyright file="MainWindow.xaml.cs" company="Tethys">
-// Copyright  2003 - 2013 by Thomas Graf
-//            All rights reserved.
-//            See the file "License.txt" for information on usage and 
-//            redistribution of this file and for a 
-//            DISCLAIMER OF ALL WARRANTIES.
-// </copyright>
-// 
-// Version .. 1.00.00.00 of 12May18
-// System ... Portable Library
-// Tools .... Microsoft Visual Studio 2012
+// ===========================================================================
 //
-// Change Report
-// 12May18 1.00.00.00 tg: initial version.
+// <copyright file="MainWindow.xaml.cs" company="Tethys">
+// Copyright  2009-2015 by Thomas Graf
+//            All rights reserved.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
+// </copyright>
+//
+// System ... Portable Library
+// Tools .... Microsoft Visual Studio 2013
 //
 // ---------------------------------------------------------------------------
 #endregion
@@ -44,12 +43,12 @@ namespace TestApplication.WPF.Views
     /// <summary>
     /// The view model.
     /// </summary>
-    private readonly MainWindowViewModel _viewmodel;
+    private readonly MainWindowViewModel viewmodel;
 
     /// <summary>
     /// The debug log window.
     /// </summary>
-    private readonly DebugLogWindow _debugWindow;
+    private readonly DebugLogWindow debugWindow;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="MainWindow"/> class.
@@ -58,14 +57,14 @@ namespace TestApplication.WPF.Views
     {
       InitializeComponent();
 
-      _debugWindow = new DebugLogWindow();
-      _debugWindow.Hiding += OnDebugWindowHiding;
+      this.debugWindow = new DebugLogWindow();
+      this.debugWindow.Hiding += OnDebugWindowHiding;
 
       // initialize logging
       ConfigureLogging();
 
-      _viewmodel = new MainWindowViewModel();
-      DataContext = _viewmodel;
+      this.viewmodel = new MainWindowViewModel();
+      DataContext = this.viewmodel;
     } // MainWindow()
 
     /// <summary>
@@ -85,8 +84,7 @@ namespace TestApplication.WPF.Views
     private void ConfigureLogging()
     {
       // ----- configure NLog logging -----
-      NLog.Config.LoggingConfiguration config
-        = global::NLog.LogManager.Configuration ?? new NLog.Config.LoggingConfiguration();
+      var config = global::NLog.LogManager.Configuration ?? new NLog.Config.LoggingConfiguration();
 
       // create & add targets
       NLog.Targets.TargetWithLayout targetRtf = new NLogTargetToLogViewAdapter(
@@ -94,12 +92,11 @@ namespace TestApplication.WPF.Views
       targetRtf.Layout = "${date:format=yyyy-MM-dd,HH\\:mm\\:ss}: ${message}";
       config.AddTarget("RtfLogView", targetRtf);
 
-      NLog.Config.LoggingRule rule = new NLog.Config.LoggingRule("*", 
-        global::NLog.LogLevel.Debug, targetRtf);
+      var rule = new NLog.Config.LoggingRule("*", global::NLog.LogLevel.Debug, targetRtf);
       config.LoggingRules.Add(rule);
 
       NLog.Targets.TargetWithLayout targetDebugTrace = new NLogTargetToLogViewAdapter(
-        _debugWindow.RtfLogView, false);
+        this.debugWindow.RtfLogView, false);
       targetDebugTrace.Layout = "${date:format=yyyy-MM-dd,HH\\:mm\\:ss}: ${message}";
       config.AddTarget("DebugTraceView", targetDebugTrace);
 
@@ -143,7 +140,7 @@ namespace TestApplication.WPF.Views
       object sender,
       System.ComponentModel.CancelEventArgs e)
     {
-      _debugWindow.Close();
+      this.debugWindow.Close();
 
       // the next command is needed to really terminate the application
       Application.Current.Shutdown();
@@ -168,15 +165,15 @@ namespace TestApplication.WPF.Views
     /// instance containing the event data.</param>
     private void BtnAddNewEventClick(object sender, RoutedEventArgs e)
     {
-      if (_viewmodel.UseDefaultText)
+      if (this.viewmodel.UseDefaultText)
       {
-        LogAppCore.AddEvent(_viewmodel.SelectedLevel.LevelText);
+        LogAppCore.AddEvent(this.viewmodel.SelectedLevel.LevelText);
       }
       else
       {
         LogAppCore.AddEvent(
-          _viewmodel.SelectedLevel.LevelText, 
-          _viewmodel.CustomText);
+          this.viewmodel.SelectedLevel.LevelText, 
+          this.viewmodel.CustomText);
       }
     }
 
@@ -199,13 +196,13 @@ namespace TestApplication.WPF.Views
     /// instance containing the event data.</param>
     private void CheckDebugLogWindowClick(object sender, RoutedEventArgs e)
     {
-      if (_debugWindow.IsVisible)
+      if (this.debugWindow.IsVisible)
       {
-        _debugWindow.Hide();
+        this.debugWindow.Hide();
       }
       else
       {
-        _debugWindow.Show();
+        this.debugWindow.Show();
       }
     }
   }

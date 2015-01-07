@@ -1,26 +1,24 @@
 ﻿#region Header
 // --------------------------------------------------------------------------
-// Tethys.Logging
+// Tethys.Logging.NLog
 // ==========================================================================
 //
-// A portable logging library for .NET Framework 4.5, Silverlight 4 and 
-// higher, Windows Phone 7 and higher and .NET for Windows Store apps.
+// A logging library for .NET Framework 4.
 //
-// ==========================================================================
+// ===========================================================================
+//
 // <copyright file="NLogLogger.cs" company="Tethys">
-// Copyright  2013 by Thomas Graf
+// Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
-//            See the file "License.txt" for information on usage and 
-//            redistribution of this file and for a 
-//            DISCLAIMER OF ALL WARRANTIES.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
 // </copyright>
-// 
-// Version .. 1.00.00.00 of 13Apr04
-// System ... Portable Library
-// Tools .... Microsoft Visual Studio 2012
 //
-// Change Report
-// 13Mar21 1.00.00.00 tg: initial version.
+// System ... Microsoft .Net Framework 4
+// Tools .... Microsoft Visual Studio 2013
 //
 // ---------------------------------------------------------------------------
 #endregion
@@ -49,7 +47,7 @@ namespace Tethys.Logging.NLog
     /// <summary>
     /// The internal NLog logger.
     /// </summary>
-    private readonly global::NLog.Logger _logger;
+    private readonly global::NLog.Logger logger;
 
     /// <summary>
     /// Declaring type used for the NLog logger.
@@ -66,7 +64,7 @@ namespace Tethys.Logging.NLog
     /// <param name="logger">The logger.</param>
     protected internal NLogLogger(global::NLog.Logger logger)
     {
-      this._logger = logger;
+      this.logger = logger;
     } // NLogLogger()
     #endregion // CONSTRUCTION
 
@@ -88,10 +86,10 @@ namespace Tethys.Logging.NLog
     {
       global::NLog.LogLevel nloglevel = TranslateLevel(level);
       global::NLog.LogEventInfo logEvent = new global::NLog.LogEventInfo(
-        nloglevel, this._logger.Name, null, "{0}", new[] { message },
+        nloglevel, this.logger.Name, null, "{0}", new[] { message },
         exception);
 
-      this._logger.Log(DeclaringType, logEvent);
+      this.logger.Log(DeclaringType, logEvent);
     } // WriteInternal()
     #endregion // ABSTRACTLOGGER IMPLEMENTATION
 

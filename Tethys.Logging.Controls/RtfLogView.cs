@@ -1,26 +1,24 @@
 ﻿#region Header
-// ---------------------------------------------------------------------------
-// TgLib.Logging.Controls
+// --------------------------------------------------------------------------
+// Tethys.Logging.Controls
+// ==========================================================================
+//
+// A logging library for .NET Framework 4.
+//
 // ===========================================================================
 //
-// This library contains common code of .Net projects of Thomas Graf.
-//
-// ===========================================================================
-// <copyright file="RtfLogView.cs" company="Thomas Graf">
-// Copyright  2003 - 2013 by Thomas Graf
-//            See the file "License.txt" for information on usage and 
-//            redistribution of this file and for a DISCLAIMER OF ALL WARRANTIES.
+// <copyright file="RtfLogView.cs" company="Tethys">
+// Copyright  2009-2015 by Thomas Graf
+//            All rights reserved.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
 // </copyright>
-// 
-// Version .. 1.00.00.00 of 13Mar09
-// Project .. TgLib.Logging.NLog
-// Creater .. Thomas Graf (tg)
-// System ... Microsoft .Net Framework 4
-// Tools .... Microsoft Visual Studio 2010
 //
-// Change Report
-// 09Nov29 1.00.00.00 tg: initial version of the tglib.logging.controls libray.
-// 09Dec22 1.00.00.01 tg: bugfix in SaveToTextFile().
+// System ... Microsoft .Net Framework 4
+// Tools .... Microsoft Visual Studio 2013
 //
 // ---------------------------------------------------------------------------
 #endregion
@@ -67,18 +65,18 @@ namespace Tethys.Logging.Controls
     /// <summary>
     /// Default color for text output.
     /// </summary>
-    private Color _defaultTextColor;
+    private Color defaultTextColor;
 
     /// <summary>
     /// Defines whether new event are added at the tail or
     /// at the head of the list.
     /// </summary>
-    private bool _addAtTail = true;
+    private bool addAtTail = true;
 
     /// <summary>
     /// Flag 'toolbar and caption visible'.
     /// </summary>
-    private bool _toolbarVisible;
+    private bool toolbarVisible;
     #endregion PRIVATE PROPERTIES
 
     //// ---------------------------------------------------------------------
@@ -93,13 +91,13 @@ namespace Tethys.Logging.Controls
     {
       get
       {
-        return _defaultTextColor;
+        return this.defaultTextColor;
       }
 
       set
       {
-        _defaultTextColor = value;
-        rtfView.SelectionColor = _defaultTextColor;
+        this.defaultTextColor = value;
+        rtfView.SelectionColor = this.defaultTextColor;
       }
     } // TextColor
 
@@ -112,12 +110,12 @@ namespace Tethys.Logging.Controls
     {
       get
       {
-        return _toolbarVisible;
+        return this.toolbarVisible;
       }
 
       set
       {
-        _toolbarVisible = value;
+        this.toolbarVisible = value;
         btnClear.Visible = value;
         btnCopy.Visible = value;
         btnSave.Visible = value;
@@ -168,8 +166,8 @@ namespace Tethys.Logging.Controls
     Category("Logging")]
     public bool AddAtTail
     {
-      get { return _addAtTail; }
-      set { _addAtTail = value; }
+      get { return this.addAtTail; }
+      set { this.addAtTail = value; }
     } // AddAtTail
 
     /// <summary>
@@ -202,12 +200,12 @@ namespace Tethys.Logging.Controls
     {
       get
       {
-        return checkDebug.Visible && _toolbarVisible;
+        return checkDebug.Visible && this.toolbarVisible;
       }
 
       set 
       {
-        if (_toolbarVisible)
+        if (this.toolbarVisible)
         {
           checkDebug.Visible = value;
         } // if
@@ -310,7 +308,7 @@ namespace Tethys.Logging.Controls
       InitializeComponent();
 
       // store default text color
-      _defaultTextColor = rtfView.SelectionColor;
+      this.defaultTextColor = rtfView.SelectionColor;
 
       rtfView.ContextMenu = new ContextMenu();
       MenuItem mi = new MenuItem("Clear All");
@@ -328,8 +326,8 @@ namespace Tethys.Logging.Controls
       mi.Click += BtnSaveClick;
       rtfView.ContextMenu.MenuItems.Add(mi);
 
-      _addAtTail = true;
-      _toolbarVisible = true;
+      this.addAtTail = true;
+      this.toolbarVisible = true;
     } // InitControl()
 
     /// <summary>
@@ -337,7 +335,7 @@ namespace Tethys.Logging.Controls
     /// </summary>
     private void CheckListHeight()
     {
-      if (!_toolbarVisible)
+      if (!this.toolbarVisible)
       {
         // enlarge table
         rtfView.Top = 0;
@@ -450,7 +448,7 @@ namespace Tethys.Logging.Controls
     {
       CheckForMaxSize();
 
-      if (!_addAtTail)
+      if (!this.addAtTail)
       {
         rtfView.SelectionStart = 0;
         rtfView.SelectionColor = color;
@@ -463,9 +461,9 @@ namespace Tethys.Logging.Controls
         rtfView.SelectedText = text;
       } // if
 
-      rtfView.SelectionColor = _defaultTextColor;
+      rtfView.SelectionColor = this.defaultTextColor;
 
-      if (_addAtTail)
+      if (this.addAtTail)
       {
         rtfView.Select(rtfView.TextLength, 0);
         rtfView.ScrollToCaret();

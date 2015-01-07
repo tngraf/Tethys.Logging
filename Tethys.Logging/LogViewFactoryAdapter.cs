@@ -1,25 +1,22 @@
 ﻿#region Header
-// ---------------------------------------------------------------------------
-// Tethys.Logging.Common.Logging
+// --------------------------------------------------------------------------
+// Tethys.Logging
+// ==========================================================================
+//
+// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and 
+// higher, Windows Phone 7 and higher and .NET for Windows Store apps.
+//
 // ===========================================================================
 //
-// Common.Logging support for Tethys.Logging.
-//
-// ===========================================================================
 // <copyright file="LogViewFactoryAdapter.cs" company="Tethys">
-// Copyright  2003 - 2013 by Thomas Graf
+// Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
 // </copyright>
-// 
-// Version .. 1.00.00.00 of 13Apr17
-// Project .. TgLib.Logging
-// Creater .. Thomas Graf (tg)
-// System ... Microsoft .Net Framework 4
-// Tools .... Microsoft Visual Studio 2010
-//
-// Change Report
-// 10Oct18 1.00.00.00 tg: initial version of the Common.Logging support 
-// library.
 //
 // ---------------------------------------------------------------------------
 #endregion
@@ -39,12 +36,12 @@ namespace Tethys.Logging
     /// <summary>
     /// Target log viewer.
     /// </summary>
-    private readonly ILogView _view;
+    private readonly ILogView view;
 
     /// <summary>
     /// Flag 'add CR/LF at the end of each text line'.
     /// </summary>
-    private readonly bool _addCrLf;
+    private readonly bool addCrLf;
     #endregion // PRIVATE PROPERTIES
 
     //// ---------------------------------------------------------------------
@@ -56,8 +53,8 @@ namespace Tethys.Logging
     /// <param name="view">The view.</param>
     public LogViewFactoryAdapter(ILogView view)
     {
-      this._view = view;
-      this._addCrLf = true;
+      this.view = view;
+      this.addCrLf = true;
     } // LogViewAdapter()
     
     /// <summary>
@@ -73,8 +70,8 @@ namespace Tethys.Logging
       MessageId = "Lf", Justification = "Intended here.")]
     public LogViewFactoryAdapter(ILogView view, bool addCrLf)
     {
-      this._view = view;
-      this._addCrLf = addCrLf;
+      this.view = view;
+      this.addCrLf = addCrLf;
     } // LogViewAdapter()
     #endregion // CONSTRUCTION
 
@@ -88,7 +85,7 @@ namespace Tethys.Logging
     /// <returns>A logger.</returns>
     public ILog GetLogger(Type type)
     {
-      return new LogViewLogger(this._view, this._addCrLf);
+      return new LogViewLogger(this.view, this.addCrLf);
     } // GetLogger()
 
     /// <summary>
@@ -98,7 +95,7 @@ namespace Tethys.Logging
     /// <returns>A logger.</returns>
     public ILog GetLogger(string name)
     {
-      return new LogViewLogger(this._view, this._addCrLf);
+      return new LogViewLogger(this.view, this.addCrLf);
     } // GetLogger()
     #endregion
   } // LogViewAdapter

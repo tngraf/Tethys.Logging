@@ -10,16 +10,28 @@ Tethys.Logging is itself a very simple logging framework and adds some enhanceme
 Most of the enhancements target the simple display of log message. Yes, you could write all log message to a file and then display them. But for applications with a graphical user interface it's often more easy to show log messages in a (separate) window. With proper configuration such message can be use as well for the user (trace, audit trail) as for the developer. 
 
 ## Libraries ##
-* **Tethys.Logging** - Platform independent basic logging  	support (Portable library: .NET Framework 4.x,                         	Silverlight 4, Windows Phone 7/8 and .NET for Windows 	Store apps).
-* **Tethys.Logging.Common.Logging** - Adapter for  	Common.Logging (.NET Client Framework 4, Common.Logging 	2.1.1).
-* **Tethys.Logging.Controls** - Logging controls for WinForms
-   (.NET Client Framework 4).
-* **Tethys.Logging.Controls.Wpf** - Logging controls for WPF
-   (.NET Client Framework 4)
-* **Tethys.Logging.NLog** - Adapter for NLog
-   (.NET Client Framework 4, NLog 2.0).
-* **Tethys.Logging.Log4Net** - Adapter for log4net 1.2.10
-   (.NET Framework 4, log4net 1.2.10).
+* **Tethys.Logging** - Platform independent basic logging support (Portable library: .NET Framework 4.x, Silverlight 4, Windows Phone 7/8 and .NET for Windows 	Store apps).
+* **Tethys.Logging.Common.Logging** - Adapter for Common.Logging (.NET Client Framework 4, Common.Logging 2.1.1).
+* **Tethys.Logging.Common.Logging231** - Adapter for 	Common.Logging (.NET Client Framework 4, Common.Logging 2.3.1).
+* **Tethys.Logging.Controls** - Logging controls for WinForms (.NET Client Framework 4).
+* **Tethys.Logging.Controls.Wpf** - Logging controls for WPF (.NET Client Framework 4)
+* **Tethys.Logging.NLog** - Adapter for NLog (.NET Client Framework 4, NLog 2.0).
+* **Tethys.Logging.NLog310** - Adapter for NLog (.NET Framework 4.5, NLog 3.1.0).
+* **Tethys.Logging.Log4Net** - Adapter for log4net 1.2.10 (.NET Framework 4, log4net 1.2.11).
+
+## Binaries ##
+
+**Binaries are available on Nuget:**
+
+* **[http://www.nuget.org/packages/Tethys.Logging/](http://www.nuget.org/packages/Tethys.Logging/)**
+* **[https://www.nuget.org/packages/Tethys.Logging.Common.Logging/](https://www.nuget.org/packages/Tethys.Logging.Common.Logging/)**
+* **[https://www.nuget.org/packages/Tethys.Logging.Common.Logging231/](https://www.nuget.org/packages/Tethys.Logging.Common.Logging231/)**
+* **[https://www.nuget.org/packages/Tethys.Logging.Controls/](https://www.nuget.org/packages/Tethys.Logging.Controls/)**
+* **[https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf/](https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf/)**
+* **[https://www.nuget.org/packages/Tethys.Logging.Log4Net/](https://www.nuget.org/packages/Tethys.Logging.Log4Net/)**
+* **[https://www.nuget.org/packages/Tethys.Logging.NLog/](https://www.nuget.org/packages/Tethys.Logging.NLog/)**
+* **[https://www.nuget.org/packages/Tethys.Logging.NLog310/](https://www.nuget.org/packages/Tethys.Logging.NLog310/)**
+* **[https://www.nuget.org/packages/Tethys.Logging.Win/](https://www.nuget.org/packages/Tethys.Logging.Win/)**
 
 ## Test Applications ##
 * TestApp.LogView - .NET Client Framework 4, WinForms. 
@@ -40,7 +52,6 @@ This is the first public release of Tethys.Logging as open source on Github.
 Yet Tethys.Logging is not completely new - the framework and is predecessor versions are under development for more that 5 years now and have been used in some professional applications. 
 See ChangeLog.md for more details.
 Tethys.Logging has also been published on SourceForge before, see [http://sourceforge.net/projects/tethyslogging/?source=directory](http://sourceforge.net/projects/tethyslogging/?source=directory).
-
 
 Documentation
 -------------

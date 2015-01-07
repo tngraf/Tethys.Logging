@@ -18,8 +18,8 @@
     <OutputPath>.\Help\</OutputPath>
     <HtmlHelpName>TgLib.Logging</HtmlHelpName>
     <DocumentationSources>
-      <DocumentationSource sourceFile="export\release\Tethys.Logging.Common.Logging.dll" />
-<DocumentationSource sourceFile="export\release\Tethys.Logging.Common.Logging.xml" />
+      <DocumentationSource sourceFile="export\release\Tethys.Logging.Common.Logging231.dll" />
+<DocumentationSource sourceFile="export\release\Tethys.Logging.Common.Logging231.xml" />
 <DocumentationSource sourceFile="export\release\Tethys.Logging.Controls.dll" />
 <DocumentationSource sourceFile="export\release\Tethys.Logging.Controls.Wpf.dll" />
 <DocumentationSource sourceFile="export\release\Tethys.Logging.Controls.Wpf.xml" />
@@ -41,7 +41,7 @@ applications with a graphical user interface it&amp;#39%3bs often more easy to s
 messages in a %28separate%29 window. With proper configuration such message can be
 use as well for the user %28trace, audit trail%29 as for the developer. 
 </ProjectSummary>
-    <CopyrightText>%28c%29 2003-2013 by T. Graf</CopyrightText>
+    <CopyrightText>%28c%29 2009-2015 by T. Graf</CopyrightText>
     <FeedbackEMailAddress>
     </FeedbackEMailAddress>
     <HelpTitle>TgLib.Logging Class Library</HelpTitle>
@@ -66,16 +66,13 @@ use as well for the user %28trace, audit trail%29 as for the developer.
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Common.Logging">
-      <HintPath>import\Common.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Common.Logging.NLog20">
-      <HintPath>import\Common.Logging.NLog20.dll</HintPath>
+      <HintPath>import\Common.Logging-2.3.1\Common.Logging.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
-      <HintPath>import\log4net.dll</HintPath>
+      <HintPath>import\Log4Net-1.2.11\log4net.dll</HintPath>
     </Reference>
     <Reference Include="NLog">
-      <HintPath>import\NLog.dll</HintPath>
+      <HintPath>import\Nlog-2.0.0\NLog.dll</HintPath>
     </Reference>
   </ItemGroup>
   <!-- Import the SHFB build targets -->

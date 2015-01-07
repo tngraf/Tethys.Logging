@@ -3,21 +3,20 @@
 // Tethys.Logging
 // ==========================================================================
 //
-// A portable logging library for .NET Framework 4.5, Silverlight 4 and 
+// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and 
 // higher, Windows Phone 7 and higher and .NET for Windows Store apps.
 //
-// ==========================================================================
-// <copyright file="AbstractLogger.cs" company="Tethys">
-// Copyright  2013 by Thomas Graf
-//            All rights reserved.
-// </copyright>
-// 
-// Version .. 1.00.00.00 of 13Apr03
-// System ... Portable Library
-// Tools .... Microsoft Visual Studio 2012
+// ===========================================================================
 //
-// Change Report
-// 13Mar21 1.00.00.00 tg: initial version.
+// <copyright file="AbstractLogger.cs" company="Tethys">
+// Copyright  2009-2015 by Thomas Graf
+//            All rights reserved.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
+// </copyright>
 //
 // ---------------------------------------------------------------------------
 #endregion
