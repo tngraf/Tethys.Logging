@@ -5,8 +5,10 @@ Simple logging &amp; enhancements for existing logging frameworks
 
 ## Project Build Status ##
 [![Build status](https://ci.appveyor.com/api/projects/status/wwv7i34nlv8h4g4i?svg=true)](https://ci.appveyor.com/project/tngraf/tethys-logging)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![NuGet](https://img.shields.io/badge/nuget%20package-v1.2.0-blue.svg)](https://www.nuget.org/packages/Tethys.Logging/)
 
-# What is Tethys.Logging?#
+# What is Tethys.Logging? #
 
 Tethys.Logging is itself a very simple logging framework and adds some enhancements to existing logging frameworks (Common.Logging, NLog, log4net).
 
