@@ -1,28 +1,28 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Tethys.Logging.Log4Net</id>
-    <version>1.2.0</version>
-    <title>Tethys.Logging.Log4Net</title>
+    <id>Tethys.Logging.Log4Net208</id>
+    <version>1.3.0</version>
+    <title>Tethys.Logging.Log4Net208</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
-	<copyright>Copyright (C) 2009-2015 T. Graf</copyright>
+    <copyright>Copyright (C) 2009-2017 T. Graf</copyright>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
     <projectUrl>https://github.com/tngraf/Tethys.Logging/</projectUrl>
     <iconUrl>http://www.4wp7.de/tethys/tethyb32.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Simple logging and enhancements for existing logging frameworks.</description>
-    <releaseNotes>Support for Log4Net 1.2.11.</releaseNotes>
+    <releaseNotes>Support for Log4Net 2.0.8</releaseNotes>
     <language>en-US</language>
-    <tags>Tethys Logging Log4Net 1.2.11</tags>
-	<dependencies> 
-	  <dependency id="Tethys.Logging" version="1.2.0" /> 
-    </dependencies> 
+    <tags>Tethys Logging Log4Net 2.0.8</tags>
+    <dependencies>
+      <dependency id="Tethys.Logging" version="1.3.0" />
+      <dependency id="log4net" version="2.0.8" />
+    </dependencies>
   </metadata>
   <files>
-    <file src="..\Export\Release\Tethys.Logging.Log4Net.xml" target="lib\net40" />
-	<file src="..\Export\Release\Tethys.Logging.Log4Net.pdb" target="lib\net40" />
-	<file src="..\import\Log4Net-1.2.11\Log4Net.dll" target="lib\net40" />
-	<file src="..\import\Log4Net-1.2.11\Log4Net.xml" target="lib\net40" />
-  </files> 
+    <file src="..\Export\Release\Tethys.Logging.Log4Net208.dll" target="lib\net40" />
+    <file src="..\Export\Release\Tethys.Logging.Log4Net208.xml" target="lib\net40" />
+    <file src="..\Export\Release\Tethys.Logging.Log4Net208.pdb" target="lib\net40" />
+  </files>
 </package>

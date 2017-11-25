@@ -2,11 +2,11 @@
 <package >
   <metadata>
     <id>Tethys.Logging</id>
-    <version>1.2.0</version>
+    <version>1.3.0</version>
     <title>Tethys.Logging</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
-	<copyright>Copyright (C) 2009-2015 T. Graf</copyright>
+    <copyright>Copyright (C) 2009-2017 T. Graf</copyright>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
     <projectUrl>https://github.com/tngraf/Tethys.Logging/</projectUrl>
     <iconUrl>http://www.4wp7.de/tethys/tethyb32.png</iconUrl>
@@ -17,7 +17,8 @@
     <tags>Tethys Logging</tags>
   </metadata>
   <files>
-    <file src="..\Export\Release\Tethys.Logging.xml" target="lib\portable-win+net40+sl40+wp" />
-	<file src="..\Export\Release\Tethys.Logging.pdb" target="lib\portable-win+net40+sl40+wp" />
-  </files> 
+    <file src="..\Export\Release\Tethys.Logging.dll" target="lib\portable-net40+sl50+win+wp80" />
+    <file src="..\Export\Release\Tethys.Logging.xml" target="lib\portable-net40+sl50+win+wp80" />
+    <file src="..\Export\Release\Tethys.Logging.pdb" target="lib\portable-net40+sl50+win+wp80" />
+  </files>
 </package>

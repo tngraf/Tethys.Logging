@@ -2,11 +2,11 @@
 <package >
   <metadata>
     <id>Tethys.Logging.Common.Logging231</id>
-    <version>1.2.0</version>
+    <version>1.3.0</version>
     <title>Tethys.Logging.Common.Logging231</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
-    <copyright>Copyright (C) 2009-2015 T. Graf</copyright>
+    <copyright>Copyright (C) 2009-2017 T. Graf</copyright>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
     <projectUrl>https://github.com/tngraf/Tethys.Logging/</projectUrl>
     <iconUrl>http://www.4wp7.de/tethys/tethyb32.png</iconUrl>
@@ -15,15 +15,14 @@
     <releaseNotes>Suport for Common.Logging 2.3.1</releaseNotes>
     <language>en-US</language>
     <tags>Tethys Logging Common.Logging</tags>
-    <dependencies> 
-      <dependency id="Tethys.Logging" version="1.2.0" /> 
-    </dependencies> 
+    <dependencies>
+      <dependency id="Tethys.Logging" version="1.3.0" />
+      <dependency id="Common.Logging" version="2.3.1" />
+    </dependencies>
   </metadata>
   <files>
+    <file src="..\Export\Release\Tethys.Logging.Common.Logging231.dll" target="lib\net40" />
     <file src="..\Export\Release\Tethys.Logging.Common.Logging231.xml" target="lib\net40" />
     <file src="..\Export\Release\Tethys.Logging.Common.Logging231.pdb" target="lib\net40" />
-    <file src="..\import\Common.Logging-2.3.1\Common.Logging.dll" target="lib\net40" />
-    <file src="..\import\Common.Logging-2.3.1\Common.Logging.pdb" target="lib\net40" />
-    <file src="..\import\Common.Logging-2.3.1\Common.Logging.xml" target="lib\net40" />
-  </files> 
+  </files>
 </package>
