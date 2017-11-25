@@ -23,12 +23,12 @@
 
 namespace Tethys.Logging.Simple
 {
-  /// <summary>
-  /// Tethys.Logging.Simple implement s a avery simple logger that forwards
-  /// all log output to debug trace.
-  /// </summary>
-  [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-  internal class NamespaceDoc
-  {
-  } // NamespaceDoc
+    /// <summary>
+    /// Tethys.Logging.Simple implement s a avery simple logger that forwards
+    /// all log output to debug trace.
+    /// </summary>
+    [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+    internal class NamespaceDoc
+    {
+    } // NamespaceDoc
 } // Tethys.Logging

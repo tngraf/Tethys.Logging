@@ -7,7 +7,7 @@
 //
 // ===========================================================================
 //
-// <copyright file="DebugLogForm.cs" company="Tethys">
+// <copyright file="AssemblyInfo.cs" company="Tethys">
 // Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
@@ -26,7 +26,6 @@
 using System;
 using System.Reflection;
 using System.Resources;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 

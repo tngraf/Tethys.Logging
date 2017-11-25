@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             x:Name="_root"
+             x:Name="Root"
              d:DesignHeight="200"
              d:DesignWidth="450"
              Loaded="UserControlLoaded"
@@ -14,13 +14,13 @@
       <RowDefinition Height="*" />
     </Grid.RowDefinitions>
     <DockPanel Grid.Row="0" RenderOptions.BitmapScalingMode="NearestNeighbor">
-      <TextBlock x:Name="_lblLabelText"
+      <TextBlock x:Name="LblLabelText"
                  HorizontalAlignment="Stretch"
                  VerticalAlignment="Center"
                  DockPanel.Dock="Left"
                  Text="{Binding LabelText,
-                                ElementName=_root}" />
-      <Button x:Name="_btnSave"
+                                ElementName=Root}" />
+      <Button x:Name="BtnSave"
               Margin="1,2,0,2"
               HorizontalAlignment="Right"
               Click="BtnSaveClick"
@@ -31,7 +31,7 @@
           </Image.Source>
         </Image>
       </Button>
-      <Button x:Name="_btnCopy"
+      <Button x:Name="BtnCopy"
               Margin="1,2"
               HorizontalAlignment="Right"
               Click="BtnCopyClick"
@@ -43,7 +43,7 @@
         </Image>
       </Button>
 
-      <Button x:Name="_btnClear"
+      <Button x:Name="BtnClear"
               Margin="1,2"
               HorizontalAlignment="Right"
               Click="BtnClearClick"
@@ -55,14 +55,14 @@
           </Image.Source>
         </Image>
       </Button>
-      <CheckBox x:Name="_checkShowDebugMessages"
+      <CheckBox x:Name="CheckShowDebugMessages"
                 Margin="0,0,8,0"
                 HorizontalAlignment="Right"
                 VerticalAlignment="Center"
                 Content="Show Debug Messages"
                 DockPanel.Dock="Right" />
     </DockPanel>
-    <RichTextBox x:Name="_rtfBox"
+    <RichTextBox x:Name="RtfBox"
                  Grid.Row="1"
                  AcceptsReturn="False"
                  AllowDrop="False"

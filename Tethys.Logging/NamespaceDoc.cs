@@ -23,13 +23,13 @@
 
 namespace Tethys.Logging
 {
-  /// <summary>
-  /// Tethys.Logging is a portable logging library for .NET Framework 4.5, 
-  /// Silverlight 4 and higher, Windows Phone 7 and higher and
-  /// .NET for Windows Store apps.
-  /// </summary>
-  [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-  internal class NamespaceDoc
-  {
-  } // NamespaceDoc
+    /// <summary>
+    /// Tethys.Logging is a portable logging library for .NET Framework 4.5, 
+    /// Silverlight 4 and higher, Windows Phone 7 and higher and
+    /// .NET for Windows Store apps.
+    /// </summary>
+    [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+    internal class NamespaceDoc
+    {
+    } // NamespaceDoc
 } // Tethys.Logging

@@ -24,12 +24,12 @@
 // ---------------------------------------------------------------------------
 #endregion
 
-namespace TestApplication.Common.Logging.NLog
+namespace TestApplication.NLog
 {
-  using System;
-  using System.Windows.Forms;
+    using System;
+    using System.Windows.Forms;
 
-  /// <summary>
+    /// <summary>
   /// Application main class.
   /// </summary>
   public static class Program

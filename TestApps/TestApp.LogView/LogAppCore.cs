@@ -56,7 +56,7 @@ namespace TestApp.LogView
     /// <param name="type">The type.</param>
     public static void AddEvent(string type)
     {
-      string text = string.Format("This is a {0} message", type);
+      var text = $"This is a {type} message";
       AddEvent(type, text);
     } // AddEvent()
 

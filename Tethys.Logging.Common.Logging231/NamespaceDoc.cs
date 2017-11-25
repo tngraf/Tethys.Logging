@@ -23,12 +23,12 @@
 
 namespace Tethys.Logging.Common.Logging231
 {
-  /// <summary>
-  /// Tethys.Logging.Common.Logging are the Common.Logging 2.3.1 specific 
-  /// extensions of Tethys.Logging.
-  /// </summary>
-  [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-  internal class NamespaceDoc
-  {
-  } // NamespaceDoc
+    /// <summary>
+    /// Tethys.Logging.Common.Logging are the Common.Logging 2.3.1 specific 
+    /// extensions of Tethys.Logging.
+    /// </summary>
+    [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+    internal class NamespaceDoc
+    {
+    } // NamespaceDoc
 } // Tethys.Logging.Common.Logging231

@@ -25,12 +25,12 @@
 
 namespace Tethys.Logging.Controls.Wpf
 {
-  /// <summary>
-  /// Tethys.Logging.Controls are WPF based controls to display
-  /// log output.
-  /// </summary>
-  [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-  internal class NamespaceDoc
-  {
-  } // NamespaceDoc
+    /// <summary>
+    /// Tethys.Logging.Controls are WPF based controls to display
+    /// log output.
+    /// </summary>
+    [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+    internal class NamespaceDoc
+    {
+    } // NamespaceDoc
 } // Tethys.Logging.Controls.Wpf

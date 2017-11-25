@@ -45,10 +45,7 @@ Most of the enhancements target the simple display of log message. Yes, you coul
 * TestApp.log4net - .NET Framework 4, WinForms, log4net.
 * TestApp.NLog - .NET Client Framework 4, WinForms, NLog.
 * TestApp.NLog2 - .NET Client Framework 4, WinForms, NLog.
-* TestApp.Win8 - .Net for Windows Store apps
 * TestApp.WindowsForms - .NET Client Framework 4, WinForms.
-* TestApp.WP71 - .Net for Windows Phone 7
-* TestApp.WP8 - .Net for Windows Phone 8
 * TestApp.WPF - .NET Client Framework 4, WPF, Common.Logging, NLog.
 
 Release Notes for this Version

@@ -21,12 +21,12 @@
 // ---------------------------------------------------------------------------
 #endregion
 
-namespace TestApplication.NLog310
+namespace TestApp.NLog310
 {
-  using System;
-  using System.Windows.Forms;
+    using System;
+    using System.Windows.Forms;
 
-  /// <summary>
+    /// <summary>
   /// Application main class.
   /// </summary>
   public static class Program

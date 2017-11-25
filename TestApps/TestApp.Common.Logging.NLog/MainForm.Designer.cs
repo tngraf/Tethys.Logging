@@ -1,8 +1,8 @@
-﻿using Tethys.Logging.Controls;
-
-namespace TestApplication.Common.Logging.NLog
+﻿namespace TestApplication.NLog
 {
-  partial class MainForm
+    using Tethys.Logging.Controls;
+
+    partial class MainForm
   {
     /// <summary>
     /// Required designer variable.
@@ -15,9 +15,9 @@ namespace TestApplication.Common.Logging.NLog
     /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
     protected override void Dispose(bool disposing)
     {
-      if (disposing && (components != null))
+      if (disposing && (this.components != null))
       {
-        components.Dispose();
+        this.components.Dispose();
       }
       base.Dispose(disposing);
     }
@@ -202,8 +202,8 @@ namespace TestApplication.Common.Logging.NLog
             this.Controls.Add(this.groupAddEvent);
             this.Name = "MainForm";
             this.Text = "Logging Tests for NLog via Common.Logging";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainFormFormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainFormFormClosed);
             this.Load += new System.EventHandler(this.MainFormLoad);
             this.groupAddEvent.ResumeLayout(false);
             this.groupAddEvent.PerformLayout();

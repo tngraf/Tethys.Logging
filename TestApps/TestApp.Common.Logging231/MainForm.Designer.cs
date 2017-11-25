@@ -1,8 +1,8 @@
-﻿using Tethys.Logging.Controls;
-
-namespace TestApplication.Common.Logging
+﻿namespace TestApp.Common.Logging231
 {
-  partial class MainForm
+    using Tethys.Logging.Controls;
+
+    partial class MainForm
   {
     /// <summary>
     /// Required designer variable.
@@ -15,9 +15,9 @@ namespace TestApplication.Common.Logging
     /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
     protected override void Dispose(bool disposing)
     {
-      if (disposing && (components != null))
+      if (disposing && (this.components != null))
       {
-        components.Dispose();
+        this.components.Dispose();
       }
       base.Dispose(disposing);
     }

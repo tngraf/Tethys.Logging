@@ -7,7 +7,7 @@
         Height="300"
         Closing="OnWindowClosing">
   <Grid Margin="4">
-    <local:RtfLogView x:Name="_logView"
+    <local:RtfLogView x:Name="LogView"
                       AddAtTail="True"
                       ShowDebugCheckBox="true"
                       ShowDebugEvents="true"

@@ -26,12 +26,12 @@
 
 namespace Tethys.Logging.Log4Net
 {
-  /// <summary>
-  /// Tethys.Logging.Log4Net are the Log4Net specific extensions of
-  /// Tethys.Logging.
-  /// </summary>
-  [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-  internal class NamespaceDoc
-  {
-  } // NamespaceDoc
+    /// <summary>
+    /// Tethys.Logging.Log4Net are the Log4Net specific extensions of
+    /// Tethys.Logging.
+    /// </summary>
+    [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+    internal class NamespaceDoc
+    {
+    } // NamespaceDoc
 } // Tethys.Logging.Log4Net

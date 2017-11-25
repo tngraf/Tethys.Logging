@@ -26,81 +26,83 @@
 
 namespace TestApplication.WPF.ViewModels
 {
-  using System.ComponentModel;
-  using Tethys.Logging;
-
-  /// <summary>
-  /// View model wrapper for a LogLevel.
-  /// </summary>
-  public class LogLevelViewModel : INotifyPropertyChanged
-  {
-    #region PUBLIC PROPERTIES
-    /// <summary>
-    /// level text.
-    /// </summary>
-    private readonly string _levelText;
+    using System.ComponentModel;
+    using Tethys.Logging;
 
     /// <summary>
-    /// Gets the level text.
+    /// View model wrapper for a LogLevel.
     /// </summary>
-    public string LevelText
+    public class LogLevelViewModel : INotifyPropertyChanged
     {
-      get { return _levelText; }
-   } // LevelText
-    #endregion // PUBLIC PROPERTIES
+        #region PUBLIC PROPERTIES
 
-    //// ---------------------------------------------------------------------
+        /// <summary>
+        /// Gets the level text.
+        /// </summary>
+        public string LevelText { get; }
+        #endregion // PUBLIC PROPERTIES
 
-    /// <summary>
-    /// Initializes a new instance of the
-    /// <see cref="LogLevelViewModel"/> class.
-    /// </summary>
-    /// <param name="level">The level.</param>
-    public LogLevelViewModel(LogLevel level)
-    {
-      _levelText = level.ToString();
-    } // MainWindowViewModel()
+        //// ---------------------------------------------------------------------
 
-    //// ---------------------------------------------------------------------
+        /// <summary>
+        /// Initializes a new instance of the
+        /// <see cref="LogLevelViewModel"/> class.
+        /// </summary>
+        /// <param name="level">The level.</param>
+        public LogLevelViewModel(LogLevel level)
+        {
+            this.LevelText = level.ToString();
+        } // MainWindowViewModel()
 
-    #region VIEWNMODEL BASE FUNCTIONALITY
-    /// <summary>
-    /// PropertyChanged event handler.
-    /// </summary>
-    private PropertyChangedEventHandler propertyChanged;
+        //// ---------------------------------------------------------------------
 
-    /// <summary>
-    /// This event is raised when a property has changed.
-    /// </summary>
-    public event PropertyChangedEventHandler PropertyChanged
-    {
-      add { this.propertyChanged += value; }
-      remove { this.propertyChanged -= value; }
-    } // PropertyChanged
+        #region VIEWNMODEL BASE FUNCTIONALITY
+        /// <summary>
+        /// PropertyChanged event handler.
+        /// </summary>
+        private PropertyChangedEventHandler propertyChanged;
 
-    /// <summary>
-    /// Raises the <see cref="PropertyChanged"/> event.
-    /// </summary>
-    /// <param name="propertyName">The property name of the property that has
-    /// changed.</param>
-    protected void RaisePropertyChanged(string propertyName)
-    {
-      OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
-    } // RaisePropertyChanged()
+        /// <summary>
+        /// This event is raised when a property has changed.
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged
+        {
+            add
+            {
+                this.propertyChanged += value;
+            }
 
-    /// <summary>
-    /// Raises the <see cref="PropertyChanged"/> event.
-    /// </summary>
-    /// <param name="e">The
-    /// <see cref="System.ComponentModel.PropertyChangedEventArgs"/> instance
-    /// containing the event data.</param>
-    protected virtual void OnPropertyChanged(PropertyChangedEventArgs e)
-    {
-      if (this.propertyChanged != null)
-      {
-        this.propertyChanged(this, e);
-      } // if
-    } // OnPropertyChanged()
-    #endregion // VIEWNMODEL BASE FUNCTIONALITY
-  }
+            remove
+            {
+                var propertyChangedEventHandler = this.propertyChanged;
+                if (propertyChangedEventHandler != null)
+                {
+                    // ReSharper disable once DelegateSubtraction
+                    this.propertyChanged -= value;
+                } // if
+            }
+        } // PropertyChanged
+
+        /// <summary>
+        /// Raises the <see cref="PropertyChanged"/> event.
+        /// </summary>
+        /// <param name="propertyName">The property name of the property that has
+        /// changed.</param>
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
+        } // RaisePropertyChanged()
+
+        /// <summary>
+        /// Raises the <see cref="PropertyChanged"/> event.
+        /// </summary>
+        /// <param name="e">The
+        /// <see cref="System.ComponentModel.PropertyChangedEventArgs"/> instance
+        /// containing the event data.</param>
+        protected virtual void OnPropertyChanged(PropertyChangedEventArgs e)
+        {
+            this.propertyChanged?.Invoke(this, e);
+        } // OnPropertyChanged()
+        #endregion // VIEWNMODEL BASE FUNCTIONALITY
+    }
 }

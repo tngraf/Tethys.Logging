@@ -23,17 +23,17 @@
 
 namespace Tethys.Logging
 {
-  /// <summary>
-  /// This is the interface for all log viewer components.
-  /// </summary>
-  public interface ILogView
-  {
     /// <summary>
-    /// Adds a log event.
+    /// This is the interface for all log viewer components.
     /// </summary>
-    /// <param name="logEvent">The log event.</param>
-    void AddLogEvent(ILogEvent logEvent);
-  } // ILogView
+    public interface ILogView
+    {
+        /// <summary>
+        /// Adds a log event.
+        /// </summary>
+        /// <param name="logEvent">The log event.</param>
+        void AddLogEvent(ILogEvent logEvent);
+    } // ILogView
 } // TgLib.Logging
 
 // ==========================================

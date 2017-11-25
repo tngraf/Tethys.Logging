@@ -22,11 +22,11 @@
 
 namespace Tethys.Logging.Win
 {
-  /// <summary>
-  /// Tethys.Logging.Win contains loggers for the .Net Framework 4.0 and later.
-  /// </summary>
-  [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-  internal class NamespaceDoc
-  {
-  } // NamespaceDoc
+    /// <summary>
+    /// Tethys.Logging.Win contains loggers for the .Net Framework 4.0 and later.
+    /// </summary>
+    [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+    internal class NamespaceDoc
+    {
+    } // NamespaceDoc
 } // Tethys.Logging.Win

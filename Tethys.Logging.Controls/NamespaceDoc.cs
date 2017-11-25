@@ -22,12 +22,12 @@
 
 namespace Tethys.Logging.Controls
 {
-  /// <summary>
-  /// Tethys.Logging.Controls are WinForms based controls to display
-  /// log output.
-  /// </summary>
-  [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-  internal class NamespaceDoc
-  {
-  } // NamespaceDoc
+    /// <summary>
+    /// Tethys.Logging.Controls are WinForms based controls to display
+    /// log output.
+    /// </summary>
+    [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+    internal class NamespaceDoc
+    {
+    } // NamespaceDoc
 } // Tethys.Logging.Controls

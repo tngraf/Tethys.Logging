@@ -25,43 +25,43 @@ namespace Tethys.Logging.Win
     using System;
 
     /// <summary>
-  /// Factory adapter to get a Trace logger.
-  /// </summary>
-  /// <remarks>
-  /// This class is based on ideas coming from 
-  /// <a href="http://netcommon.sourceforge.net">Common.Logging</a>.
-  /// </remarks>
+    /// Factory adapter to get a Trace logger.
+    /// </summary>
+    /// <remarks>
+    /// This class is based on ideas coming from 
+    /// <a href="http://netcommon.sourceforge.net">Common.Logging</a>.
+    /// </remarks>
     public class TraceLoggerFactoryAdapter : ILoggerFactoryAdapter
-  {
-    /// <summary>
-    /// The one and only Trace logger.
-    /// </summary>
-    private static readonly ILog DefaultLogger = new TraceLogger();
-
-    #region ILoggerFactoryAdapter Implementation
-    /// <summary>
-    /// Get a ILog instance by type.
-    /// </summary>
-    /// <param name="type">The type to use for the logger</param>
-    /// <returns>
-    /// A logger.
-    /// </returns>
-    public ILog GetLogger(Type type)
     {
-      return DefaultLogger;
-    } // GetLogger()
+        /// <summary>
+        /// The one and only Trace logger.
+        /// </summary>
+        private static readonly ILog DefaultLogger = new TraceLogger();
 
-    /// <summary>
-    /// Get a ILog instance by name.
-    /// </summary>
-    /// <param name="name">The name of the logger</param>
-    /// <returns>
-    /// A logger.
-    /// </returns>
-    public ILog GetLogger(string name)
-    {
-      return DefaultLogger;
-    } // GetLogger()
-    #endregion // ILoggerFactoryAdapter Implementation
-  } // TraceLoggerFactoryAdapter
+        #region ILoggerFactoryAdapter Implementation
+        /// <summary>
+        /// Get a ILog instance by type.
+        /// </summary>
+        /// <param name="type">The type to use for the logger</param>
+        /// <returns>
+        /// A logger.
+        /// </returns>
+        public ILog GetLogger(Type type)
+        {
+            return DefaultLogger;
+        } // GetLogger()
+
+        /// <summary>
+        /// Get a ILog instance by name.
+        /// </summary>
+        /// <param name="name">The name of the logger</param>
+        /// <returns>
+        /// A logger.
+        /// </returns>
+        public ILog GetLogger(string name)
+        {
+            return DefaultLogger;
+        } // GetLogger()
+        #endregion // ILoggerFactoryAdapter Implementation
+    } // TraceLoggerFactoryAdapter
 } // Tethys.Logging.Simple

@@ -23,93 +23,83 @@
 
 namespace Tethys.Logging
 {
-  using System;
-  using System.Text;
-
-  /// <summary>
-  /// A logger that forwards the log output to an <see cref="ILogView"/> object.
-  /// </summary>
-  public class LogViewLogger : AbstractLogger
-  {
-    #region PRIVATE PROPERTIES
-    /// <summary>
-    /// Target log viewer.
-    /// </summary>
-    private readonly ILogView view;
+    using System;
+    using System.Text;
 
     /// <summary>
-    /// Flag 'add CR/LF at the end of each text line'.
+    /// A logger that forwards the log output to an <see cref="ILogView"/> object.
     /// </summary>
-    private readonly bool addCrLf;
-    #endregion // PRIVATE PROPERTIES
-
-    //// ---------------------------------------------------------------------
-
-    #region CONSTRUCTION
-    /// <summary>
-    /// Initializes a new instance of the <see cref="LogViewLogger"/> class.
-    /// </summary>
-    /// <param name="view">The view.</param>
-    public LogViewLogger(ILogView view)
+    public class LogViewLogger : AbstractLogger
     {
-      if (view == null)
-      {
-        throw new ArgumentNullException("view");
-      } // if
+        #region PRIVATE PROPERTIES
+        /// <summary>
+        /// Target log viewer.
+        /// </summary>
+        private readonly ILogView view;
 
-      this.view = view;
-      this.addCrLf = true;
-    } // LogViewLogger()
+        /// <summary>
+        /// Flag 'add CR/LF at the end of each text line'.
+        /// </summary>
+        private readonly bool addCrLf;
+        #endregion // PRIVATE PROPERTIES
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="LogViewLogger"/> class.
-    /// </summary>
-    /// <param name="view">The view.</param>
-    /// <param name="addLineEnd">Add CR/LF at the end of each text line or not.
-    /// </param>
-    public LogViewLogger(ILogView view, bool addLineEnd)
-    {
-      if (view == null)
-      {
-        throw new ArgumentNullException("view");
-      } // if
+        //// ---------------------------------------------------------------------
 
-      this.view = view;
-      this.addCrLf = addLineEnd;
-    } // LogViewLogger()
-    #endregion // CONSTRUCTION
+        #region CONSTRUCTION
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LogViewLogger"/> class.
+        /// </summary>
+        /// <param name="view">The view.</param>
+        public LogViewLogger(ILogView view)
+        {
+            this.view = view ?? throw new ArgumentNullException(nameof(view));
+            this.addCrLf = true;
+        } // LogViewLogger()
 
-    //// ---------------------------------------------------------------------
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LogViewLogger"/> class.
+        /// </summary>
+        /// <param name="view">The view.</param>
+        /// <param name="addLineEnd">Add CR/LF at the end of each text line or not.
+        /// </param>
+        public LogViewLogger(ILogView view, bool addLineEnd)
+        {
+            this.view = view ?? throw new ArgumentNullException(nameof(view));
+            this.addCrLf = addLineEnd;
+        } // LogViewLogger()
+        #endregion // CONSTRUCTION
 
-    #region OVERRIDES OF ABSTRACTLOGGER
-    /// <summary>
-    /// Actually sends the message to the underlying log system.
-    /// </summary>
-    /// <param name="level">the level of this log event.</param>
-    /// <param name="message">the message to log</param>
-    /// <param name="exception">the exception to log (may be null)</param>
-    protected override void WriteInternal(LogLevel level, 
-      object message, Exception exception)
-    {
-      var sb = new StringBuilder();
-      this.FormatOutput(sb, level, message, exception);
+        //// ---------------------------------------------------------------------
 
-      if (this.addCrLf)
-      {
-        sb.Append("\n");
-      } // if
+        #region OVERRIDES OF ABSTRACTLOGGER
+        /// <summary>
+        /// Actually sends the message to the underlying log system.
+        /// </summary>
+        /// <param name="level">the level of this log event.</param>
+        /// <param name="message">the message to log</param>
+        /// <param name="exception">the exception to log (may be null)</param>
+        protected override void WriteInternal(LogLevel level,
+          object message, Exception exception)
+        {
+            var sb = new StringBuilder();
+            this.FormatOutput(sb, level, message, exception);
 
-      var le = new LogEvent(level, DateTime.Now, sb.ToString());
+            if (this.addCrLf)
+            {
+                sb.Append("\n");
+            } // if
 
-      this.view.AddLogEvent(le);
-    } // WriteInternal()
-    #endregion // OVERRIDES OF ABSTRACTLOGGER
+            var le = new LogEvent(level, DateTime.Now, sb.ToString());
 
-    //// ---------------------------------------------------------------------
+            this.view.AddLogEvent(le);
+        } // WriteInternal()
+        #endregion // OVERRIDES OF ABSTRACTLOGGER
 
-    #region PRIVATE METHODS
-    #endregion PRIVATE METHODS
-  } // LogViewLogger
+        //// ---------------------------------------------------------------------
+
+        #region PRIVATE METHODS
+        #endregion PRIVATE METHODS
+    } // LogViewLogger
 } // Tethys.Logging
 
 // =======================

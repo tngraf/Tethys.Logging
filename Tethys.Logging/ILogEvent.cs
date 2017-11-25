@@ -23,33 +23,33 @@
 
 namespace Tethys.Logging
 {
-  using System;
-
-  /// <summary>
-  /// Interface for logging events for log viewer.
-  /// This is an abstract interface for as well log4net as
-  /// NLog logging events.
-  /// </summary>
-  public interface ILogEvent
-  {
-    /// <summary>
-    /// Gets the log level.
-    /// </summary>
-    /// <value>The level.</value>
-    LogLevel Level { get; }
+    using System;
 
     /// <summary>
-    /// Gets the log event time stamp.
+    /// Interface for logging events for log viewer.
+    /// This is an abstract interface for as well log4net as
+    /// NLog logging events.
     /// </summary>
-    /// <value>The time stamp.</value>
-    DateTime Timestamp { get; }
+    public interface ILogEvent
+    {
+        /// <summary>
+        /// Gets the log level.
+        /// </summary>
+        /// <value>The level.</value>
+        LogLevel Level { get; }
 
-    /// <summary>
-    /// Gets the log message.
-    /// </summary>
-    /// <value>The message.</value>
-    string Message { get; }
-  } // ILogEvent
+        /// <summary>
+        /// Gets the log event time stamp.
+        /// </summary>
+        /// <value>The time stamp.</value>
+        DateTime Timestamp { get; }
+
+        /// <summary>
+        /// Gets the log message.
+        /// </summary>
+        /// <value>The message.</value>
+        string Message { get; }
+    } // ILogEvent
 } // Tethys.Logging
 
 // ==================================

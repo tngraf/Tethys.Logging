@@ -25,71 +25,71 @@
 
 namespace Tethys.Logging.Controls.Wpf
 {
-  using System;
-  using System.Windows;
+    using System;
+    using System.Windows;
 
-  /// <summary>
-  /// Interaction logic for the debug log window.
-  /// </summary>
-  // ReSharper disable RedundantExtendsListEntry
-  public partial class DebugLogWindow : Window
-  // ReSharper restore RedundantExtendsListEntry
-  {
-    #region PUBLIC PROPERTIES
     /// <summary>
-    /// Hiding event.
+    /// Interaction logic for the debug log window.
     /// </summary>
-    public event EventHandler Hiding;
-    
-    /// <summary>
-    /// Gets the underlying RtfLogView control
-    /// </summary>
-    public RtfLogView RtfLogView
+    // ReSharper disable RedundantExtendsListEntry
+    public partial class DebugLogWindow : Window
+    // ReSharper restore RedundantExtendsListEntry
     {
-      get { return this._logView; }
-    } // RtfLogView
-    #endregion // PUBLIC PROPERTIES
+        #region PUBLIC PROPERTIES
+        /// <summary>
+        /// Hiding event.
+        /// </summary>
+        public event EventHandler Hiding;
 
-    //// ---------------------------------------------------------------------
+        /// <summary>
+        /// Gets the underlying RtfLogView control
+        /// </summary>
+        public RtfLogView RtfLogView
+        {
+            get { return this.LogView; }
+        } // RtfLogView
+        #endregion // PUBLIC PROPERTIES
 
-    #region CONSTRUCTION
-    /// <summary>
-    /// Initializes a new instance of the <see cref="DebugLogWindow"/> class.
-    /// </summary>
-    public DebugLogWindow()
-    {
-      InitializeComponent();
-    } // DebugLogWindow()
-    #endregion // CONSTRUCTION
+        //// ---------------------------------------------------------------------
 
-    //// ---------------------------------------------------------------------
+        #region CONSTRUCTION
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DebugLogWindow"/> class.
+        /// </summary>
+        public DebugLogWindow()
+        {
+            this.InitializeComponent();
+        } // DebugLogWindow()
+        #endregion // CONSTRUCTION
 
-    #region UI MANAGEMENT
-    /// <summary>
-    /// Handles the Closing event of the Window control.
-    /// </summary>
-    /// <param name="sender">The source of the event.</param>
-    /// <param name="e">The <see cref="System.ComponentModel.CancelEventArgs"/>
-    /// instance containing the event data.</param>
-    private void OnWindowClosing(object sender,
-      System.ComponentModel.CancelEventArgs e)
-    {
-      // prohibit close operation
-      // ==> only hide window
-      e.Cancel = true;
+        //// ---------------------------------------------------------------------
 
-      // raise Hiding event
-      if (Hiding != null)
-      {
-        EventArgs ea = new EventArgs();
-        Hiding(this, ea);
-      } // if
+        #region UI MANAGEMENT
+        /// <summary>
+        /// Handles the Closing event of the Window control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="System.ComponentModel.CancelEventArgs"/>
+        /// instance containing the event data.</param>
+        private void OnWindowClosing(object sender,
+          System.ComponentModel.CancelEventArgs e)
+        {
+            // prohibit close operation
+            // ==> only hide window
+            e.Cancel = true;
 
-      // hide form
-      Hide();
-    } // OnWindowClosing()
-    #endregion // UI MANAGEMENT
-  } // DebugLogWindow
+            // raise Hiding event
+            if (this.Hiding != null)
+            {
+                var ea = new EventArgs();
+                this.Hiding(this, ea);
+            } // if
+
+            // hide form
+            this.Hide();
+        } // OnWindowClosing()
+        #endregion // UI MANAGEMENT
+    } // DebugLogWindow
 } // Tethys.Logging.Controls.Wpf
 
 // =====================================================
