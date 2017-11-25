@@ -5,7 +5,7 @@ Tethys.Logging Change Log
 * Upgrade to VS2017.
 * Test apps for Windows Phone and Win8 removed.
 * Use of new .Net language features
-* Code style updade.
+* Code style update.
 
 ## V1.2.0	(2015-01-07) ##
 * Upgrade to VS2013.
