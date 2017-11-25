@@ -21,7 +21,7 @@
 // ---------------------------------------------------------------------------
 #endregion
 
-namespace Tethys.Logging.Common.Logging231
+namespace Tethys.Logging.Common.Logging
 {
     using System;
     using System.Globalization;

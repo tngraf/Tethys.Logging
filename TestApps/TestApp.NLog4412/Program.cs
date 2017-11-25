@@ -1,6 +1,6 @@
 ﻿#region Header
 // --------------------------------------------------------------------------
-// Tethys.Logging.Common.Logging231
+// Tethys.Logging
 // ==========================================================================
 //
 // A (portable) logging library for .NET Framework 4.5, Silverlight 4 and 
@@ -8,7 +8,7 @@
 //
 // ===========================================================================
 //
-// <copyright file="NamespaceDoc.cs" company="Tethys">
+// <copyright file="Program.cs" company="Tethys">
 // Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
@@ -21,14 +21,25 @@
 // ---------------------------------------------------------------------------
 #endregion
 
-namespace Tethys.Logging.Common.Logging
+namespace TestApp.NLog4412
 {
+    using System;
+    using System.Windows.Forms;
+
     /// <summary>
-    /// Tethys.Logging.Common.Logging are the Common.Logging 2.3.1 specific 
-    /// extensions of Tethys.Logging.
+  /// Application main class.
+  /// </summary>
+  public static class Program
+  {
+    /// <summary>
+    /// The main entry point for the application.
     /// </summary>
-    [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-    internal class NamespaceDoc
+    [STAThread]
+    public static void Main()
     {
-    } // NamespaceDoc
-} // Tethys.Logging.Common.Logging231
+      Application.EnableVisualStyles();
+      Application.SetCompatibleTextRenderingDefault(false);
+      Application.Run(new MainForm());
+    }
+  }
+}

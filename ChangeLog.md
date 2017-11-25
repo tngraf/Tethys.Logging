@@ -7,6 +7,8 @@ Tethys.Logging Change Log
 * Use of new .Net language features
 * Code style update.
 * Support for Common.Logging 3.4.1.
+* Support for NLog 4.4.12.
+* Support for log4net 2.0.8.
 
 ## V1.2.0	(2015-01-07) ##
 * Upgrade to VS2013.

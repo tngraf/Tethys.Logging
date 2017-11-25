@@ -32,7 +32,7 @@ namespace TestApp.Common.Logging341
 
     using global::Common.Logging;
 
-    using Tethys.Logging.Common.Logging231;
+    using Tethys.Logging.Common.Logging;
 
     /// <summary>
     /// Main form of the application.

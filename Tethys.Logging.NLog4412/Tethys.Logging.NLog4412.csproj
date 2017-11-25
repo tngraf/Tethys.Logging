@@ -4,23 +4,25 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4584AB02-CE4F-4B6D-AC20-050661F46164}</ProjectGuid>
+    <ProjectGuid>{3D6AEC3B-210C-4C08-B62D-78E89DFAD2D6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tethys.Logging.Common.Logging</RootNamespace>
-    <AssemblyName>Tethys.Logging.Common.Logging341</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>Tethys.Logging.NLog4412</RootNamespace>
+    <AssemblyName>Tethys.Logging.NLog4412</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>..\export\debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,7 +31,8 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\export\Release\Tethys.Logging.Common.Logging341.xml</DocumentationFile>
+    <DocumentationFile>..\export\Release\Tethys.Logging.NLog4412.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -38,11 +41,8 @@
     <AssemblyOriginatorKeyFile>..\Tethys.Logging\TethysLibKey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,8 +51,18 @@
     <Compile Include="..\GlobalAssemblyInfo.cs">
       <Link>Properties\GlobalAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="CommonLoggingToLogViewAdapter.cs" />
-    <Compile Include="LogViewLogger.cs" />
+    <Compile Include="..\Tethys.Logging.NLog\NLogLogger.cs">
+      <Link>NLogLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Logging.NLog\NLogLoggerFactoryAdapter.cs">
+      <Link>NLogLoggerFactoryAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Logging.NLog\NLogTargetToLogViewAdapter.cs">
+      <Link>NLogTargetToLogViewAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Logging.NLog\SingleLogLevelFilter.cs">
+      <Link>SingleLogLevelFilter.cs</Link>
+    </Compile>
     <Compile Include="NamespaceDoc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

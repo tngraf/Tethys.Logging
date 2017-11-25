@@ -23,7 +23,9 @@ Most of the enhancements target the simple display of log message. Yes, you coul
 * **Tethys.Logging.Controls.Wpf** - Logging controls for WPF (.NET Client Framework 4)
 * **Tethys.Logging.NLog** - Adapter for NLog (.NET Client Framework 4, NLog 2.0).
 * **Tethys.Logging.NLog310** - Adapter for NLog (.NET Framework 4.5, NLog 3.1.0).
+* **Tethys.Logging.NLog4412** - Adapter for NLog (.NET Framework 4.5, NLog 4.4.12).
 * **Tethys.Logging.Log4Net** - Adapter for log4net 1.2.10 (.NET Framework 4, log4net 1.2.11).
+* **Tethys.Logging.Log4Net208** - Adapter for log4net 1.2.10 (.NET Framework 4, log4net 2.0.8).
 
 ## Binaries ##
 
@@ -46,7 +48,10 @@ Most of the enhancements target the simple display of log message. Yes, you coul
 * TestApp.Common.Logging341 - .NET Client Framework 4, WinForms, Common.Logging 3.4.1. 
 * TestApp.Common.Logging.NLog - .NET Client Framework 4, WinForms, Common.Logging, NLog.
 * TestApp.log4net - .NET Framework 4, WinForms, log4net.
+* TestApp.log4net208 - .NET Framework 4, WinForms, log4net 2.0.8.
 * TestApp.NLog - .NET Client Framework 4, WinForms, NLog.
+* TestApp.NLog310 - .NET Client Framework 4, WinForms, NLog 3.1.0.
+* TestApp.NLog4412 - .NET Client Framework 4, WinForms, NLog 4.4.12.
 * TestApp.NLog2 - .NET Client Framework 4, WinForms, NLog.
 * TestApp.WindowsForms - .NET Client Framework 4, WinForms.
 * TestApp.WPF - .NET Client Framework 4, WPF, Common.Logging, NLog.

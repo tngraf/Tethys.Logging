@@ -7,7 +7,7 @@
     <ProjectGuid>{036AFD4F-2260-447A-BFD0-233AB02D2DBD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tethys.Logging.NLog310</RootNamespace>
+    <RootNamespace>Tethys.Logging.NLog</RootNamespace>
     <AssemblyName>Tethys.Logging.NLog310</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -41,8 +41,8 @@
     <AssemblyOriginatorKeyFile>..\Tethys.Logging\TethysLibKey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NLog">
-      <HintPath>..\import\NLog-3.1.0\NLog.dll</HintPath>
+    <Reference Include="NLog, Version=3.1.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.3.1.0.0\lib\net45\NLog.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -70,6 +70,7 @@
     <None Include="..\Tethys.Logging\TethysLibKey.snk">
       <Link>TethysLibKey.snk</Link>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tethys.Logging\Tethys.Logging.csproj">

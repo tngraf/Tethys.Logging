@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A37FFE2C-78A6-466E-86FF-DD36D7BD4BE3}</ProjectGuid>
+    <ProjectGuid>{5BF2C025-CCB3-4EF4-AC60-3892F3106810}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestApplication.NLog</RootNamespace>
-    <AssemblyName>TestApplication.NLog</AssemblyName>
+    <RootNamespace>TestApp.Log4Net208</RootNamespace>
+    <AssemblyName>TestApp.Log4Net208</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
@@ -17,7 +17,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -53,9 +53,15 @@
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\Tethys.Logging\TethysLibKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\NLog.2.0.0.2000\lib\net40\NLog.dll</HintPath>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\log4net.2.0.8\lib\net40-full\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
@@ -73,6 +79,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.de.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.en.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,7 +98,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="app.config" />
+    <None Include="..\..\Tethys.Logging\TethysLibKey.snk">
+      <Link>TethysLibKey.snk</Link>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -120,9 +134,9 @@
       <Project>{a7304531-0144-48f9-ac6a-057f7ca00dd5}</Project>
       <Name>Tethys.Logging.Controls</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Tethys.Logging.NLog\Tethys.Logging.NLog.csproj">
-      <Project>{6453f7b5-bf04-4104-9c72-c77594aaf037}</Project>
-      <Name>Tethys.Logging.NLog</Name>
+    <ProjectReference Include="..\..\Tethys.Logging.Log4Net208\Tethys.Logging.Log4Net208.csproj">
+      <Project>{a4398f05-b03d-4fc0-be4b-3439f062b254}</Project>
+      <Name>Tethys.Logging.Log4Net208</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Tethys.Logging\Tethys.Logging.csproj">
       <Project>{8ad903ff-c316-489a-9ae0-f59e5ad158d8}</Project>

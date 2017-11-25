@@ -1,10 +1,9 @@
 ﻿#region Header
 // --------------------------------------------------------------------------
-// Tethys.Logging.Common.Logging231
+// Tethys.Logging.Log4Net
 // ==========================================================================
 //
-// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and 
-// higher, Windows Phone 7 and higher and .NET for Windows Store apps.
+// A logging library for .NET Framework 4.
 //
 // ===========================================================================
 //
@@ -18,17 +17,21 @@
 //            either express or implied. 
 // </copyright>
 //
+// System ... Microsoft .Net Framework 4
+// Tools .... Microsoft Visual Studio 2013
+//
 // ---------------------------------------------------------------------------
 #endregion
 
-namespace Tethys.Logging.Common.Logging
+
+namespace Tethys.Logging.Log4Net
 {
     /// <summary>
-    /// Tethys.Logging.Common.Logging are the Common.Logging 2.3.1 specific 
-    /// extensions of Tethys.Logging.
+    /// Tethys.Logging.Log4Net are the Log4Net specific extensions of
+    /// Tethys.Logging.
     /// </summary>
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
     internal class NamespaceDoc
     {
     } // NamespaceDoc
-} // Tethys.Logging.Common.Logging231
+} // Tethys.Logging.Log4Net
