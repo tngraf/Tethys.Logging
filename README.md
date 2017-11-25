@@ -18,6 +18,7 @@ Most of the enhancements target the simple display of log message. Yes, you coul
 * **Tethys.Logging** - Platform independent basic logging support (Portable library: .NET Framework 4.x, Silverlight 4, Windows Phone 7/8 and .NET for Windows 	Store apps).
 * **Tethys.Logging.Common.Logging** - Adapter for Common.Logging (.NET Client Framework 4, Common.Logging 2.1.1).
 * **Tethys.Logging.Common.Logging231** - Adapter for 	Common.Logging (.NET Client Framework 4, Common.Logging 2.3.1).
+* **Tethys.Logging.Common.Logging341** - Adapter for 	Common.Logging (.NET Client Framework 4, Common.Logging 3.4.1).
 * **Tethys.Logging.Controls** - Logging controls for WinForms (.NET Client Framework 4).
 * **Tethys.Logging.Controls.Wpf** - Logging controls for WPF (.NET Client Framework 4)
 * **Tethys.Logging.NLog** - Adapter for NLog (.NET Client Framework 4, NLog 2.0).
@@ -40,7 +41,9 @@ Most of the enhancements target the simple display of log message. Yes, you coul
 
 ## Test Applications ##
 * TestApp.LogView - .NET Client Framework 4, WinForms. 
-* TestApp.Common.Logging - .NET Client Framework 4, WinForms, Common.Logging. 
+* TestApp.Common.Logging - .NET Client Framework 4, WinForms, Common.Logging 2.1.1. 
+* TestApp.Common.Logging231 - .NET Client Framework 4, WinForms, Common.Logging 2.3.1. 
+* TestApp.Common.Logging341 - .NET Client Framework 4, WinForms, Common.Logging 3.4.1. 
 * TestApp.Common.Logging.NLog - .NET Client Framework 4, WinForms, Common.Logging, NLog.
 * TestApp.log4net - .NET Framework 4, WinForms, log4net.
 * TestApp.NLog - .NET Client Framework 4, WinForms, NLog.
