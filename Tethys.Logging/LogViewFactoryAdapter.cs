@@ -24,6 +24,7 @@
 namespace Tethys.Logging
 {
     using System;
+    using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
 
     /// <summary>
@@ -42,6 +43,11 @@ namespace Tethys.Logging
         /// Flag 'add CR/LF at the end of each text line'.
         /// </summary>
         private readonly bool addCrLf;
+
+        /// <summary>
+        /// The settings.
+        /// </summary>
+        private IDictionary<string, string> logSettings;
         #endregion // PRIVATE PROPERTIES
 
         //// ---------------------------------------------------------------------
@@ -73,6 +79,29 @@ namespace Tethys.Logging
             this.view = view;
             this.addCrLf = addCrLf;
         } // LogViewAdapter()
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LogViewFactoryAdapter"/> class.
+        /// </summary>
+        /// <param name="view">The view.</param>
+        /// <param name="settings">The settings.</param>
+        public LogViewFactoryAdapter(ILogView view, IDictionary<string, string> settings)
+        {
+            this.view = view;
+
+            this.logSettings = settings;
+
+            if (this.logSettings == null)
+            {
+                return;
+            } // if
+
+            if (settings.ContainsKey("AddCrLf"))
+            {
+                var value = settings["AddCrLf"].Equals("TRUE", StringComparison.OrdinalIgnoreCase);
+                this.addCrLf = value;
+            } // if
+        } // LogViewAdapter()
         #endregion // CONSTRUCTION
 
         //// ---------------------------------------------------------------------
@@ -85,7 +114,7 @@ namespace Tethys.Logging
         /// <returns>A logger.</returns>
         public ILog GetLogger(Type type)
         {
-            return new LogViewLogger(this.view, this.addCrLf);
+            return new LogViewLogger(this.view, this.logSettings);
         } // GetLogger()
 
         /// <summary>
@@ -95,7 +124,7 @@ namespace Tethys.Logging
         /// <returns>A logger.</returns>
         public ILog GetLogger(string name)
         {
-            return new LogViewLogger(this.view, this.addCrLf);
+            return new LogViewLogger(this.view, this.logSettings);
         } // GetLogger()
         #endregion
     } // LogViewAdapter

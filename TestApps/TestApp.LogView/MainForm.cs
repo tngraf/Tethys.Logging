@@ -24,6 +24,7 @@
 namespace TestApp.LogView
 {
     using System;
+    using System.Collections.Generic;
     using System.Windows.Forms;
 
     using Tethys.Logging;
@@ -38,8 +39,8 @@ namespace TestApp.LogView
         /// </summary>
         private readonly string[] eventTypes =
           {
-        "Debug", "Info", "Warning", "Error", "Fatal"
-      };
+            "Debug", "Info", "Warning", "Error", "Fatal"
+          };
 
         #region CONSTRUCTION
         /// <summary>
@@ -62,11 +63,10 @@ namespace TestApp.LogView
         /// </summary>
         private void ConfigureLogging()
         {
-            // ok
-            // Common.Logging.LogManager.Adapter
-            //  = new Common.Logging.Simple.ConsoleOutLoggerFactoryAdapter();
-            LogManager.Adapter
-              = new LogViewFactoryAdapter(this.rtfLogView);
+            var settings = new Dictionary<string, string>();
+            settings.Add("AddTime", "false");
+            settings.Add("AddLevel", "false");
+            LogManager.Adapter = new LogViewFactoryAdapter(this.rtfLogView, settings);
 
             // ----- Application -----
             LogAppCore.ConfigureLogging();
