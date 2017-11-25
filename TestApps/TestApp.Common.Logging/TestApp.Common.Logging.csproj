@@ -54,8 +54,8 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Common.Logging">
-      <HintPath>..\..\import\Common.Logging-2.1.1\Common.Logging.dll</HintPath>
+    <Reference Include="Common.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.2.1.1\lib\net40\Common.Logging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
@@ -87,6 +87,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

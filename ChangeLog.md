@@ -6,6 +6,7 @@ Tethys.Logging Change Log
 * Test apps for Windows Phone and Win8 removed.
 * Use of new .Net language features
 * Code style update.
+* Support for Common.Logging 3.4.1.
 
 ## V1.2.0	(2015-01-07) ##
 * Upgrade to VS2013.

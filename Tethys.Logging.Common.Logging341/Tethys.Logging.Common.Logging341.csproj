@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D1441E01-15AB-416F-83EE-ABF256617BCA}</ProjectGuid>
+    <ProjectGuid>{4584AB02-CE4F-4B6D-AC20-050661F46164}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tethys.Logging.Common.Logging231</RootNamespace>
-    <AssemblyName>Tethys.Logging.Common.Logging231</AssemblyName>
+    <RootNamespace>Tethys.Logging.Common.Logging341</RootNamespace>
+    <AssemblyName>Tethys.Logging.Common.Logging341</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -29,7 +29,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\export\Release\Tethys.Logging.Common.Logging231.XML</DocumentationFile>
+    <DocumentationFile>..\export\Release\Tethys.Logging.Common.Logging341.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -38,8 +38,11 @@
     <AssemblyOriginatorKeyFile>..\Tethys.Logging\TethysLibKey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Common.Logging, Version=2.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Common.Logging.2.3.1\lib\net40\Common.Logging.dll</HintPath>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
