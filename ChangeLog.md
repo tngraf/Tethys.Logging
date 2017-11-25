@@ -1,6 +1,10 @@
 Tethys.Logging Change Log
 =========================
 
+## V1.3.0	(2017-11-25) ##
+* Upgrade to VS2017.
+* Test apps for Windows Phone and Win8 removed.
+
 ## V1.2.0	(2015-01-07) ##
 * Upgrade to VS2013.
 * Header updated.
