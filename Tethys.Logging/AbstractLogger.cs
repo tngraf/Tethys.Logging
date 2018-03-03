@@ -9,7 +9,7 @@
 // ===========================================================================
 //
 // <copyright file="AbstractLogger.cs" company="Tethys">
-// Copyright  2009-2017 by Thomas Graf
+// Copyright  2009-2018 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
 //            Unless required by applicable law or agreed to in writing, 
@@ -444,7 +444,7 @@ namespace Tethys.Logging
         /// <param name="message">The object to log.</param>
         public void Fatal(object message)
         {
-            this.WriteInternal(LogLevel.Trace, message, null);
+            this.WriteInternal(LogLevel.Fatal, message, null);
         } // Fatal()
 
         /// <summary>
@@ -454,7 +454,7 @@ namespace Tethys.Logging
         /// <param name="exception">The exception.</param>
         public void Fatal(object message, Exception exception)
         {
-            this.WriteInternal(LogLevel.Trace, message, exception);
+            this.WriteInternal(LogLevel.Fatal, message, exception);
         } // Fatal()
 
         /// <summary>
