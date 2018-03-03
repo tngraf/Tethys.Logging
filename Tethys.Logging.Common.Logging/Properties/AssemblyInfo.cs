@@ -8,8 +8,8 @@
 //
 // ===========================================================================
 //
-// <copyright file="CommonLoggingToLogViewAdapter.cs" company="Tethys">
-// Copyright  2009-2015 by Thomas Graf
+// <copyright file="AssemblyInfo.cs" company="Tethys">
+// Copyright  2009-2018 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
 //            Unless required by applicable law or agreed to in writing, 
