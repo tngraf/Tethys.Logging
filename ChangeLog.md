@@ -1,6 +1,10 @@
 Tethys.Logging Change Log
 =========================
 
+## V1.4.0 (2018-03-03) ##
+* Tethys.Logging.Console added.
+* Fix in AbstractLogger.
+
 ## V1.3.0 (2017-11-25) ##
 * Upgrade to VS2017.
 * Test apps for Windows Phone and Win8 removed.

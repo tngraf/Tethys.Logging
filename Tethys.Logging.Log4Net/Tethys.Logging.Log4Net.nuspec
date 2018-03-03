@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Tethys.Logging.Log4Net</id>
-    <version>1.3.0</version>
+    <version>1.4.0</version>
     <title>Tethys.Logging.Log4Net</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
@@ -16,7 +16,7 @@
     <language>en-US</language>
     <tags>Tethys Logging Log4Net 1.2.11</tags>
     <dependencies>
-      <dependency id="Tethys.Logging" version="1.3.0" />
+      <dependency id="Tethys.Logging" version="1.4.0" />
     </dependencies>
   </metadata>
   <files>

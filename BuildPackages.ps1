@@ -62,5 +62,10 @@ nuget pack Tethys.Logging.Win.nuspec
 move Tethys.Logging.*.nupkg ..\export\packages
 cd ..
 
+cd Tethys.Logging.Console
+nuget pack Tethys.Logging.Console.nuspec
+move Tethys.Logging.*.nupkg ..\export\packages
+cd ..
+
 # ============================
 # ============================
