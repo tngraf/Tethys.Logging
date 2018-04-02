@@ -15,7 +15,7 @@ Tethys.Logging is itself a very simple logging framework and adds some enhanceme
 Most of the enhancements target the simple display of log message. Yes, you could write all log message to a file and then display them. But for applications with a graphical user interface it's often more easy to show log messages in a (separate) window. With proper configuration such message can be use as well for the user (trace, audit trail) as for the developer. 
 
 ## Libraries ##
-* **Tethys.Logging** - Platform independent basic logging support (Portable library: .NET Framework 4.x, Silverlight 4, Windows Phone 7/8 and .NET for Windows 	Store apps).
+* **Tethys.Logging** - Platform independent basic logging support (.Net Standard 2.0).
 * **Tethys.Logging.Common.Logging** - Adapter for Common.Logging (.NET Client Framework 4, Common.Logging 2.1.1).
 * **Tethys.Logging.Common.Logging231** - Adapter for Common.Logging (.NET Client Framework 4, Common.Logging 2.3.1).
 * **Tethys.Logging.Common.Logging341** - Adapter for Common.Logging (.NET Client Framework 4, Common.Logging 3.4.1).
@@ -26,7 +26,7 @@ Most of the enhancements target the simple display of log message. Yes, you coul
 * **Tethys.Logging.NLog4412** - Adapter for NLog (.NET Framework 4.5, NLog 4.4.12).
 * **Tethys.Logging.Log4Net** - Adapter for log4net 1.2.10 (.NET Framework 4, log4net 1.2.11).
 * **Tethys.Logging.Log4Net208** - Adapter for log4net 2.0.8 (.NET Framework 4, log4net 2.0.8).
-* **Tethys.Logging.Console** - log output to console window.
+* **Tethys.Logging.Console** - log output to console window (.Net Standard 2.0).
 
 ## Binaries ##
 
