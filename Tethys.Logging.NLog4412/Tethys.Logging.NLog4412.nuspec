@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Tethys.Logging.NLog4412</id>
-    <version>1.4.0</version>
+    <version>1.4.1</version>
     <title>Tethys.Logging.NLog4412</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
@@ -16,13 +16,13 @@
     <language>en-US</language>
     <tags>Tethys Logging NLog</tags>
     <dependencies>
-      <dependency id="Tethys.Logging" version="1.4.0" />
+      <dependency id="Tethys.Logging" version="1.4.1" />
       <dependency id="NLog" version="4.4.12" />
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Export\Release\Tethys.Logging.NLog4412.dll" target="lib\net40-Client" />
-    <file src="..\Export\Release\Tethys.Logging.NLog4412.xml" target="lib\net40-Client" />
-    <file src="..\Export\Release\Tethys.Logging.NLog4412.pdb" target="lib\net40-Client" />
+    <file src="..\Export\Release\Tethys.Logging.NLog4412.dll" target="lib\net461" />
+    <file src="..\Export\Release\Tethys.Logging.NLog4412.xml" target="lib\net461" />
+    <file src="..\Export\Release\Tethys.Logging.NLog4412.pdb" target="lib\net461" />
   </files>
 </package>

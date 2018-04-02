@@ -193,7 +193,7 @@ namespace TestApp.NLog310
         /// <summary>
         /// Displays the configuration.
         /// </summary>
-        public static void DisplayConfiguration()
+        private static void DisplayConfiguration()
         {
             if (global::NLog.LogManager.Configuration == null)
             {

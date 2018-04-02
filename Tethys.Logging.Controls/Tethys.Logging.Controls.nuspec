@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Tethys.Logging.Controls</id>
-    <version>1.4.0</version>
+    <version>1.4.1</version>
     <title>Tethys.Logging.Controls</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
@@ -16,12 +16,12 @@
     <language>en-US</language>
     <tags>Tethys Logging WinForms</tags>
     <dependencies>
-      <dependency id="Tethys.Logging" version="1.4.0" />
+      <dependency id="Tethys.Logging" version="1.4.1" />
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Export\Release\Tethys.Logging.Controls.dll" target="lib\net40-Client" />
-    <file src="..\Export\Release\Tethys.Logging.Controls.xml" target="lib\net40-Client" />
-    <file src="..\Export\Release\Tethys.Logging.Controls.pdb" target="lib\net40-Client" />
+    <file src="..\Export\Release\Tethys.Logging.Controls.dll" target="lib\net461" />
+    <file src="..\Export\Release\Tethys.Logging.Controls.xml" target="lib\net461" />
+    <file src="..\Export\Release\Tethys.Logging.Controls.pdb" target="lib\net461" />
   </files>
 </package>

@@ -79,7 +79,7 @@ namespace TestApp.Common.Logging341
             global::Common.Logging.LogManager.Adapter
               = new CommonLoggingToLogViewAdapter(this.rtfLogView);
 
-            log = global::Common.Logging.LogManager.GetCurrentClassLogger();
+            log = LogManager.GetLogger(typeof(MainForm));
         } // ConfigureLogging()
         #endregion // CONSTRUCTION
 

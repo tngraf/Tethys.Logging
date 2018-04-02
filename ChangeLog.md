@@ -1,6 +1,10 @@
 Tethys.Logging Change Log
 =========================
 
+## V1.4.1 (2018-04-02) ##
+* Tethys.Logging and Tethys.Logging.Console target .Net Standard 2.0
+* All other projects target .Net Framework 4.6.1
+
 ## V1.4.0 (2018-03-03) ##
 * Tethys.Logging.Console added.
 * Fix in AbstractLogger.

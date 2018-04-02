@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Tethys.Logging</id>
-    <version>1.4.0</version>
+    <version>1.4.1</version>
     <title>Tethys.Logging</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
@@ -17,8 +17,8 @@
     <tags>Tethys Logging</tags>
   </metadata>
   <files>
-    <file src="..\Export\Release\Tethys.Logging.dll" target="lib\portable-net40+sl50+win+wp80" />
-    <file src="..\Export\Release\Tethys.Logging.xml" target="lib\portable-net40+sl50+win+wp80" />
-    <file src="..\Export\Release\Tethys.Logging.pdb" target="lib\portable-net40+sl50+win+wp80" />
+    <file src="..\Export\Release\Tethys.Logging.dll" target="lib\netstandard2.0" />
+    <file src="..\Export\Release\Tethys.Logging.xml" target="lib\netstandard2.0" />
+    <file src="..\Export\Release\Tethys.Logging.pdb" target="lib\netstandard2.0" />
   </files>
 </package>

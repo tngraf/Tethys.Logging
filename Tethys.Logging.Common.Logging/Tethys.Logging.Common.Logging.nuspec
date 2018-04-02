@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Tethys.Logging.Common.Logging</id>
-    <version>1.4.0</version>
+    <version>1.4.1</version>
     <title>Tethys.Logging.Common.Logging</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
@@ -16,13 +16,13 @@
     <language>en-US</language>
     <tags>Tethys Logging Common.Logging 2.1.1</tags>
     <dependencies>
-      <dependency id="Tethys.Logging" version="1.4.0" />
+      <dependency id="Tethys.Logging" version="1.4.1" />
       <dependency id="Common.Logging" version="2.1.1" />
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Export\Release\Tethys.Logging.Common.Logging.dll" target="lib\net40" />
-    <file src="..\Export\Release\Tethys.Logging.Common.Logging.xml" target="lib\net40" />
-    <file src="..\Export\Release\Tethys.Logging.Common.Logging.pdb" target="lib\net40" />
+    <file src="..\Export\Release\Tethys.Logging.Common.Logging.dll" target="lib\net461" />
+    <file src="..\Export\Release\Tethys.Logging.Common.Logging.xml" target="lib\net461" />
+    <file src="..\Export\Release\Tethys.Logging.Common.Logging.pdb" target="lib\net461" />
   </files>
 </package>

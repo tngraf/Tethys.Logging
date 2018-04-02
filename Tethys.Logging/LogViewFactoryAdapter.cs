@@ -47,7 +47,7 @@ namespace Tethys.Logging
         /// <summary>
         /// The settings.
         /// </summary>
-        private IDictionary<string, string> logSettings;
+        private readonly IDictionary<string, string> logSettings;
         #endregion // PRIVATE PROPERTIES
 
         //// ---------------------------------------------------------------------

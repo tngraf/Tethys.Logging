@@ -28,7 +28,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Tethys.Logging.Console")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Console log output for Tethys.Logging")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyProduct("Tethys.Logging.Console")]
 

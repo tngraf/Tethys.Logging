@@ -9,8 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TestApp.Common.Logging341</RootNamespace>
     <AssemblyName>TestApp.Common.Logging341</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -93,7 +95,7 @@
       <Name>Tethys.Logging.Controls</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Tethys.Logging\Tethys.Logging.csproj">
-      <Project>{8ad903ff-c316-489a-9ae0-f59e5ad158d8}</Project>
+      <Project>{f60c8961-5b5d-4dac-82a5-05098841b9ae}</Project>
       <Name>Tethys.Logging</Name>
     </ProjectReference>
   </ItemGroup>

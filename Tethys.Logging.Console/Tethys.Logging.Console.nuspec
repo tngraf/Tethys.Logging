@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Tethys.Logging.Console</id>
-    <version>1.4.0</version>
+    <version>1.4.1</version>
     <title>Tethys.Logging.Console</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
@@ -11,17 +11,19 @@
     <projectUrl>https://github.com/tngraf/Tethys.Logging/</projectUrl>
     <iconUrl>http://www.4wp7.de/tethys/tethyb32.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Simple logging and enhancements for existing logging frameworks.</description>
+    <description>Console log output for Tethys.Logging.</description>
     <releaseNotes>Console logging</releaseNotes>
     <language>en-US</language>
     <tags>Tethys Logging Console</tags>
     <dependencies>
-      <dependency id="Tethys.Logging" version="1.4.0" />
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Tethys.Logging" version="1.0.0" exclude="Build,Analyzers" />
+      </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Export\Release\Tethys.Logging.Console.dll" target="lib\net40" />
-    <file src="..\Export\Release\Tethys.Logging.Console.xml" target="lib\net40" />
-    <file src="..\Export\Release\Tethys.Logging.Console.pdb" target="lib\net40" />
+    <file src="..\Export\Release\Tethys.Logging.Console.dll" target="lib\netstandard2.0" />
+    <file src="..\Export\Release\Tethys.Logging.Console.xml" target="lib\netstandard2.0" />
+    <file src="..\Export\Release\Tethys.Logging.Console.pdb" target="lib\netstandard2.0" />
   </files>
 </package>

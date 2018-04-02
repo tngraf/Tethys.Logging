@@ -37,7 +37,7 @@ namespace Tethys.Logging.Common.Logging
         /// <summary>
         /// Target log viewer.
         /// </summary>
-        private readonly ILogView view;
+        private readonly Tethys.Logging.ILogView view;
 
         /// <summary>
         /// Flag 'add CR/LF at the end of each text line'.

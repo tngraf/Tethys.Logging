@@ -110,6 +110,11 @@ namespace Tethys.Logging.Console
         private const ConsoleColor DefaultColorFatal = ConsoleColor.Red;
 
         /// <summary>
+        /// The minimum log level.
+        /// </summary>
+        private readonly LogLevel minLogLevel;
+
+        /// <summary>
         /// Flag 'add time'.
         /// </summary>
         private bool addTime;
@@ -148,11 +153,6 @@ namespace Tethys.Logging.Console
         /// The color for fatal error output.
         /// </summary>
         private ConsoleColor colorFatal = DefaultColorFatal;
-
-        /// <summary>
-        /// The minimum log level.
-        /// </summary>
-        private readonly LogLevel minLogLevel;
         #endregion // PRIVATE PROPERTIES
 
         //// ---------------------------------------------------------------------
