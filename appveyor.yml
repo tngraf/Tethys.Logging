@@ -2,11 +2,7 @@ version: 1.5.0.{build}
 image: Visual Studio 2019
 before_build:
 - cmd: >-
-    echo "111"
-
     nuget restore
-
-    echo "222"
 build:
   project: Tethys.Logging.sln
-  verbosity: detailed
+  verbosity: normal
