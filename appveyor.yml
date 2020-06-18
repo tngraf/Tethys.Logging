@@ -1,15 +1,16 @@
 version: 1.5.{build}
 image: Visual Studio 2019
-install:
-  - call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat"
 configuration:
-  - Debug
   - Release
-cache:
-  - packages -> **\packages.config
 before_build:
-  - cmd: nuget restore
-  - project: Tethys.Logging.sln
+  - cmd: >-
+    echo "111"
+
+    nuget restore
+
+    echo "222"
+
 build:
+  project: Tethys.Logging.sln
   verbosity: normal
 test: off
