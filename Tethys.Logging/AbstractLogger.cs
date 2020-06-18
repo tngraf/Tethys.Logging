@@ -1,9 +1,8 @@
-﻿#region Header
-// --------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------
 // Tethys.Logging
 // ==========================================================================
 //
-// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and 
+// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and
 // higher, Windows Phone 7 and higher and .NET for Windows Store apps.
 //
 // ===========================================================================
@@ -12,14 +11,13 @@
 // Copyright  2009-2018 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
-//            Unless required by applicable law or agreed to in writing, 
+//            Unless required by applicable law or agreed to in writing,
 //            software distributed under the License is distributed on an
 //            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-//            either express or implied. 
+//            either express or implied.
 // </copyright>
 //
 // ---------------------------------------------------------------------------
-#endregion
 
 namespace Tethys.Logging
 {
@@ -32,55 +30,11 @@ namespace Tethys.Logging
     /// An abstract logger to simply the creation of loggers.
     /// </summary>
     /// <remarks>
-    /// This class is based on ideas coming from 
+    /// This class is based on ideas coming from
     /// <a href="http://netcommon.sourceforge.net">Common.Logging</a>.
     /// </remarks>
     public abstract class AbstractLogger : ILog
     {
-        /// <summary>
-        /// Appends the formatted message to the specified <see cref="StringBuilder" />.
-        /// </summary>
-        /// <param name="stringBuilder">the <see cref="StringBuilder" />
-        /// that receives the formatted message.</param>
-        /// <param name="level">The level.</param>
-        /// <param name="message">The message.</param>
-        /// <param name="exception">The exception.</param>
-        [SuppressMessage("Microsoft.Naming", "CA1720:IdentifiersShouldNotContainTypeNames",
-          MessageId = "string", Justification = "Best solution...")]
-        protected virtual void FormatOutput(StringBuilder stringBuilder,
-          LogLevel level, object message, Exception exception)
-        {
-            if (stringBuilder == null)
-            {
-                throw new ArgumentNullException(nameof(stringBuilder));
-            }
-
-            // Append date and time
-            stringBuilder.Append(DateTime.Now);
-            stringBuilder.Append(" ");
-
-            // Append a readable representation of the log level
-            stringBuilder.Append(("[" + level.ToString().ToUpper() + "]").PadRight(8));
-
-            // Append the message
-            stringBuilder.Append(message);
-
-            // Append stack trace if not null
-            if (exception != null)
-            {
-                stringBuilder.Append(Environment.NewLine).Append(exception);
-            } // if
-        } // FormatOutput()
-
-        /// <summary>
-        /// Do the actual logging by constructing the log message using a <see cref="StringBuilder" /> then
-        /// sending the output to this final target implemented in derived classes.
-        /// </summary>
-        /// <param name="level">The <see cref="LogLevel" /> of the message.</param>
-        /// <param name="message">The log message.</param>
-        /// <param name="exception">An optional <see cref="Exception" /> associated with the message.</param>
-        protected abstract void WriteInternal(LogLevel level, object message, Exception exception);
-
         #region ILog implementation
         #region Trace
         /// <summary>
@@ -108,11 +62,11 @@ namespace Tethys.Logging
         /// <param name="formatProvider">The format provider.</param>
         /// <param name="format">The format.</param>
         /// <param name="args">The arguments.</param>
-        public void TraceFormat(IFormatProvider formatProvider,
-          string format, params object[] args)
+        public void TraceFormat(
+            IFormatProvider formatProvider, string format, params object[] args)
         {
-            this.WriteInternal(LogLevel.Trace,
-            string.Format(formatProvider, format, args), null);
+            this.WriteInternal(
+                LogLevel.Trace, string.Format(formatProvider, format, args), null);
         } // TraceFormat()
 
         /// <summary>
@@ -122,11 +76,13 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        public void TraceFormat(IFormatProvider formatProvider,
-          string format, Exception exception, params object[] args)
+        public void TraceFormat(
+            IFormatProvider formatProvider, string format, Exception exception, params object[] args)
         {
-            this.WriteInternal(LogLevel.Trace, string.Format(formatProvider,
-            format, args), exception);
+            this.WriteInternal(
+                LogLevel.Trace,
+                string.Format(formatProvider, format, args),
+                exception);
         } // TraceFormat()
 
         /// <summary>
@@ -136,8 +92,10 @@ namespace Tethys.Logging
         /// <param name="args">The arguments.</param>
         public virtual void TraceFormat(string format, params object[] args)
         {
-            this.WriteInternal(LogLevel.Trace, string.Format(
-            CultureInfo.InvariantCulture, format, args), null);
+            this.WriteInternal(
+                LogLevel.Trace,
+                string.Format(CultureInfo.InvariantCulture, format, args),
+                null);
         } // TraceFormat()
 
         /// <summary>
@@ -148,8 +106,10 @@ namespace Tethys.Logging
         /// <param name="args">The arguments.</param>
         public virtual void TraceFormat(string format, Exception exception, params object[] args)
         {
-            this.WriteInternal(LogLevel.Trace, string.Format(
-            CultureInfo.InvariantCulture, format, args), exception);
+            this.WriteInternal(
+                LogLevel.Trace,
+                string.Format(CultureInfo.InvariantCulture, format, args),
+                exception);
         } // TraceFormat()
         #endregion // Trace
 
@@ -179,11 +139,13 @@ namespace Tethys.Logging
         /// <param name="formatProvider">The format provider.</param>
         /// <param name="format">The format.</param>
         /// <param name="args">The arguments.</param>
-        public void DebugFormat(IFormatProvider formatProvider,
-          string format, params object[] args)
+        public void DebugFormat(
+            IFormatProvider formatProvider, string format, params object[] args)
         {
-            this.WriteInternal(LogLevel.Debug,
-            string.Format(formatProvider, format, args), null);
+            this.WriteInternal(
+                LogLevel.Debug,
+                string.Format(formatProvider, format, args),
+                null);
         } // DebugFormat()
 
         /// <summary>
@@ -193,11 +155,13 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        public void DebugFormat(IFormatProvider formatProvider,
-          string format, Exception exception, params object[] args)
+        public void DebugFormat(
+            IFormatProvider formatProvider, string format, Exception exception, params object[] args)
         {
-            this.WriteInternal(LogLevel.Debug, string.Format(formatProvider,
-            format, args), exception);
+            this.WriteInternal(
+                LogLevel.Debug,
+                string.Format(formatProvider, format, args),
+                exception);
         } // DebugFormat()
 
         /// <summary>
@@ -207,8 +171,10 @@ namespace Tethys.Logging
         /// <param name="args">The arguments.</param>
         public virtual void DebugFormat(string format, params object[] args)
         {
-            this.WriteInternal(LogLevel.Debug, string.Format(
-            CultureInfo.InvariantCulture, format, args), null);
+            this.WriteInternal(
+                LogLevel.Debug,
+                string.Format(CultureInfo.InvariantCulture, format, args),
+                null);
         } // DebugFormat()
 
         /// <summary>
@@ -219,8 +185,10 @@ namespace Tethys.Logging
         /// <param name="args">The arguments.</param>
         public virtual void DebugFormat(string format, Exception exception, params object[] args)
         {
-            this.WriteInternal(LogLevel.Debug, string.Format(
-            CultureInfo.InvariantCulture, format, args), exception);
+            this.WriteInternal(
+                LogLevel.Debug,
+                string.Format(CultureInfo.InvariantCulture, format, args),
+                exception);
         } // TraceFormat()
         #endregion // Debug
 
@@ -250,11 +218,13 @@ namespace Tethys.Logging
         /// <param name="formatProvider">The format provider.</param>
         /// <param name="format">The format.</param>
         /// <param name="args">The arguments.</param>
-        public void InfoFormat(IFormatProvider formatProvider,
-          string format, params object[] args)
+        public void InfoFormat(
+            IFormatProvider formatProvider, string format, params object[] args)
         {
-            this.WriteInternal(LogLevel.Info,
-            string.Format(formatProvider, format, args), null);
+            this.WriteInternal(
+                LogLevel.Info,
+                string.Format(formatProvider, format, args),
+                null);
         } // InfoFormat()
 
         /// <summary>
@@ -264,11 +234,13 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        public void InfoFormat(IFormatProvider formatProvider,
-          string format, Exception exception, params object[] args)
+        public void InfoFormat(
+            IFormatProvider formatProvider, string format, Exception exception, params object[] args)
         {
-            this.WriteInternal(LogLevel.Info, string.Format(formatProvider,
-            format, args), exception);
+            this.WriteInternal(
+                LogLevel.Info,
+                string.Format(formatProvider, format, args),
+                exception);
         } // InfoFormat()
 
         /// <summary>
@@ -278,8 +250,10 @@ namespace Tethys.Logging
         /// <param name="args">The arguments.</param>
         public virtual void InfoFormat(string format, params object[] args)
         {
-            this.WriteInternal(LogLevel.Info, string.Format(
-            CultureInfo.InvariantCulture, format, args), null);
+            this.WriteInternal(
+                LogLevel.Info,
+                string.Format(CultureInfo.InvariantCulture, format, args),
+                null);
         } // InfoFormat()
 
         /// <summary>
@@ -290,8 +264,10 @@ namespace Tethys.Logging
         /// <param name="args">The arguments.</param>
         public virtual void InfoFormat(string format, Exception exception, params object[] args)
         {
-            this.WriteInternal(LogLevel.Info, string.Format(
-            CultureInfo.InvariantCulture, format, args), exception);
+            this.WriteInternal(
+                LogLevel.Info,
+                string.Format(CultureInfo.InvariantCulture, format, args),
+                exception);
         } // TraceFormat()
         #endregion // Info
 
@@ -321,11 +297,13 @@ namespace Tethys.Logging
         /// <param name="formatProvider">The format provider.</param>
         /// <param name="format">The format.</param>
         /// <param name="args">The arguments.</param>
-        public void WarnFormat(IFormatProvider formatProvider,
-          string format, params object[] args)
+        public void WarnFormat(
+            IFormatProvider formatProvider, string format, params object[] args)
         {
-            this.WriteInternal(LogLevel.Warn,
-            string.Format(formatProvider, format, args), null);
+            this.WriteInternal(
+                LogLevel.Warn,
+                string.Format(formatProvider, format, args),
+                null);
         } // WarnFormat()
 
         /// <summary>
@@ -335,11 +313,13 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        public void WarnFormat(IFormatProvider formatProvider,
-          string format, Exception exception, params object[] args)
+        public void WarnFormat(
+            IFormatProvider formatProvider, string format, Exception exception, params object[] args)
         {
-            this.WriteInternal(LogLevel.Warn, string.Format(formatProvider,
-            format, args), exception);
+            this.WriteInternal(
+                LogLevel.Warn,
+                string.Format(formatProvider, format, args),
+                exception);
         } // WarnFormat()
 
         /// <summary>
@@ -349,8 +329,10 @@ namespace Tethys.Logging
         /// <param name="args">The arguments.</param>
         public virtual void WarnFormat(string format, params object[] args)
         {
-            this.WriteInternal(LogLevel.Warn, string.Format(
-            CultureInfo.InvariantCulture, format, args), null);
+            this.WriteInternal(
+                LogLevel.Warn,
+                string.Format(CultureInfo.InvariantCulture, format, args),
+                null);
         } // WarnFormat()
 
         /// <summary>
@@ -361,8 +343,10 @@ namespace Tethys.Logging
         /// <param name="args">The arguments.</param>
         public virtual void WarnFormat(string format, Exception exception, params object[] args)
         {
-            this.WriteInternal(LogLevel.Warn, string.Format(
-            CultureInfo.InvariantCulture, format, args), exception);
+            this.WriteInternal(
+                LogLevel.Warn,
+                string.Format(CultureInfo.InvariantCulture, format, args),
+                exception);
         } // WarnFormat()
         #endregion // Warn
 
@@ -392,11 +376,13 @@ namespace Tethys.Logging
         /// <param name="formatProvider">The format provider.</param>
         /// <param name="format">The format.</param>
         /// <param name="args">The arguments.</param>
-        public void ErrorFormat(IFormatProvider formatProvider,
-          string format, params object[] args)
+        public void ErrorFormat(
+            IFormatProvider formatProvider, string format, params object[] args)
         {
-            this.WriteInternal(LogLevel.Error,
-            string.Format(formatProvider, format, args), null);
+            this.WriteInternal(
+                LogLevel.Error,
+                string.Format(formatProvider, format, args),
+                null);
         } // ErrorFormat()
 
         /// <summary>
@@ -406,11 +392,13 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        public void ErrorFormat(IFormatProvider formatProvider,
-          string format, Exception exception, params object[] args)
+        public void ErrorFormat(
+            IFormatProvider formatProvider, string format, Exception exception, params object[] args)
         {
-            this.WriteInternal(LogLevel.Error, string.Format(formatProvider,
-            format, args), exception);
+            this.WriteInternal(
+                LogLevel.Error,
+                string.Format(formatProvider, format, args),
+                exception);
         } // ErrorFormat()
 
         /// <summary>
@@ -420,8 +408,10 @@ namespace Tethys.Logging
         /// <param name="args">The arguments.</param>
         public virtual void ErrorFormat(string format, params object[] args)
         {
-            this.WriteInternal(LogLevel.Error, string.Format(
-            CultureInfo.InvariantCulture, format, args), null);
+            this.WriteInternal(
+                LogLevel.Error,
+                string.Format(CultureInfo.InvariantCulture, format, args),
+                null);
         } // ErrorFormat()
 
         /// <summary>
@@ -432,8 +422,10 @@ namespace Tethys.Logging
         /// <param name="args">The arguments.</param>
         public virtual void ErrorFormat(string format, Exception exception, params object[] args)
         {
-            this.WriteInternal(LogLevel.Error, string.Format(
-            CultureInfo.InvariantCulture, format, args), exception);
+            this.WriteInternal(
+                LogLevel.Error,
+                string.Format(CultureInfo.InvariantCulture, format, args),
+                exception);
         } // ErrorFormat()
         #endregion // Error
 
@@ -463,11 +455,13 @@ namespace Tethys.Logging
         /// <param name="formatProvider">The format provider.</param>
         /// <param name="format">The format.</param>
         /// <param name="args">The arguments.</param>
-        public void FatalFormat(IFormatProvider formatProvider,
-          string format, params object[] args)
+        public void FatalFormat(
+            IFormatProvider formatProvider, string format, params object[] args)
         {
-            this.WriteInternal(LogLevel.Fatal,
-            string.Format(formatProvider, format, args), null);
+            this.WriteInternal(
+                LogLevel.Fatal,
+                string.Format(formatProvider, format, args),
+                null);
         } // FatalFormat()
 
         /// <summary>
@@ -477,11 +471,13 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        public void FatalFormat(IFormatProvider formatProvider,
-          string format, Exception exception, params object[] args)
+        public void FatalFormat(
+            IFormatProvider formatProvider, string format, Exception exception, params object[] args)
         {
-            this.WriteInternal(LogLevel.Fatal, string.Format(formatProvider,
-            format, args), exception);
+            this.WriteInternal(
+                LogLevel.Fatal,
+                string.Format(formatProvider, format, args),
+                exception);
         } // FatalFormat()
 
         /// <summary>
@@ -491,8 +487,10 @@ namespace Tethys.Logging
         /// <param name="args">The arguments.</param>
         public virtual void FatalFormat(string format, params object[] args)
         {
-            this.WriteInternal(LogLevel.Fatal, string.Format(
-            CultureInfo.InvariantCulture, format, args), null);
+            this.WriteInternal(
+                LogLevel.Fatal,
+                string.Format(CultureInfo.InvariantCulture, format, args),
+                null);
         } // FatalFormat()
 
         /// <summary>
@@ -503,10 +501,62 @@ namespace Tethys.Logging
         /// <param name="args">The arguments.</param>
         public virtual void FatalFormat(string format, Exception exception, params object[] args)
         {
-            this.WriteInternal(LogLevel.Fatal, string.Format(
-            CultureInfo.InvariantCulture, format, args), exception);
+            this.WriteInternal(
+                LogLevel.Fatal,
+                string.Format(CultureInfo.InvariantCulture, format, args),
+                exception);
         } // FatalFormat()
         #endregion // Fatal
         #endregion // ILog implementation
+
+        /// <summary>
+        /// Do the actual logging by constructing the log message using a <see cref="StringBuilder" /> then
+        /// sending the output to this final target implemented in derived classes.
+        /// </summary>
+        /// <param name="level">The <see cref="LogLevel" /> of the message.</param>
+        /// <param name="message">The log message.</param>
+        /// <param name="exception">An optional <see cref="Exception" /> associated with the message.</param>
+        protected abstract void WriteInternal(LogLevel level, object message, Exception exception);
+
+        /// <summary>
+        /// Appends the formatted message to the specified <see cref="StringBuilder" />.
+        /// </summary>
+        /// <param name="stringBuilder">the <see cref="StringBuilder" />
+        /// that receives the formatted message.</param>
+        /// <param name="level">The level.</param>
+        /// <param name="message">The message.</param>
+        /// <param name="exception">The exception.</param>
+        [SuppressMessage(
+            "Microsoft.Naming",
+            "CA1720:IdentifiersShouldNotContainTypeNames",
+            MessageId = "string",
+            Justification = "Best solution...")]
+        protected virtual void FormatOutput(
+            StringBuilder stringBuilder,
+            LogLevel level,
+            object message,
+            Exception exception)
+        {
+            if (stringBuilder == null)
+            {
+                throw new ArgumentNullException(nameof(stringBuilder));
+            }
+
+            // Append date and time
+            stringBuilder.Append(DateTime.Now);
+            stringBuilder.Append(" ");
+
+            // Append a readable representation of the log level
+            stringBuilder.Append(("[" + level.ToString().ToUpper() + "]").PadRight(8));
+
+            // Append the message
+            stringBuilder.Append(message);
+
+            // Append stack trace if not null
+            if (exception != null)
+            {
+                stringBuilder.Append(Environment.NewLine).Append(exception);
+            } // if
+        } // FormatOutput()
     } // AbstractLogger
 } // Tethys.Logging

@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
@@ -10,11 +10,11 @@
     <SignAssembly>true</SignAssembly>
     <DelaySign>false</DelaySign>
     <Authors>Thomas Graf</Authors>
-    <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/tngraf/Tethys.Logging/</PackageProjectUrl>
-    <PackageIconUrl>http://www.4wp7.de/tethys/tethyb32.png</PackageIconUrl>
     <PackageTags>Tethys Logging Console</PackageTags>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageIcon>tethys_icon.png</PackageIcon>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -32,6 +32,13 @@
     <Compile Include="..\GlobalAssemblyInfo.cs">
       <Link>Properties\GlobalAssemblyInfo.cs</Link>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\tethys_icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

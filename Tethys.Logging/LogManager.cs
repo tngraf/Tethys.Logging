@@ -1,9 +1,8 @@
-﻿#region Header
-// --------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------
 // Tethys.Logging
 // ==========================================================================
 //
-// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and 
+// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and
 // higher, Windows Phone 7 and higher and .NET for Windows Store apps.
 //
 // ===========================================================================
@@ -12,14 +11,13 @@
 // Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
-//            Unless required by applicable law or agreed to in writing, 
+//            Unless required by applicable law or agreed to in writing,
 //            software distributed under the License is distributed on an
 //            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-//            either express or implied. 
+//            either express or implied.
 // </copyright>
 //
 // ---------------------------------------------------------------------------
-#endregion
 
 namespace Tethys.Logging
 {
@@ -27,11 +25,11 @@ namespace Tethys.Logging
     using System.Diagnostics.CodeAnalysis;
 
     /// <summary>
-    /// Use the LogManager's <see cref="GetLogger(string)"/> or <see cref="GetLogger(System.Type)"/> 
+    /// Use the LogManager's <see cref="GetLogger(string)"/> or <see cref="GetLogger(System.Type)"/>
     /// methods to obtain <see cref="ILog"/> instances for logging.
     /// </summary>
     /// <remarks>
-    /// This class is based on ideas coming from 
+    /// This class is based on ideas coming from
     /// <a href="http://netcommon.sourceforge.net">Common.Logging</a>.
     /// </remarks>
     public static class LogManager
@@ -45,9 +43,10 @@ namespace Tethys.Logging
         /// Gets or sets the adapter.
         /// </summary>
         /// <value>The adapter.</value>
-        [SuppressMessage("Microsoft.Usage",
-          "CA2208:InstantiateArgumentExceptionsCorrectly",
-          Justification = "Best solution here ...")]
+        [SuppressMessage(
+            "Microsoft.Usage",
+            "CA2208:InstantiateArgumentExceptionsCorrectly",
+            Justification = "Best solution here ...")]
         public static ILoggerFactoryAdapter Adapter
         {
             get
@@ -57,6 +56,7 @@ namespace Tethys.Logging
                     ILoggerFactoryAdapter defaultFactory = new NoOpLoggerFactoryAdapter();
                     return defaultFactory;
                 } // if
+
                 return adapter;
             }
 
@@ -72,7 +72,7 @@ namespace Tethys.Logging
         /// on the currently configured <see cref="Adapter"/> using the specified type.
         /// </summary>
         /// <param name="type">The type.</param>
-        /// <returns>the logger instance obtained from the current <see cref="Adapter"/></returns>
+        /// <returns>the logger instance obtained from the current <see cref="Adapter"/>.</returns>
         public static ILog GetLogger(Type type)
         {
             return Adapter.GetLogger(type);
@@ -83,7 +83,7 @@ namespace Tethys.Logging
         /// on the currently configured <see cref="Adapter"/> using the specified name.
         /// </summary>
         /// <param name="name">The name.</param>
-        /// <returns>the logger instance obtained from the current <see cref="Adapter"/></returns>
+        /// <returns>the logger instance obtained from the current <see cref="Adapter"/>.</returns>
         public static ILog GetLogger(string name)
         {
             return Adapter.GetLogger(name);

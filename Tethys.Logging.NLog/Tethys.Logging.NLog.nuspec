@@ -2,27 +2,31 @@
 <package >
   <metadata>
     <id>Tethys.Logging.NLog</id>
-    <version>1.4.1</version>
+    <version>$version$</version>
     <title>Tethys.Logging.NLog</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
-    <copyright>Copyright (C) 2009-2018 T. Graf</copyright>
-    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <copyright>$copyright$</copyright>
+    <license type="expression">Apache-2.0</license>
+    <icon>tethys_icon.png</icon>
     <projectUrl>https://github.com/tngraf/Tethys.Logging/</projectUrl>
-    <iconUrl>http://www.4wp7.de/tethys/tethyb32.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Simple logging and enhancements for existing logging frameworks.</description>
     <releaseNotes>Support for NLog 2.0.0.</releaseNotes>
     <language>en-US</language>
     <tags>Tethys Logging NLog 2.0.0</tags>
     <dependencies>
-      <dependency id="Tethys.Logging" version="1.4.1" />
-      <dependency id="NLog" version="2.0.0.2000" />
+      <group targetFramework="net472">
+        <dependency id="Tethys.Logging" version="$version$" />
+        <dependency id="NLog" version="2.0.0.2000" />
+      </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Export\Release\Tethys.Logging.NLog.dll" target="lib\net461" />
-    <file src="..\Export\Release\Tethys.Logging.NLog.xml" target="lib\net461" />
-    <file src="..\Export\Release\Tethys.Logging.NLog.pdb" target="lib\net461" />
+    <file src="..\tethys_icon.png" target="." />
+
+    <file src="bin\Release\Tethys.Logging.NLog.dll" target="lib\net472" />
+    <file src="bin\Release\Tethys.Logging.NLog.xml" target="lib\net472" />
+    <file src="bin\Release\Tethys.Logging.NLog.pdb" target="lib\net472" />
   </files>
 </package>

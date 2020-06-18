@@ -1,9 +1,8 @@
-﻿#region Header
-// --------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------
 // Tethys.Logging
 // ==========================================================================
 //
-// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and 
+// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and
 // higher, Windows Phone 7 and higher and .NET for Windows Store apps.
 //
 // ===========================================================================
@@ -12,14 +11,13 @@
 // Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
-//            Unless required by applicable law or agreed to in writing, 
+//            Unless required by applicable law or agreed to in writing,
 //            software distributed under the License is distributed on an
 //            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-//            either express or implied. 
+//            either express or implied.
 // </copyright>
 //
 // ---------------------------------------------------------------------------
-#endregion
 
 namespace Tethys.Logging
 {
@@ -51,8 +49,8 @@ namespace Tethys.Logging
         /// <param name="formatProvider">The format provider.</param>
         /// <param name="format">The format.</param>
         /// <param name="args">The arguments.</param>
-        void TraceFormat(IFormatProvider formatProvider,
-          string format, params object[] args);
+        void TraceFormat(
+            IFormatProvider formatProvider, string format, params object[] args);
 
         /// <summary>
         /// Log a message with 'Trace' level.
@@ -61,8 +59,8 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        void TraceFormat(IFormatProvider formatProvider,
-          string format, Exception exception, params object[] args);
+        void TraceFormat(
+            IFormatProvider formatProvider, string format, Exception exception, params object[] args);
 
         /// <summary>
         /// Log a message with 'Trace' level.
@@ -77,8 +75,8 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        void TraceFormat(string format, Exception exception,
-          params object[] args);
+        void TraceFormat(
+            string format, Exception exception, params object[] args);
         #endregion // Trace
 
         //// --------------------------------------------------------------------
@@ -103,8 +101,8 @@ namespace Tethys.Logging
         /// <param name="formatProvider">The format provider.</param>
         /// <param name="format">The format.</param>
         /// <param name="args">The arguments.</param>
-        void DebugFormat(IFormatProvider formatProvider,
-          string format, params object[] args);
+        void DebugFormat(
+            IFormatProvider formatProvider, string format, params object[] args);
 
         /// <summary>
         /// Log a message with 'Debug' level.
@@ -113,8 +111,8 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        void DebugFormat(IFormatProvider formatProvider,
-          string format, Exception exception, params object[] args);
+        void DebugFormat(
+            IFormatProvider formatProvider, string format, Exception exception, params object[] args);
 
         /// <summary>
         /// Log a message with 'Debug' level.
@@ -129,8 +127,8 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        void DebugFormat(string format, Exception exception,
-          params object[] args);
+        void DebugFormat(
+            string format, Exception exception, params object[] args);
         #endregion // Debug
 
         //// --------------------------------------------------------------------
@@ -155,8 +153,8 @@ namespace Tethys.Logging
         /// <param name="formatProvider">The format provider.</param>
         /// <param name="format">The format.</param>
         /// <param name="args">The arguments.</param>
-        void InfoFormat(IFormatProvider formatProvider,
-          string format, params object[] args);
+        void InfoFormat(
+            IFormatProvider formatProvider, string format, params object[] args);
 
         /// <summary>
         /// Log a message with 'Info' level.
@@ -165,8 +163,8 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        void InfoFormat(IFormatProvider formatProvider,
-          string format, Exception exception, params object[] args);
+        void InfoFormat(
+            IFormatProvider formatProvider, string format, Exception exception, params object[] args);
 
         /// <summary>
         /// Log a message with 'Info' level.
@@ -181,8 +179,8 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        void InfoFormat(string format, Exception exception,
-          params object[] args);
+        void InfoFormat(
+            string format, Exception exception, params object[] args);
         #endregion // Info
 
         //// --------------------------------------------------------------------
@@ -207,8 +205,8 @@ namespace Tethys.Logging
         /// <param name="formatProvider">The format provider.</param>
         /// <param name="format">The format.</param>
         /// <param name="args">The arguments.</param>
-        void WarnFormat(IFormatProvider formatProvider,
-          string format, params object[] args);
+        void WarnFormat(
+            IFormatProvider formatProvider, string format, params object[] args);
 
         /// <summary>
         /// Log a message with 'Warn' level.
@@ -217,8 +215,8 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        void WarnFormat(IFormatProvider formatProvider,
-          string format, Exception exception, params object[] args);
+        void WarnFormat(
+            IFormatProvider formatProvider, string format, Exception exception, params object[] args);
 
         /// <summary>
         /// Log a message with 'Warn' level.
@@ -233,8 +231,8 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        void WarnFormat(string format, Exception exception,
-          params object[] args);
+        void WarnFormat(
+            string format, Exception exception, params object[] args);
         #endregion // Warn
 
         //// --------------------------------------------------------------------
@@ -244,9 +242,11 @@ namespace Tethys.Logging
         /// Log a message with 'Error' level.
         /// </summary>
         /// <param name="message">The object to log.</param>
-        [SuppressMessage("Microsoft.Naming",
-         "CA1716:IdentifiersShouldNotMatchKeywords", MessageId = "Error",
-         Justification = "This is ok here!")]
+        [SuppressMessage(
+            "Microsoft.Naming",
+            "CA1716:IdentifiersShouldNotMatchKeywords",
+            MessageId = "Error",
+            Justification = "This is ok here!")]
         void Error(object message);
 
         /// <summary>
@@ -254,9 +254,11 @@ namespace Tethys.Logging
         /// </summary>
         /// <param name="message">The message.</param>
         /// <param name="exception">The exception.</param>
-        [SuppressMessage("Microsoft.Naming",
-         "CA1716:IdentifiersShouldNotMatchKeywords", MessageId = "Error",
-         Justification = "This is ok here!")]
+        [SuppressMessage(
+            "Microsoft.Naming",
+            "CA1716:IdentifiersShouldNotMatchKeywords",
+            MessageId = "Error",
+            Justification = "This is ok here!")]
         void Error(object message, Exception exception);
 
         /// <summary>
@@ -265,11 +267,13 @@ namespace Tethys.Logging
         /// <param name="formatProvider">The format provider.</param>
         /// <param name="format">The format.</param>
         /// <param name="args">The arguments.</param>
-        [SuppressMessage("Microsoft.Naming",
-         "CA1716:IdentifiersShouldNotMatchKeywords", MessageId = "Error",
-         Justification = "This is ok here!")]
-        void ErrorFormat(IFormatProvider formatProvider,
-          string format, params object[] args);
+        [SuppressMessage(
+            "Microsoft.Naming",
+            "CA1716:IdentifiersShouldNotMatchKeywords",
+            MessageId = "Error",
+            Justification = "This is ok here!")]
+        void ErrorFormat(
+            IFormatProvider formatProvider, string format, params object[] args);
 
         /// <summary>
         /// Log a message with 'Error' level.
@@ -278,20 +282,24 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        [SuppressMessage("Microsoft.Naming",
-         "CA1716:IdentifiersShouldNotMatchKeywords", MessageId = "Error",
-         Justification = "This is ok here!")]
-        void ErrorFormat(IFormatProvider formatProvider,
-          string format, Exception exception, params object[] args);
+        [SuppressMessage(
+            "Microsoft.Naming",
+            "CA1716:IdentifiersShouldNotMatchKeywords",
+            MessageId = "Error",
+            Justification = "This is ok here!")]
+        void ErrorFormat(
+            IFormatProvider formatProvider, string format, Exception exception, params object[] args);
 
         /// <summary>
         /// Log a message with 'Error' level.
         /// </summary>
         /// <param name="format">The format.</param>
         /// <param name="args">The arguments.</param>
-        [SuppressMessage("Microsoft.Naming",
-         "CA1716:IdentifiersShouldNotMatchKeywords", MessageId = "Error",
-         Justification = "This is ok here!")]
+        [SuppressMessage(
+            "Microsoft.Naming",
+            "CA1716:IdentifiersShouldNotMatchKeywords",
+            MessageId = "Error",
+            Justification = "This is ok here!")]
         void ErrorFormat(string format, params object[] args);
 
         /// <summary>
@@ -300,11 +308,13 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        [SuppressMessage("Microsoft.Naming",
-         "CA1716:IdentifiersShouldNotMatchKeywords", MessageId = "Error",
-         Justification = "This is ok here!")]
-        void ErrorFormat(string format, Exception exception,
-          params object[] args);
+        [SuppressMessage(
+            "Microsoft.Naming",
+            "CA1716:IdentifiersShouldNotMatchKeywords",
+            MessageId = "Error",
+            Justification = "This is ok here!")]
+        void ErrorFormat(
+            string format, Exception exception, params object[] args);
         #endregion // Error
 
         //// --------------------------------------------------------------------
@@ -329,8 +339,8 @@ namespace Tethys.Logging
         /// <param name="formatProvider">The format provider.</param>
         /// <param name="format">The format.</param>
         /// <param name="args">The arguments.</param>
-        void FatalFormat(IFormatProvider formatProvider,
-          string format, params object[] args);
+        void FatalFormat(
+            IFormatProvider formatProvider, string format, params object[] args);
 
         /// <summary>
         /// Log a message with 'Fatal' level.
@@ -339,8 +349,8 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        void FatalFormat(IFormatProvider formatProvider,
-          string format, Exception exception, params object[] args);
+        void FatalFormat(
+            IFormatProvider formatProvider, string format, Exception exception, params object[] args);
 
         /// <summary>
         /// Log a message with 'Fatal' level.
@@ -355,8 +365,8 @@ namespace Tethys.Logging
         /// <param name="format">The format.</param>
         /// <param name="exception">The exception.</param>
         /// <param name="args">The arguments.</param>
-        void FatalFormat(string format, Exception exception,
-          params object[] args);
+        void FatalFormat(
+            string format, Exception exception, params object[] args);
         #endregion // Fatal
     } // ILog
 } // Tethys.Logging

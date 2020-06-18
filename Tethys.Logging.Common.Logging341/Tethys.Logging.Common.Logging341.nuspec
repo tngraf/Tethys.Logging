@@ -2,28 +2,32 @@
 <package >
   <metadata>
     <id>Tethys.Logging.Common.Logging341</id>
-    <version>1.4.1</version>
+    <version>$version$</version>
     <title>Tethys.Logging.Common.Logging341</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
-    <copyright>Copyright (C) 2009-2018 T. Graf</copyright>
-    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <copyright>$copyright$</copyright>
+    <license type="expression">Apache-2.0</license>
+    <icon>tethys_icon.png</icon>
     <projectUrl>https://github.com/tngraf/Tethys.Logging/</projectUrl>
-    <iconUrl>http://www.4wp7.de/tethys/tethyb32.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Simple logging and enhancements for existing logging frameworks.</description>
     <releaseNotes>Suport for Common.Logging 3.4.1</releaseNotes>
     <language>en-US</language>
     <tags>Tethys Logging Common.Logging</tags>
     <dependencies>
-      <dependency id="Tethys.Logging" version="1.4.1" />
+      <group targetFramework="net472">
+      <dependency id="Tethys.Logging" version="$version$" />
       <dependency id="Common.Logging" version="3.4.1" />
       <dependency id="Common.Logging.Core" version="3.4.1" />
+      </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Export\Release\Tethys.Logging.Common.Logging341.dll" target="lib\net461" />
-    <file src="..\Export\Release\Tethys.Logging.Common.Logging341.xml" target="lib\net461" />
-    <file src="..\Export\Release\Tethys.Logging.Common.Logging341.pdb" target="lib\net461" />
+    <file src="..\tethys_icon.png" target="." />
+
+    <file src="bin\Release\Tethys.Logging.Common.Logging341.dll" target="lib\net472" />
+    <file src="bin\Release\Tethys.Logging.Common.Logging341.xml" target="lib\net472" />
+    <file src="bin\Release\Tethys.Logging.Common.Logging341.pdb" target="lib\net472" />
   </files>
 </package>

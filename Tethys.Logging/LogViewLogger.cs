@@ -1,9 +1,8 @@
-﻿#region Header
-// --------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------
 // Tethys.Logging
 // ==========================================================================
 //
-// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and 
+// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and
 // higher, Windows Phone 7 and higher and .NET for Windows Store apps.
 //
 // ===========================================================================
@@ -12,14 +11,13 @@
 // Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
-//            Unless required by applicable law or agreed to in writing, 
+//            Unless required by applicable law or agreed to in writing,
 //            software distributed under the License is distributed on an
 //            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-//            either express or implied. 
+//            either express or implied.
 // </copyright>
 //
 // ---------------------------------------------------------------------------
-#endregion
 
 namespace Tethys.Logging
 {
@@ -33,7 +31,7 @@ namespace Tethys.Logging
     /// </summary>
     public class LogViewLogger : AbstractLogger
     {
-        #region PRIVATE PROPERTIES        
+        #region PRIVATE PROPERTIES
         /// <summary>
         /// The settings key 'add CR/LF'.
         /// </summary>
@@ -121,10 +119,10 @@ namespace Tethys.Logging
         /// Actually sends the message to the underlying log system.
         /// </summary>
         /// <param name="level">the level of this log event.</param>
-        /// <param name="message">the message to log</param>
-        /// <param name="exception">the exception to log (may be null)</param>
-        protected override void WriteInternal(LogLevel level,
-          object message, Exception exception)
+        /// <param name="message">the message to log.</param>
+        /// <param name="exception">the exception to log (may be null).</param>
+        protected override void WriteInternal(
+            LogLevel level, object message, Exception exception)
         {
             var sb = new StringBuilder();
             this.FormatOutput(sb, level, message, exception);
@@ -147,10 +145,13 @@ namespace Tethys.Logging
         /// <param name="level">The level.</param>
         /// <param name="message">The message.</param>
         /// <param name="exception">The exception.</param>
-        [SuppressMessage("Microsoft.Naming", "CA1720:IdentifiersShouldNotContainTypeNames",
-            MessageId = "string", Justification = "Best solution...")]
-        protected override void FormatOutput(StringBuilder stringBuilder,
-                                             LogLevel level, object message, Exception exception)
+        [SuppressMessage(
+            "Microsoft.Naming",
+            "CA1720:IdentifiersShouldNotContainTypeNames",
+            MessageId = "string",
+            Justification = "Best solution...")]
+        protected override void FormatOutput(
+            StringBuilder stringBuilder, LogLevel level, object message, Exception exception)
         {
             if (stringBuilder == null)
             {

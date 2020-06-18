@@ -1,5 +1,9 @@
-Tethys.Logging Change Log
-=========================
+# Tethys.Logging Change Log
+
+## V1.5.0 (2020-06-18) ##
+* Tethys.Logging and Tethys.Logging.Console target .Net Standard 2.0 and .Net Standard 2.1
+* All other projects target .Net Framework 4.7.2.
+* Creation of Nuget packages updated.
 
 ## V1.4.1 (2018-04-02) ##
 * Tethys.Logging and Tethys.Logging.Console target .Net Standard 2.0

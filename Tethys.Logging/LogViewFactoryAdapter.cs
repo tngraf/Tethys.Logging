@@ -1,9 +1,8 @@
-﻿#region Header
-// --------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------
 // Tethys.Logging
 // ==========================================================================
 //
-// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and 
+// A (portable) logging library for .NET Framework 4.5, Silverlight 4 and
 // higher, Windows Phone 7 and higher and .NET for Windows Store apps.
 //
 // ===========================================================================
@@ -12,14 +11,13 @@
 // Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
-//            Unless required by applicable law or agreed to in writing, 
+//            Unless required by applicable law or agreed to in writing,
 //            software distributed under the License is distributed on an
 //            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-//            either express or implied. 
+//            either express or implied.
 // </copyright>
 //
 // ---------------------------------------------------------------------------
-#endregion
 
 namespace Tethys.Logging
 {
@@ -64,16 +62,22 @@ namespace Tethys.Logging
         } // LogViewAdapter()
 
         /// <summary>
-        /// Initializes a new instance of the 
+        /// Initializes a new instance of the
         /// <see cref="LogViewFactoryAdapter"/> class.
         /// </summary>
         /// <param name="view">View where to add the adapter.</param>
         /// <param name="addCrLf">Add CR/LF at the end of each text line or not.
         /// </param>
-        [SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly",
-          MessageId = "Cr", Justification = "Intended here.")]
-        [SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly",
-          MessageId = "Lf", Justification = "Intended here.")]
+        [SuppressMessage(
+            "Microsoft.Naming",
+            "CA1709:IdentifiersShouldBeCasedCorrectly",
+            MessageId = "Cr",
+            Justification = "Intended here.")]
+        [SuppressMessage(
+            "Microsoft.Naming",
+            "CA1709:IdentifiersShouldBeCasedCorrectly",
+            MessageId = "Lf",
+            Justification = "Intended here.")]
         public LogViewFactoryAdapter(ILogView view, bool addCrLf)
         {
             this.view = view;
