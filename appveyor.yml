@@ -1,7 +1,5 @@
-version: 1.5.{build}
+version: 1.5.0.{build}
 image: Visual Studio 2019
-configuration:
-  - Release
 before_build:
   - cmd: >-
     echo "111"
@@ -12,5 +10,4 @@ before_build:
 
 build:
   project: Tethys.Logging.sln
-  verbosity: normal
-test: off
+  verbosity: detailed
