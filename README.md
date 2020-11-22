@@ -6,7 +6,7 @@ Simple logging &amp; enhancements for existing logging frameworks
 ## Project Build Status ##
 [![Build status](https://ci.appveyor.com/api/projects/status/wwv7i34nlv8h4g4i?svg=true)](https://ci.appveyor.com/project/tngraf/tethys-logging)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
-[![NuGet](https://img.shields.io/badge/nuget%20package-v1.5.0-blue.svg)](https://www.nuget.org/packages/Tethys.Logging/)
+[![NuGet](https://img.shields.io/badge/nuget%20package-v1.6.0-blue.svg)](https://www.nuget.org/packages/Tethys.Logging/)
 
 # What is Tethys.Logging? #
 
@@ -16,17 +16,21 @@ Most of the enhancements target the simple display of log message. Yes, you coul
 
 ## Libraries ##
 * **Tethys.Logging** - Platform independent basic logging support (.Net Standard 2.0).
-* **Tethys.Logging.Common.Logging** - Adapter for Common.Logging (.NET Client Framework 4, Common.Logging 2.1.1).
-* **Tethys.Logging.Common.Logging231** - Adapter for Common.Logging (.NET Client Framework 4, Common.Logging 2.3.1).
-* **Tethys.Logging.Common.Logging341** - Adapter for Common.Logging (.NET Client Framework 4, Common.Logging 3.4.1).
-* **Tethys.Logging.Controls** - Logging controls for WinForms (.NET Client Framework 4).
-* **Tethys.Logging.Controls.Wpf** - Logging controls for WPF (.NET Client Framework 4)
-* **Tethys.Logging.NLog** - Adapter for NLog (.NET Client Framework 4, NLog 2.0).
-* **Tethys.Logging.NLog310** - Adapter for NLog (.NET Framework 4.5, NLog 3.1.0).
-* **Tethys.Logging.NLog4412** - Adapter for NLog (.NET Framework 4.5, NLog 4.4.12).
-* **Tethys.Logging.Log4Net** - Adapter for log4net 1.2.10 (.NET Framework 4, log4net 1.2.11).
-* **Tethys.Logging.Log4Net208** - Adapter for log4net 2.0.8 (.NET Framework 4, log4net 2.0.8).
+* **Tethys.Logging.Common.Logging** - Adapter for Common.Logging (.NET Framework 4.72+, Common.Logging 2.1.1).
+* **Tethys.Logging.Common.Logging231** - Adapter for Common.Logging (.NET Framework 4.72+, Common.Logging 2.3.1).
+* **Tethys.Logging.Common.Logging341** - Adapter for Common.Logging (.NET Framework 4.72+, Common.Logging 3.4.1).
 * **Tethys.Logging.Console** - log output to console window (.Net Standard 2.0).
+* **Tethys.Logging.Controls** - Logging controls for WinForms (.NET Framework 4.72+).
+* **Tethys.Logging.Controls.NET5** - Logging controls for WinForms (.NET Core 3.1 and .NET 5).
+* **Tethys.Logging.Controls.Wpf** - Logging controls for WPF (.NET Framework 4.72+)
+* **Tethys.Logging.Controls.Wpf.NET5** - Logging controls for WPF (.NET Core 3.1 and .NET 5)
+* **Tethys.Logging.Log4Net** - Adapter for log4net 1.2.10 (.NET Framework 4.72+, log4net 1.2.11).
+* **Tethys.Logging.Log4Net208** - Adapter for log4net 2.0.8 (.NET Framework 4.72+, log4net 2.0.8).
+* **Tethys.Logging.NLog** - Adapter for NLog (.NET Framework 4.72+, NLog 2.0).
+* **Tethys.Logging.NLog310** - Adapter for NLog (.NET Framework 4.72+, NLog 3.1.0).
+* **Tethys.Logging.NLog4412** - Adapter for NLog (.NET Framework 4.72+, NLog 4.4.12).
+* **Tethys.Logging.Win** - Adapter for Trace (.NET Framework 4.72+).
+
 
 ## Binaries ##
 
@@ -36,15 +40,17 @@ Most of the enhancements target the simple display of log message. Yes, you coul
 * **[https://www.nuget.org/packages/Tethys.Logging.Common.Logging/](https://www.nuget.org/packages/Tethys.Logging.Common.Logging/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Common.Logging231/](https://www.nuget.org/packages/Tethys.Logging.Common.Logging231/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Common.Logging341/](https://www.nuget.org/packages/Tethys.Logging.Common.Logging341/)**
+* **[https://www.nuget.org/packages/Tethys.Logging.Console/](https://www.nuget.org/packages/Tethys.Logging.Console/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Controls/](https://www.nuget.org/packages/Tethys.Logging.Controls/)**
+* **[https://www.nuget.org/packages/Tethys.Logging.Controls.NET5/](https://www.nuget.org/packages/Tethys.Logging.Controls.NET5/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf/](https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf/)**
+* **[https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf.NET5/](https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf.NET5/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Log4Net/](https://www.nuget.org/packages/Tethys.Logging.Log4Net/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Log4Net208/](https://www.nuget.org/packages/Tethys.Logging.Log4Net208/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.NLog/](https://www.nuget.org/packages/Tethys.Logging.NLog/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.NLog310/](https://www.nuget.org/packages/Tethys.Logging.NLog310/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.NLog4412/](https://www.nuget.org/packages/Tethys.Logging.NLog4412/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Win/](https://www.nuget.org/packages/Tethys.Logging.Win/)**
-* **[https://www.nuget.org/packages/Tethys.Logging.Console/](https://www.nuget.org/packages/Tethys.Logging.Console/)**
 
 ## Test Applications ##
 * TestApp.LogView - .NET Client Framework 4, WinForms. 
@@ -69,7 +75,7 @@ applications, see Overview.txt for details.
 
 License
 -------
-Copyright 2009-2018 T. Graf
+Copyright 2009-2020 T. Graf
 
 Licensed under the **Apache License, Version 2.0** (the "License");
 you may not use this file except in compliance with the License.

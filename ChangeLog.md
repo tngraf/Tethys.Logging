@@ -1,7 +1,8 @@
 # Tethys.Logging Change Log
 
 ## V1.6.0 (2020-11-22) ##
-* Support for .NET 5: Tethys.Logging.Controls.NET5
+* Support for .NET Core 3.1 and .NET 5: Tethys.Logging.Controls.NET5 (WinForms)
+* Support for .NET Core 3.1 and .NET 5: Tethys.Logging.Controls.Wpf.NET5 (WPF)
 
 ## V1.5.0 (2020-06-18) ##
 * Tethys.Logging and Tethys.Logging.Console target .Net Standard 2.0 and .Net Standard 2.1
