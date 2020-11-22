@@ -35,10 +35,10 @@ using System.Reflection;
 [assembly: AssemblyCulture("")]
 
 // Version information
-[assembly: AssemblyVersion("1.5.0.0")]
-[assembly: AssemblyFileVersion("1.5.0.0")]
+[assembly: AssemblyVersion("1.6.0.0")]
+[assembly: AssemblyFileVersion("1.6.0.0")]
 
 // AssemblyInformationalVersionAttribute is used for NuGet
-[assembly: AssemblyInformationalVersionAttribute("1.5.0")]
+[assembly: AssemblyInformationalVersionAttribute("1.6.0")]
 
 // =================================

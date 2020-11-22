@@ -3,7 +3,7 @@
 # =======================================
 
 # global version
-$version = "1.5.0"
+$version = "1.6.0"
 $copyright = "Copyright (C) 2009-2020 T. Graf"
 $all = "version=" + $version + ";copyright=" + $copyright
 
@@ -14,6 +14,11 @@ cd ..
 
 cd Tethys.Logging.Controls
 nuget pack Tethys.Logging.Controls.nuspec -properties $all
+move Tethys.Logging.*.nupkg ..\export\packages -force
+cd ..
+
+cd Tethys.Logging.Controls.NET5
+nuget pack Tethys.Logging.Controls.NET5.nuspec -properties $all
 move Tethys.Logging.*.nupkg ..\export\packages -force
 cd ..
 
