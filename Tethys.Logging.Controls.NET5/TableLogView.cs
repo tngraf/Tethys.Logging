@@ -503,8 +503,8 @@ namespace Tethys.Logging.Controls
         /// Returns the index in the image list of the image for
         /// this log event level.
         /// </summary>
-        /// <param name="eventLevel">log event level</param>
-        /// <returns>index of the image for this level</returns>
+        /// <param name="eventLevel">log event level.</param>
+        /// <returns>index of the image for this level.</returns>
         private static int GetImageIndex(LogLevel eventLevel)
         {
             var index = 0;

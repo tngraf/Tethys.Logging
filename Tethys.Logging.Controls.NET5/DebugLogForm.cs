@@ -42,7 +42,7 @@ namespace Tethys.Logging.Controls
         public event EventHandler HidingEvent;
 
         /// <summary>
-        /// Gets the underlying RtfLogView control
+        /// Gets the underlying RtfLogView control.
         /// </summary>
         public RtfLogView RtfLogView { get; private set; }
         #endregion // PUBLIC PROPERTIES

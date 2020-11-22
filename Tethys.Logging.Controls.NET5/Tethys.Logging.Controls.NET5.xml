@@ -18,7 +18,7 @@
         </member>
         <member name="P:Tethys.Logging.Controls.DebugLogForm.RtfLogView">
             <summary>
-            Gets the underlying RtfLogView control
+            Gets the underlying RtfLogView control.
             </summary>
         </member>
         <member name="M:Tethys.Logging.Controls.DebugLogForm.#ctor">
@@ -63,7 +63,7 @@
         <member name="T:Tethys.Logging.Controls.RtfLogView.AppendTextDelegate">
             <summary>
             Delegate to be used in case of callbacks coming from
-            other threads
+            other threads.
             </summary>
             <param name="text">The text.</param>
             <param name="color">The color.</param>
@@ -214,8 +214,8 @@
             <summary>
             Appends text to the current text of status view.
             </summary>
-            <param name="text">text to add</param>
-            <param name="color">color of the text</param>
+            <param name="text">text to add.</param>
+            <param name="color">color of the text.</param>
         </member>
         <member name="M:Tethys.Logging.Controls.RtfLogView.AddLogEvent(Tethys.Logging.ILogEvent)">
             <summary>
@@ -232,8 +232,8 @@
             <summary>
             Appends text to the current text of status view.
             </summary>
-            <param name="text">text to add</param>
-            <param name="color">color of the text</param>
+            <param name="text">text to add.</param>
+            <param name="color">color of the text.</param>
         </member>
         <member name="F:Tethys.Logging.Controls.RtfLogView.components">
             <summary> 
@@ -483,8 +483,8 @@
             Returns the index in the image list of the image for
             this log event level.
             </summary>
-            <param name="eventLevel">log event level</param>
-            <returns>index of the image for this level</returns>
+            <param name="eventLevel">log event level.</param>
+            <returns>index of the image for this level.</returns>
         </member>
         <member name="M:Tethys.Logging.Controls.TableLogView.InitControl">
             <summary>

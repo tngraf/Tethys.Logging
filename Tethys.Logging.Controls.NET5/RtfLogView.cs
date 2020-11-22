@@ -44,7 +44,7 @@ namespace Tethys.Logging.Controls
 
         /// <summary>
         /// Delegate to be used in case of callbacks coming from
-        /// other threads
+        /// other threads.
         /// </summary>
         /// <param name="text">The text.</param>
         /// <param name="color">The color.</param>
@@ -437,8 +437,8 @@ namespace Tethys.Logging.Controls
         /// <summary>
         /// Appends text to the current text of status view.
         /// </summary>
-        /// <param name="text">text to add</param>
-        /// <param name="color">color of the text</param>
+        /// <param name="text">text to add.</param>
+        /// <param name="color">color of the text.</param>
         private void AppendTextInternal(string text, Color color)
         {
             this.CheckForMaxSize();
@@ -510,8 +510,8 @@ namespace Tethys.Logging.Controls
         /// <summary>
         /// Appends text to the current text of status view.
         /// </summary>
-        /// <param name="text">text to add</param>
-        /// <param name="color">color of the text</param>
+        /// <param name="text">text to add.</param>
+        /// <param name="color">color of the text.</param>
         public void AppendText(string text, Color color)
         {
             if (this.IsDisposed ||
