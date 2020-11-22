@@ -27,6 +27,11 @@ nuget pack Tethys.Logging.Controls.Wpf.nuspec -properties $all
 move Tethys.Logging.*.nupkg ..\export\packages -force
 cd ..
 
+cd Tethys.Logging.Controls.Wpf.NET5
+nuget pack Tethys.Logging.Controls.Wpf.NET5.nuspec -properties $all
+move Tethys.Logging.*.nupkg ..\export\packages -force
+cd ..
+
 cd Tethys.Logging.Common.Logging
 nuget pack Tethys.Logging.Common.Logging.nuspec -properties $all
 move Tethys.Logging.*.nupkg ..\export\packages -force
