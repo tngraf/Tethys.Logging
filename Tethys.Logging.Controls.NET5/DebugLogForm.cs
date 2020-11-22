@@ -2,7 +2,7 @@
 // Tethys.Logging.Controls
 // ==========================================================================
 //
-// A logging library for .NET Framework 4.
+// A logging library for .NET Framework 4.5+ and .NET Core.
 //
 // ===========================================================================
 //
@@ -16,11 +16,9 @@
 //            either express or implied.
 // </copyright>
 //
-// System ... Microsoft .Net Framework 4
-// Tools .... Microsoft Visual Studio 2013
-//
 // ---------------------------------------------------------------------------
 
+// ReSharper disable once CheckNamespace
 namespace Tethys.Logging.Controls
 {
     using System;

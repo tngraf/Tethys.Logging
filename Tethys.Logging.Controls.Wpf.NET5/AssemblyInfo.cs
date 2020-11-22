@@ -1,13 +1,13 @@
 // --------------------------------------------------------------------------
-// Tethys.Logging
+// Tethys.Logging.Controls.WPF
 // ==========================================================================
 //
 // A logging library for .NET Framework 4.5+ and .NET Core.
 //
 // ===========================================================================
 //
-// <copyright file="Program.cs" company="Tethys">
-// Copyright  2020 by Thomas Graf
+// <copyright file="AssemblyInfo.cs" company="Tethys">
+// Copyright  2009-2015 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
 //            Unless required by applicable law or agreed to in writing,
@@ -18,26 +18,14 @@
 //
 // ---------------------------------------------------------------------------
 
-namespace TestApp.WindowsForms.NET5
-{
-    using System;
-    using System.Windows.Forms;
+using System.Windows;
 
-    /// <summary>
-    /// Main program class.
-    /// </summary>
-    public static class Program
-    {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        public static void Main()
-        {
-            Application.SetHighDpiMode(HighDpiMode.SystemAware);
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
-        } // Main()
-    } // Program
-}
+[assembly: ThemeInfo(
+    ResourceDictionaryLocation.None,
+    // where theme specific resource dictionaries are located
+    // (used if a resource is not found in the page,
+    // or application resource dictionaries)
+    ResourceDictionaryLocation.SourceAssembly)]
+// where the generic resource dictionary is located
+// (used if a resource is not found in the page,
+// app, or any theme specific resource dictionaries)

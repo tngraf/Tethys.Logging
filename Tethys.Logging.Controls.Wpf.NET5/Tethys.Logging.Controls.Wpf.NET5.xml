@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tethys.Logging.Controls.Wpf.NET5</name>
+    </assembly>
+    <members>
+        <member name="T:Tethys.Logging.Controls.Wpf.DebugLogWindow">
+            <summary>
+            Interaction logic for the debug log window.
+            </summary>
+            <summary>
+            DebugLogWindow
+            </summary>
+        </member>
+        <member name="E:Tethys.Logging.Controls.Wpf.DebugLogWindow.Hiding">
+            <summary>
+            Hiding event.
+            </summary>
+        </member>
+        <member name="P:Tethys.Logging.Controls.Wpf.DebugLogWindow.RtfLogView">
+            <summary>
+            Gets the underlying RtfLogView control.
+            </summary>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.DebugLogWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tethys.Logging.Controls.Wpf.DebugLogWindow"/> class.
+            </summary>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.DebugLogWindow.OnWindowClosing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Handles the Closing event of the Window control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.ComponentModel.CancelEventArgs"/>
+            instance containing the event data.</param>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.DebugLogWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Tethys.Logging.Controls.Wpf.RtfLogView">
+            <summary>
+            Interaction logic for the Rtf log view.
+            </summary>
+            <summary>
+            RtfLogView
+            </summary>
+        </member>
+        <member name="F:Tethys.Logging.Controls.Wpf.RtfLogView.MaxLogLengthChunk">
+            <summary>
+            The maximum chunk length.
+            </summary>
+        </member>
+        <member name="F:Tethys.Logging.Controls.Wpf.RtfLogView.ShowToolButtonsProperty">
+            <summary>
+            Dependency property for ShowToolButtons.
+            </summary>
+        </member>
+        <member name="P:Tethys.Logging.Controls.Wpf.RtfLogView.ShowToolButtons">
+            <summary>
+            Gets or sets a value indicating whether to show the tool buttons.
+            </summary>
+            <value><c>true</c> if tool buttons are shown; otherwise,
+            <c>false</c>.</value>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.OnShowToolButtonsChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the <see cref="F:Tethys.Logging.Controls.Wpf.RtfLogView.ShowToolButtonsProperty"/> property has
+            been changed.
+            </summary>
+            <param name="dependencyObject">The dependency object.</param>
+            <param name="args">The
+            <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/>
+            instance containing the event data.</param>
+        </member>
+        <member name="F:Tethys.Logging.Controls.Wpf.RtfLogView.AddAtTailProperty">
+            <summary>
+            Dependency property for <c>AddAtTail</c>.
+            </summary>
+        </member>
+        <member name="P:Tethys.Logging.Controls.Wpf.RtfLogView.AddAtTail">
+            <summary>
+            Gets or sets a value indicating whether to add new event at the end.
+            </summary>
+        </member>
+        <member name="F:Tethys.Logging.Controls.Wpf.RtfLogView.LabelTextProperty">
+            <summary>
+            Dependency property for <c>LabelText</c>.
+            </summary>
+        </member>
+        <member name="P:Tethys.Logging.Controls.Wpf.RtfLogView.LabelText">
+            <summary>
+            Gets or sets the label text.
+            </summary>
+        </member>
+        <member name="F:Tethys.Logging.Controls.Wpf.RtfLogView.MaxLogLengthProperty">
+            <summary>
+            Dependency property for <c>MaxLogLength</c>.
+            </summary>
+        </member>
+        <member name="P:Tethys.Logging.Controls.Wpf.RtfLogView.MaxLogLength">
+            <summary>
+            Gets or sets the maximum log length.
+            </summary>
+        </member>
+        <member name="F:Tethys.Logging.Controls.Wpf.RtfLogView.ShowDebugCheckBoxProperty">
+            <summary>
+            Dependency property for <c>ShowDebugCheckBox</c>.
+            </summary>
+        </member>
+        <member name="P:Tethys.Logging.Controls.Wpf.RtfLogView.ShowDebugCheckBox">
+            <summary>
+            Gets or sets a value indicating whether to show the 'show debug'
+            check box.
+            </summary>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.OnShowDebugCheckBoxChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the <see cref="F:Tethys.Logging.Controls.Wpf.RtfLogView.ShowDebugCheckBoxProperty"/> property has
+            been changed.
+            </summary>
+            <param name="dependencyObject">The dependency object.</param>
+            <param name="args">The
+            <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/>
+            instance containing the event data.</param>
+        </member>
+        <member name="F:Tethys.Logging.Controls.Wpf.RtfLogView.ShowDebugEventsProperty">
+            <summary>
+            Dependency property for <c>ShowDebugEvents</c>.
+            </summary>
+        </member>
+        <member name="P:Tethys.Logging.Controls.Wpf.RtfLogView.ShowDebugEvents">
+            <summary>
+            Gets or sets a value indicating whether to show debug events.
+            </summary>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.OnShowDebugEventsChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the <see cref="F:Tethys.Logging.Controls.Wpf.RtfLogView.ShowDebugEventsProperty"/> property has
+            been changed.
+            </summary>
+            <param name="dependencyObject">The dependency object.</param>
+            <param name="args">The
+            <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/>
+            instance containing the event data.</param>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tethys.Logging.Controls.Wpf.RtfLogView"/> class.
+            </summary>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.UserControlLoaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Loaded event of the UserControl control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/>
+            instance containing the event data.</param>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.BtnSaveClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the 'save button' control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/>
+            instance containing the event data.</param>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.BtnCopyClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the 'copy button' control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/>
+            instance containing the event data.</param>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.BtnClearClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the 'clear button' control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/>
+            instance containing the event data.</param>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.AddLogEvent(Tethys.Logging.ILogEvent)">
+            <summary>
+            Adds a log event.
+            </summary>
+            <param name="logEvent">The log event.</param>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.AddLogEventInternal(Tethys.Logging.ILogEvent)">
+            <summary>
+            Adds a log event.
+            </summary>
+            <param name="logEvent">The log event.</param>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.Clear">
+            <summary>
+            Clears the status view.
+            </summary>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.GetText">
+            <summary>
+            Gets the text.
+            </summary>
+            <returns>The text.</returns>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.AppendText(System.String,System.Windows.Media.Brush)">
+            <summary>
+            Appends text to the current text of status view.
+            </summary>
+            <param name="text">text to add.</param>
+            <param name="color">color of the text.</param>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.CopyToClipboard">
+            <summary>
+            Copies the contents of the event log to the clipboard.
+            </summary>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.SaveToTextFile">
+            <summary>
+            Saves the contents of the event log to a text file.
+            </summary>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.WriteTextFile(System.String)">
+            <summary>
+            Write the log window contents to a plain text file.
+            </summary>
+            <param name="fileName">Name of the file to write to.</param>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.WriteRichTextFile(System.String)">
+            <summary>
+            Write the log window contents to a RTF file.
+            </summary>
+            <param name="fileName">Name of the file to write to.</param>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.CheckForMaxSize">
+            <summary>
+            Checks for the maximum text display size.
+            </summary>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.AppendTextInternal(System.String,System.Windows.Media.Brush)">
+            <summary>
+            Appends text to the current text of status view.
+            </summary>
+            <param name="text">text to add.</param>
+            <param name="color">color of the text.</param>
+        </member>
+        <member name="M:Tethys.Logging.Controls.Wpf.RtfLogView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

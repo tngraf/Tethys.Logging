@@ -2,7 +2,7 @@
 // Tethys.Logging.Controls
 // ==========================================================================
 //
-// A logging library for .NET Framework 4.
+// A logging library for .NET Framework 4.5+ and .NET Core.
 //
 // ===========================================================================
 //
@@ -15,9 +15,6 @@
 //            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
 //            either express or implied.
 // </copyright>
-//
-// System ... Microsoft .Net Framework 4
-// Tools .... Microsoft Visual Studio 2013
 //
 // ---------------------------------------------------------------------------
 

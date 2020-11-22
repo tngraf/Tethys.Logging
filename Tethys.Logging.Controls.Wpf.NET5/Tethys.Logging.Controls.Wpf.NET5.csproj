@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1;net5.0-windows</TargetFrameworks>
+    <UseWPF>true</UseWPF>
+    <AssemblyOriginatorKeyFile>..\Tethys.Logging\TethysLibKey.snk</AssemblyOriginatorKeyFile>
+    <CodeAnalysisRuleSet>..\Tethys.Logging.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>E:\PROG\My_OSS\GitHub\Tethys.Logging\Tethys.Logging.Controls.Wpf.NET5\Tethys.Logging.Controls.Wpf.NET5.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\ClearAll_modern.png" />
+    <None Remove="Resources\Copy.png" />
+    <None Remove="Resources\DeleteHS.png" />
+    <None Remove="Resources\Save.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tethys.Logging\Tethys.Logging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\ClearAll_modern.png" />
+    <Resource Include="Resources\Copy.png" />
+    <Resource Include="Resources\DeleteHS.png" />
+    <Resource Include="Resources\Save.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DebugLogWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="RtfLogView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+</Project>

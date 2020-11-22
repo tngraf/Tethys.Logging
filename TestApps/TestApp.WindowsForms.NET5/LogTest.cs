@@ -2,7 +2,8 @@
 // Tethys.Logging
 // ==========================================================================
 //
-// A logging library for .NET Framework 4.5 and .NET Core.
+// A logging library for .NET Framework 4.5+ and .NET Core.
+//
 // ===========================================================================
 //
 // <copyright file="LogTest.cs" company="Tethys">
@@ -15,8 +16,8 @@
 //            either express or implied.
 // </copyright>
 //
-// System ... Portable Library
-// Tools .... Microsoft Visual Studio 2013
+// System ... .NET 5.0
+// Tools .... Microsoft Visual Studio 2019
 //
 // ---------------------------------------------------------------------------
 

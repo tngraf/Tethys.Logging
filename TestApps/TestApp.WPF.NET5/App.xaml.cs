@@ -1,4 +1,4 @@
-// --------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------
 // Tethys.Logging
 // ==========================================================================
 //
@@ -6,8 +6,8 @@
 //
 // ===========================================================================
 //
-// <copyright file="Program.cs" company="Tethys">
-// Copyright  2020 by Thomas Graf
+// <copyright file="App.xaml.cs" company="Tethys">
+// Copyright  2009-2020 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
 //            Unless required by applicable law or agreed to in writing,
@@ -18,26 +18,14 @@
 //
 // ---------------------------------------------------------------------------
 
-namespace TestApp.WindowsForms.NET5
+namespace TestApp.WPF.NET5
 {
-    using System;
-    using System.Windows.Forms;
+    using System.Windows;
 
     /// <summary>
-    /// Main program class.
+    /// Interaction logic for App.xaml.
     /// </summary>
-    public static class Program
+    public partial class App : Application
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        public static void Main()
-        {
-            Application.SetHighDpiMode(HighDpiMode.SystemAware);
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
-        } // Main()
-    } // Program
+    }
 }
