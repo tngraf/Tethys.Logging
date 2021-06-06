@@ -1,4 +1,4 @@
-﻿namespace TestApp.Log4Net208
+﻿namespace TestApp.Log4Net212
 {
   partial class MainForm
   {

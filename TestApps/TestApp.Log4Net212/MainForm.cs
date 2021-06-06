@@ -9,7 +9,7 @@
 // ===========================================================================
 //
 // <copyright file="MainForm.cs" company="Tethys">
-// Copyright  2009-2015 by Thomas Graf
+// Copyright  2009-2021 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
 //            Unless required by applicable law or agreed to in writing, 
@@ -19,24 +19,22 @@
 // </copyright>
 //
 // System ... Portable Library
-// Tools .... Microsoft Visual Studio 2013
+// Tools .... Microsoft Visual Studio 2019
 //
 // ---------------------------------------------------------------------------
 #endregion
 
-namespace TestApp.Log4Net208
+namespace TestApp.Log4Net212
 {
     using System;
     using System.Diagnostics;
     using System.Globalization;
     using System.Threading;
     using System.Windows.Forms;
-
     using log4net;
     using log4net.Config;
     using log4net.Core;
     using log4net.Layout;
-
     using Tethys.Logging.Controls;
     using Tethys.Logging.Log4Net;
 
