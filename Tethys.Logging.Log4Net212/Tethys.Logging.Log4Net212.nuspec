@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Tethys.Logging.Log4Net208</id>
+    <id>Tethys.Logging.Log4Net212</id>
     <version>$version$</version>
-    <title>Tethys.Logging.Log4Net208</title>
+    <title>Tethys.Logging.Log4Net212</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
     <copyright>$copyright$</copyright>
@@ -12,21 +12,21 @@
     <projectUrl>https://github.com/tngraf/Tethys.Logging/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Simple logging and enhancements for existing logging frameworks.</description>
-    <releaseNotes>Support for Log4Net 2.0.8</releaseNotes>
+    <releaseNotes>Support for Log4Net 2.0.12</releaseNotes>
     <language>en-US</language>
-    <tags>Tethys Logging Log4Net 2.0.8</tags>
+    <tags>Tethys Logging Log4Net 2.0.12</tags>
     <dependencies>
       <group targetFramework="net472">
         <dependency id="Tethys.Logging" version="$version$" />
-        <dependency id="log4net" version="2.0.8" />
+        <dependency id="log4net" version="2.0.12" />
       </group>
     </dependencies>
   </metadata>
   <files>
     <file src="..\tethys_icon.png" target="." />
 
-    <file src="bin\Release\Tethys.Logging.Log4Net208.dll" target="lib\net472" />
-    <file src="bin\Release\Tethys.Logging.Log4Net208.xml" target="lib\net472" />
-    <file src="bin\Release\Tethys.Logging.Log4Net208.pdb" target="lib\net472" />
+    <file src="bin\Release\Tethys.Logging.Log4Net212.dll" target="lib\net472" />
+    <file src="bin\Release\Tethys.Logging.Log4Net212.xml" target="lib\net472" />
+    <file src="bin\Release\Tethys.Logging.Log4Net212.pdb" target="lib\net472" />
   </files>
 </package>

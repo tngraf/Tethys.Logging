@@ -1,5 +1,8 @@
 # Tethys.Logging Change Log
 
+## V1.6.1 (2021-06-06) ##
+* log4net 2.0.8 replaced by 2.0.12 due to security vulnerabilities.
+
 ## V1.6.0 (2020-11-22) ##
 * Support for .NET Core 3.1 and .NET 5: Tethys.Logging.Controls.NET5 (WinForms)
 * Support for .NET Core 3.1 and .NET 5: Tethys.Logging.Controls.Wpf.NET5 (WPF)

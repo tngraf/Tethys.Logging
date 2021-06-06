@@ -59,11 +59,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tethys.Logging.Common.Loggi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp.Common.Logging341", "TestApps\TestApp.Common.Logging341\TestApp.Common.Logging341.csproj", "{39A223EB-EDAD-47A1-98AF-BF3CA6D182A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tethys.Logging.Log4Net208", "Tethys.Logging.Log4Net208\Tethys.Logging.Log4Net208.csproj", "{A4398F05-B03D-4FC0-BE4B-3439F062B254}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tethys.Logging.Log4Net212", "Tethys.Logging.Log4Net212\Tethys.Logging.Log4Net212.csproj", "{A4398F05-B03D-4FC0-BE4B-3439F062B254}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tethys.Logging.NLog4412", "Tethys.Logging.NLog4412\Tethys.Logging.NLog4412.csproj", "{3D6AEC3B-210C-4C08-B62D-78E89DFAD2D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp.log4net208", "TestApps\TestApp.Log4Net208\TestApp.log4net208.csproj", "{5BF2C025-CCB3-4EF4-AC60-3892F3106810}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp.log4net212", "TestApps\TestApp.Log4Net212\TestApp.log4net212.csproj", "{5BF2C025-CCB3-4EF4-AC60-3892F3106810}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp.NLog4412", "TestApps\TestApp.NLog4412\TestApp.NLog4412.csproj", "{1D5BF38F-5854-47A7-A91A-530D329F18EE}"
 EndProject

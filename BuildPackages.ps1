@@ -3,8 +3,8 @@
 # =======================================
 
 # global version
-$version = "1.6.0"
-$copyright = "Copyright (C) 2009-2020 T. Graf"
+$version = "1.6.1"
+$copyright = "Copyright (C) 2009-2021 T. Graf"
 $all = "version=" + $version + ";copyright=" + $copyright
 
 cd Tethys.Logging
@@ -52,8 +52,8 @@ nuget pack Tethys.Logging.Log4net.nuspec -properties $all
 move Tethys.Logging.*.nupkg ..\export\packages -force
 cd ..
 
-cd Tethys.Logging.Log4net208
-nuget pack Tethys.Logging.Log4net208.nuspec -properties $all
+cd Tethys.Logging.Log4net212
+nuget pack Tethys.Logging.Log4net212.nuspec -properties $all
 move Tethys.Logging.*.nupkg ..\export\packages -force
 cd ..
 

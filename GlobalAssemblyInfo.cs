@@ -2,13 +2,13 @@
 // Tethys.Logging
 // ==========================================================================
 //
-// A (portable) logging library for .NET Framework 4.7.2, Silverlight 4
+// A (portable) logging library for .NET Framework, .NET Core, Silverlight 4
 // and higher.
 //
 // ===========================================================================
 //
 // <copyright file="GlobalAssemblyInfo.cs" company="Tethys">
-// Copyright  2009-2020 by Thomas Graf
+// Copyright  2009-2021 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
 //            Unless required by applicable law or agreed to in writing,
@@ -30,15 +30,15 @@ using System.Reflection;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyCompany("Tethys")]
-[assembly: AssemblyCopyright("Copyright © 2009-2020 T. Graf")]
+[assembly: AssemblyCopyright("Copyright © 2009-2021 T. Graf")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Version information
-[assembly: AssemblyVersion("1.6.0.0")]
-[assembly: AssemblyFileVersion("1.6.0.0")]
+[assembly: AssemblyVersion("1.6.1.0")]
+[assembly: AssemblyFileVersion("1.6.1.0")]
 
 // AssemblyInformationalVersionAttribute is used for NuGet
-[assembly: AssemblyInformationalVersionAttribute("1.6.0")]
+[assembly: AssemblyInformationalVersionAttribute("1.6.1")]
 
 // =================================

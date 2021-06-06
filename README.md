@@ -25,7 +25,7 @@ Most of the enhancements target the simple display of log message. Yes, you coul
 * **Tethys.Logging.Controls.Wpf** - Logging controls for WPF (.NET Framework 4.72+)
 * **Tethys.Logging.Controls.Wpf.NET5** - Logging controls for WPF (.NET Core 3.1 and .NET 5)
 * **Tethys.Logging.Log4Net** - Adapter for log4net 1.2.10 (.NET Framework 4.72+, log4net 1.2.11).
-* **Tethys.Logging.Log4Net208** - Adapter for log4net 2.0.8 (.NET Framework 4.72+, log4net 2.0.8).
+* **Tethys.Logging.Log4Net212** - Adapter for log4net 2.0.8 (.NET Framework 4.72+, log4net 2.0.12).
 * **Tethys.Logging.NLog** - Adapter for NLog (.NET Framework 4.72+, NLog 2.0).
 * **Tethys.Logging.NLog310** - Adapter for NLog (.NET Framework 4.72+, NLog 3.1.0).
 * **Tethys.Logging.NLog4412** - Adapter for NLog (.NET Framework 4.72+, NLog 4.4.12).
@@ -46,7 +46,7 @@ Most of the enhancements target the simple display of log message. Yes, you coul
 * **[https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf/](https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf.NET5/](https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf.NET5/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Log4Net/](https://www.nuget.org/packages/Tethys.Logging.Log4Net/)**
-* **[https://www.nuget.org/packages/Tethys.Logging.Log4Net208/](https://www.nuget.org/packages/Tethys.Logging.Log4Net208/)**
+* **[https://www.nuget.org/packages/Tethys.Logging.Log4Net212/](https://www.nuget.org/packages/Tethys.Logging.Log4Net212/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.NLog/](https://www.nuget.org/packages/Tethys.Logging.NLog/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.NLog310/](https://www.nuget.org/packages/Tethys.Logging.NLog310/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.NLog4412/](https://www.nuget.org/packages/Tethys.Logging.NLog4412/)**
@@ -59,7 +59,7 @@ Most of the enhancements target the simple display of log message. Yes, you coul
 * TestApp.Common.Logging341 - .NET Client Framework 4, WinForms, Common.Logging 3.4.1. 
 * TestApp.Common.Logging.NLog - .NET Client Framework 4, WinForms, Common.Logging, NLog.
 * TestApp.log4net - .NET Framework 4, WinForms, log4net.
-* TestApp.log4net208 - .NET Framework 4, WinForms, log4net 2.0.8.
+* TestApp.log4net212 - .NET Framework 4, WinForms, log4net 2.0.12.
 * TestApp.NLog - .NET Client Framework 4, WinForms, NLog.
 * TestApp.NLog310 - .NET Client Framework 4, WinForms, NLog 3.1.0.
 * TestApp.NLog4412 - .NET Client Framework 4, WinForms, NLog 4.4.12.
@@ -75,7 +75,7 @@ applications, see Overview.txt for details.
 
 License
 -------
-Copyright 2009-2020 T. Graf
+Copyright 2009-2021 T. Graf
 
 Licensed under the **Apache License, Version 2.0** (the "License");
 you may not use this file except in compliance with the License.

@@ -8,8 +8,8 @@
     <ProjectGuid>{5BF2C025-CCB3-4EF4-AC60-3892F3106810}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestApp.Log4Net208</RootNamespace>
-    <AssemblyName>TestApp.Log4Net208</AssemblyName>
+    <RootNamespace>TestApp.Log4Net212</RootNamespace>
+    <AssemblyName>TestApp.Log4Net212</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
@@ -63,11 +63,13 @@
     <AssemblyOriginatorKeyFile>..\..\Tethys.Logging\TethysLibKey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\log4net.2.0.8\lib\net40-full\log4net.dll</HintPath>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>C:\home\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
@@ -138,7 +140,7 @@
       <Project>{a7304531-0144-48f9-ac6a-057f7ca00dd5}</Project>
       <Name>Tethys.Logging.Controls</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Tethys.Logging.Log4Net208\Tethys.Logging.Log4Net208.csproj">
+    <ProjectReference Include="..\..\Tethys.Logging.Log4Net212\Tethys.Logging.Log4Net212.csproj">
       <Project>{a4398f05-b03d-4fc0-be4b-3439f062b254}</Project>
       <Name>Tethys.Logging.Log4Net208</Name>
     </ProjectReference>
