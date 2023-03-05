@@ -1,6 +1,8 @@
-# =======================================
+# =============================================
 # Build NuGet Packages for Tethys.Logging
-# =======================================
+# SPDX-FileCopyrightText: (c) 2022-2023 T. Graf
+# SPDX-License-Identifier: Apache-2.0
+# =============================================
 
 # global version
 $version = "1.6.1"

@@ -1,23 +1,16 @@
-﻿// --------------------------------------------------------------------------
-// Tethys.Logging
-// ==========================================================================
-//
-// A (portable) logging library for .NET Framework, .NET Core, Silverlight 4
-// and higher.
-//
-// ===========================================================================
-//
+﻿// -------------------------------------------------------------------------------
 // <copyright file="GlobalAssemblyInfo.cs" company="Tethys">
-// Copyright  2009-2021 by Thomas Graf
-//            All rights reserved.
-//            Licensed under the Apache License, Version 2.0.
-//            Unless required by applicable law or agreed to in writing,
-//            software distributed under the License is distributed on an
-//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-//            either express or implied.
+//   Copyright (C) 2009-2023 Thomas Graf
+//   All Rights Reserved.
 // </copyright>
 //
-// ---------------------------------------------------------------------------
+// Licensed under the Apache License, Version 2.0.
+// Unless required by applicable law or agreed to in writing,
+// software distributed under the License is distributed on an
+// "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+// either express or implied.
+// SPDX-License-Identifier: Apache-2.0
+// -------------------------------------------------------------------------------
 
 /* ---------------------------------------------------------------------------
  * Main goal of the Tethy.Logging library is to provide a platform

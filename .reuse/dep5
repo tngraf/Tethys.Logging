@@ -1,0 +1,36 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Tethys.Logging
+Upstream-Contact: T. Graf
+Source: https://github.com/tngraf/Tethys.Logging
+
+Files: .gitignore README.md
+Copyright: 2009-2023 T. Graf
+License: Apache-2.0
+
+Files: Tethys.Logging.Controls.Wpf/*
+Copyright: 2009-2023 T. Graf
+License: Apache-2.0
+
+Files: Tethys.Logging.Controls.Wpf.NET5/*
+Copyright: 2009-2023 T. Graf
+License: Apache-2.0
+
+Files: Tethys.Logging.Controls.Wpf.NET5/Resources/*
+Copyright: 2009-2023 T. Graf
+License: Apache-2.0
+
+Files: Tethys.Logging.Controls/*
+Copyright: 2009-2023 T. Graf
+License: Apache-2.0
+
+Files: Tethys.Logging.Controls.NET5/*
+Copyright: 2009-2023 T. Graf
+License: Apache-2.0
+
+Files: Tethys.Logging.Controls.NET5/Resources*
+Copyright: 2009-2023 T. Graf
+License: Apache-2.0
+
+Files: import/Log4Net-1.2.11/*
+Copyright: 2004-2011 The Apache Software Foundation
+License: Apache-2.0

@@ -1,4 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+SPDX-FileCopyrightText: (c) 2022-2023 T. Graf
+SPDX-License-Identifier: Apache-2.0
+-->
 <FxCopProject Version="10.0" Name="Tethys.Logging.Main">
  <ProjectOptions>
   <SharedProject>True</SharedProject>

@@ -1,10 +1,15 @@
+<!-- 
+SPDX-FileCopyrightText: (c) 2022-2023 T. Graf
+SPDX-License-Identifier: Apache-2.0
+-->
+
 <Project>
   <PropertyGroup>
     <Version>1.6.1</Version>
     <FileVersion>1.6.1.0</FileVersion>
     <Product>Tethys.Logging</Product>
     <Company></Company>
-    <Copyright>Copyright © 2009-2021 T. Graf</Copyright>
+    <Copyright>Copyright © 2009-2023 T. Graf</Copyright>
     <Authors>T. Graf</Authors>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>

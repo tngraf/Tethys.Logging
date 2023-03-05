@@ -1,4 +1,9 @@
-﻿<Window
+﻿<!-- 
+SPDX-FileCopyrightText: (c) 2022-2023 T. Graf
+SPDX-License-Identifier: Apache-2.0
+-->
+
+<Window
     x:Class="TestApp.WPF.NET5.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"

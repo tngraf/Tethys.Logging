@@ -6,6 +6,8 @@
 //     Changes to this file may cause incorrect behavior and will be lost if
 //     the code is regenerated.
 // </auto-generated>
+// SPDX-FileCopyrightText: (c) 2009-2023 T. Graf
+// SPDX-License-Identifier: Apache-2.0
 //------------------------------------------------------------------------------
 
 namespace TestApp.WindowsForms.Properties {
