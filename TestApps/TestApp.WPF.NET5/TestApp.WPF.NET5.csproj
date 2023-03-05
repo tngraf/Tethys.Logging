@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <AssemblyOriginatorKeyFile>..\Tethys.Logging\TethysLibKey.snk</AssemblyOriginatorKeyFile>
     <CodeAnalysisRuleSet>..\..\Tethys.Logging.ruleset</CodeAnalysisRuleSet>

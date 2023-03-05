@@ -5,6 +5,10 @@ SPDX-License-Identifier: Apache-2.0
 
 # Tethys.Logging Change Log
 
+## NEXT
+
+* Dropped support for .NET 5, added support for .NET 6.
+
 ## V1.6.1 (2021-06-06)
 
 * log4net 2.0.8 replaced by 2.0.12 due to security vulnerabilities.

@@ -20,7 +20,7 @@ SPDX-License-Identifier: Apache-2.0
     <language>en-US</language>
     <tags>Tethys Logging WPF</tags>
     <dependencies>
-      <group targetFramework="net5.0-windows">
+      <group targetFramework="net6.0-windows">
         <dependency id="Tethys.Logging" version="$version$" />
       </group>
       <group targetFramework="netcoreapp3.1">
@@ -31,9 +31,9 @@ SPDX-License-Identifier: Apache-2.0
   <files>
     <file src="..\tethys_icon.png" target="." />
 
-    <file src="bin\Release\net5.0-windows\Tethys.Logging.Controls.Wpf.NET5.dll" target="lib\net5.0-windows" />
-    <file src="bin\Release\net5.0-windows\Tethys.Logging.Controls.Wpf.NET5.xml" target="lib\net5.0-windows" />
-    <file src="bin\Release\net5.0-windows\Tethys.Logging.Controls.Wpf.NET5.pdb" target="lib\net5.0-windows" />
+    <file src="bin\Release\net6.0-windows\Tethys.Logging.Controls.Wpf.NET5.dll" target="lib\net6.0-windows" />
+    <file src="bin\Release\net6.0-windows\Tethys.Logging.Controls.Wpf.NET5.xml" target="lib\net6.0-windows" />
+    <file src="bin\Release\net6.0-windows\Tethys.Logging.Controls.Wpf.NET5.pdb" target="lib\net6.0-windows" />
     <file src="bin\Release\netcoreapp3.1\Tethys.Logging.Controls.Wpf.NET5.dll" target="lib\netcoreapp3.1" />
     <file src="bin\Release\netcoreapp3.1\Tethys.Logging.Controls.Wpf.NET5.xml" target="lib\netcoreapp3.1" />
     <file src="bin\Release\netcoreapp3.1\Tethys.Logging.Controls.Wpf.NET5.pdb" target="lib\netcoreapp3.1" />

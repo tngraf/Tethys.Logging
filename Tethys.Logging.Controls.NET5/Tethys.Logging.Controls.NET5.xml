@@ -525,6 +525,14 @@
             Checks for the maximum length.
             </summary>
         </member>
+        <member name="M:Tethys.Logging.Controls.TableLogView.Dispose(System.Boolean)">
+            <summary>
+            Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Control" />
+            and its child controls and optionally releases the managed resources.
+            </summary>
+            <param name="disposing"><see langword="true" /> to release both managed and
+            unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        </member>
         <member name="M:Tethys.Logging.Controls.TableLogView.AddLogEvent(Tethys.Logging.ILogEvent)">
             <summary>
             Adds a log event.
@@ -556,6 +564,11 @@
             Appends the specified event to the log view.
             </summary>
             <param name="logEvent">The log event.</param>
+        </member>
+        <member name="M:Tethys.Logging.Controls.TableLogView.Dispose">
+            <summary>
+            Releases all resources used by the <see cref="T:System.ComponentModel.Component" />.
+            </summary>
         </member>
         <member name="F:Tethys.Logging.Controls.TableLogView.components">
             <summary>
