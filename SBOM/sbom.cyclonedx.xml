@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" serialNumber="urn:uuid:4eea18d7-6201-40be-afce-dddc92b8c96e" version="1" xmlns="http://cyclonedx.org/schema/bom/1.4">
+  <metadata>
+    <tools>
+      <tool>
+        <vendor>CycloneDX</vendor>
+        <name>CycloneDX module for .NET</name>
+        <version>2.7.0.0</version>
+      </tool>
+    </tools>
+    <component type="application" bom-ref="Tethys.Logging@1.6.1">
+      <name>Tethys.Logging</name>
+      <version>1.6.1</version>
+    </component>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:nuget/Common.Logging@2.1.1">
+      <publisher>Aleksandar Seovic, Mark Pollack, Erich Eichinger, Stephen Bohlen</publisher>
+      <name>Common.Logging</name>
+      <version>2.1.1</version>
+      <description>Common.Logging library introduces a simple abstraction to allow you to select a specific logging implementation at runtime.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">1F5A236ED4274A5528A8DE4EB21CA9203ED94735CF0ED4B05DB431989BD251D8DA1A1C741513C1633BE3C94376F5514DF9BD921FF8C357ECDD41C0048BD5706B</hash>
+      </hashes>
+      <purl>pkg:nuget/Common.Logging@2.1.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://netcommon.sourceforge.net/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Common.Logging@2.3.1">
+      <publisher>Aleksandar Seovic, Mark Pollack, Erich Eichinger, Stephen Bohlen</publisher>
+      <name>Common.Logging</name>
+      <version>2.3.1</version>
+      <description>Common.Logging library introduces a simple abstraction to allow you to select a specific logging implementation at runtime.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">DD737AA6DDBEE09630CC18B0867EBB15E4627C35A8362E7DCDB6BD5297A297BF43919B29594CD3F464671809758D97826F64952FAB679B5B3EB0A188C42CE79D</hash>
+      </hashes>
+      <purl>pkg:nuget/Common.Logging@2.3.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://netcommon.sourceforge.net/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Common.Logging@3.4.1">
+      <publisher>Aleksandar Seovic, Mark Pollack, Erich Eichinger, Stephen Bohlen</publisher>
+      <name>Common.Logging</name>
+      <version>3.4.1</version>
+      <description>Common.Logging library introduces a simple abstraction to allow you to select a specific logging implementation at runtime.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">07B98EACB02200B71A743A0CCEE2B230461B75F2D4522C5E6556C142A9F5B743B2A25CFB2DA042E8EC95382D3DE12F177CEC71F9122661FEEBF4EE4D70B865BA</hash>
+      </hashes>
+      <purl>pkg:nuget/Common.Logging@3.4.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://net-commons.github.io/common-logging/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Common.Logging.Core@3.4.1">
+      <publisher>Aleksandar Seovic, Mark Pollack, Erich Eichinger, Stephen Bohlen</publisher>
+      <name>Common.Logging.Core</name>
+      <version>3.4.1</version>
+      <description>Common.Logging.Core contains the portable (PCL) implementation of the Common.Logging low-level abstractions common to all other Common.Logging packages.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">E85FDB602BC865E3C97FB59E0AA80C54263D9AFB8CE1594A63EC9946A6A5B0B75D3104AA1A9DA582CD32A3039B98D5253AC2BB4B1AD7FDC66B48B292CF04C443</hash>
+      </hashes>
+      <purl>pkg:nuget/Common.Logging.Core@3.4.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://net-commons.github.io/common-logging/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Common.Logging.NLog20@2.1.0">
+      <publisher>Aleksandar Seovic, Mark Pollack, Erich Eichinger, Stephen Bohlen</publisher>
+      <name>Common.Logging.NLog20</name>
+      <version>2.1.0</version>
+      <description>Common.Logging library bindings for NLog 2.0 logging framework.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">3F4DE0D194B0A3DD672B8ABF8452AD7EE4D3DFF0EA1D9193441019F4CE53D028EA2612E385EB8934CE1CBAC422AD2B29AFCAD49D82036953CA9421E97531E689</hash>
+      </hashes>
+      <purl>pkg:nuget/Common.Logging.NLog20@2.1.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://netcommon.sourceforge.net/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Common.Logging.NLog20@2.1.1">
+      <publisher>Aleksandar Seovic, Mark Pollack, Erich Eichinger, Stephen Bohlen</publisher>
+      <name>Common.Logging.NLog20</name>
+      <version>2.1.1</version>
+      <description>Common.Logging library bindings for NLog 2.0 logging framework.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">44FE761D3549FD6A23F773249B3E2E5E6B873B1C97FBCA225CB85BFC6D4931749F31009441ED3E92137EBD4DDDD48EFDE3F8EB1E8138A398A293D4C456D5DF15</hash>
+      </hashes>
+      <purl>pkg:nuget/Common.Logging.NLog20@2.1.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://netcommon.sourceforge.net/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/log4net@2.0.12">
+      <publisher>The Apache Software Foundation</publisher>
+      <name>log4net</name>
+      <version>2.0.12</version>
+      <description>log4net is a tool to help the programmer output log statements to a variety of output targets. In case of problems with an application, it is helpful to enable logging so that the problem can be located. With log4net it is possible to enable logging at runtime without modifying the application binary. The log4net package is designed so that log statements can remain in shipped code without incurring a high performance cost. It follows that the speed of logging (or rather not logging) is crucial.
+
+      At the same time, log output can be so voluminous that it quickly becomes overwhelming. One of the distinctive features of log4net is the notion of hierarchical loggers. Using these loggers it is possible to selectively control which log statements are output at arbitrary granularity.
+
+      log4net is designed with two distinct goals in mind: speed and flexibility</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">C1BD9C39842150741937966F8F6F747C804366665274E9DCEA7BBE683BC10F5EAC9F9F57AE1D642E02F9588CA4DC50EE9F659102DEA8EA15860750AF356100C9</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <copyright>Copyright 2004-2017 The Apache Software Foundation</copyright>
+      <purl>pkg:nuget/log4net@2.0.12</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://logging.apache.org/log4net/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/apache/logging-log4net</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.CSharp@4.0.1">
+      <publisher>Microsoft</publisher>
+      <name>Microsoft.CSharp</name>
+      <version>4.0.1</version>
+      <description>Provides support for compilation and code generation, including dynamic, using the C# language.
+
+Commonly Used Types:
+Microsoft.CSharp.RuntimeBinder.Binder
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException
+Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo
+Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags
+Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags
+ 
+When using NuGet 3.x this package requires at least version 3.4.</description>
+      <hashes>
+        <hash alg="SHA-512">C0E75A9162F28BA4C4572C8FAC4FD4C8C97D6D3505A37683646BA5F7E5F6AC0DA69D5200D2646054DE90E8E08F893A10E514591B69B8273640842B2CF90BDDEC</hash>
+      </hashes>
+      <copyright>© Microsoft Corporation.  All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.CSharp@4.0.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://dot.net/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.NETCore.Platforms@1.1.0">
+      <publisher>Microsoft</publisher>
+      <name>Microsoft.NETCore.Platforms</name>
+      <version>1.1.0</version>
+      <description>Provides runtime information required to resolve target framework, platform, and runtime specific implementations of .NETCore packages. 
+When using NuGet 3.x this package requires at least version 3.4.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">6BF892C274596FE2C7164E3D8503B24E187F64D0B7BEC6D9B05EB95F04086FCEB7A85EA6B2685D42DC465C52F6F0E6F636C0B3FDDAC48F6F0125DFD83E92D106</hash>
+      </hashes>
+      <copyright>© Microsoft Corporation.  All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.NETCore.Platforms@1.1.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://dot.net/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/NETStandard.Library@2.0.3">
+      <publisher>Microsoft</publisher>
+      <name>NETStandard.Library</name>
+      <version>2.0.3</version>
+      <description>A set of standard .NET APIs that are prescribed to be used and supported together. 
+18a36291e48808fa7ef2d00a764ceb1ec95645a5 
+When using NuGet 3.x this package requires at least version 3.4.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">B2DE3B3E8B19487AE3102763788CD941BCE2BD804916FE8FDA7BF8723DB2A5D236D380CEFAF67B979ADA18C897E1E5CC279DD17CE220FBFB380C7559E7836ED8</hash>
+      </hashes>
+      <copyright>.NET Foundation and Contributors</copyright>
+      <purl>pkg:nuget/NETStandard.Library@2.0.3</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://dot.net/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/NLog@2.0.0.2000">
+      <publisher>Jaroslaw Kowalski</publisher>
+      <name>NLog</name>
+      <version>2.0.0.2000</version>
+      <description>NLog - Advanced .NET and Silverlight Logging</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">EE7B60016D5A1FB42D25CBD68A8F394279A25046BCA9D8F4C5277A19A7F0B40F856C298EAE3EA6C474E503FEC2FD36321C6A4EDE08028E4B9C40BE3987D85085</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://github.com/jkowalski/NLog/blob/master/LICENSE.txt</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/NLog@2.0.0.2000</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://nlog-project.org/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/NLog@2.1.0">
+      <publisher>Kim Christensen</publisher>
+      <name>NLog</name>
+      <version>2.1.0</version>
+      <description>NLog - Advanced .NET and Silverlight Logging</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">386FC34C52B51D038B634043AFDB3BBD5CE6842F29640AFE8C8096EC17D05D794D9D4E5E8520297409DE52BF5B738EEADBCE24FC4BDA0022B877A32551FFB45A</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://github.com/NLog/NLog/blob/master/LICENSE.txt</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/NLog@2.1.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://github.com/NLog/NLog/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/NLog@3.1.0">
+      <publisher>Kim Christensen</publisher>
+      <name>NLog</name>
+      <version>3.1.0</version>
+      <description>NLog - Advanced .NET and Silverlight Logging</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">D9E41D8B6BC2AC42CADC7FD3BAA7CFAB1C365BD14F8E84DF3BBE214F21D564566954FC3C68014C2680708E8B53A6B4BD57ABDACB4606FD4364315B28FE494333</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://github.com/NLog/NLog/blob/master/LICENSE.txt</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/NLog@3.1.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://github.com/NLog/NLog/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/NLog@4.4.12">
+      <publisher>Kim Christensen,Julian Verdurmen</publisher>
+      <name>NLog</name>
+      <version>4.4.12</version>
+      <description>NLog - Advanced .NET and Silverlight Logging</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">AF2A32FCE8307B32A077E1B245B16AEF14BAFB30D6D4044D3CA729B6D78A4DA8065B12935DF279DD886AD9B8718C08F1B39871D2B5BB5959B91601A3CC4D0659</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://github.com/NLog/NLog/blob/master/LICENSE.txt</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/NLog@4.4.12</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://nlog-project.org/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Tethys.Logging@1.5.0">
+      <publisher>Thomas Graf</publisher>
+      <name>Tethys.Logging</name>
+      <version>1.5.0</version>
+      <description>Simple logging and enhancements for existing logging frameworks.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">05526EDA10400D13AD633B4DB24AA5193EAE91D5F5B72490B93C6AC40B426C184440A35EECCDD0B4F9C4167E84B09FE9A44E6453C049E7B8310A365684BF1E6A</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <copyright>Copyright (C) 2009-2020 T. Graf</copyright>
+      <purl>pkg:nuget/Tethys.Logging@1.5.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/tngraf/Tethys.Logging/</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <dependencies>
+    <dependency ref="pkg:nuget/Common.Logging.Core@3.4.1">
+      <dependency ref="pkg:nuget/Microsoft.CSharp@4.0.1" />
+    </dependency>
+    <dependency ref="pkg:nuget/Common.Logging.NLog20@2.1.0">
+      <dependency ref="pkg:nuget/Common.Logging@2.1.1" />
+      <dependency ref="pkg:nuget/NLog@2.0.0.2000" />
+    </dependency>
+    <dependency ref="pkg:nuget/Common.Logging.NLog20@2.1.1">
+      <dependency ref="pkg:nuget/Common.Logging@2.1.1" />
+      <dependency ref="pkg:nuget/NLog@2.0.0.2000" />
+    </dependency>
+    <dependency ref="pkg:nuget/Common.Logging@2.1.1" />
+    <dependency ref="pkg:nuget/Common.Logging@2.3.1" />
+    <dependency ref="pkg:nuget/Common.Logging@3.4.1">
+      <dependency ref="pkg:nuget/Common.Logging.Core@3.4.1" />
+    </dependency>
+    <dependency ref="pkg:nuget/log4net@2.0.12" />
+    <dependency ref="pkg:nuget/Microsoft.CSharp@4.0.1" />
+    <dependency ref="pkg:nuget/Microsoft.NETCore.Platforms@1.1.0" />
+    <dependency ref="pkg:nuget/NETStandard.Library@2.0.3">
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Platforms@1.1.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/NLog@2.0.0.2000" />
+    <dependency ref="pkg:nuget/NLog@2.1.0" />
+    <dependency ref="pkg:nuget/NLog@3.1.0" />
+    <dependency ref="pkg:nuget/NLog@4.4.12" />
+    <dependency ref="Tethys.Logging@1.6.1">
+      <dependency ref="pkg:nuget/Common.Logging@2.1.1" />
+      <dependency ref="pkg:nuget/NLog@2.0.0.2000" />
+      <dependency ref="pkg:nuget/Common.Logging.NLog20@2.1.0" />
+      <dependency ref="pkg:nuget/Common.Logging.NLog20@2.1.1" />
+      <dependency ref="pkg:nuget/NLog@2.1.0" />
+      <dependency ref="pkg:nuget/Common.Logging@2.3.1" />
+      <dependency ref="pkg:nuget/NLog@3.1.0" />
+      <dependency ref="pkg:nuget/Common.Logging@3.4.1" />
+      <dependency ref="pkg:nuget/log4net@2.0.12" />
+      <dependency ref="pkg:nuget/NLog@4.4.12" />
+    </dependency>
+  </dependencies>
+</bom>
