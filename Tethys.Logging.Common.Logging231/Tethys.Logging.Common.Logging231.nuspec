@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- 
-SPDX-FileCopyrightText: (c) 2009-2023 T. Graf
+SPDX-FileCopyrightText: (c) 2009-2024 T. Graf
 SPDX-License-Identifier: Apache-2.0
 -->
 <package >
@@ -16,7 +16,7 @@ SPDX-License-Identifier: Apache-2.0
     <projectUrl>https://github.com/tngraf/Tethys.Logging/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Simple logging and enhancements for existing logging frameworks.</description>
-    <releaseNotes>Suport for Common.Logging 2.3.1</releaseNotes>
+    <releaseNotes>Support for Common.Logging 2.3.1</releaseNotes>
     <language>en-US</language>
     <tags>Tethys Logging Common.Logging</tags>
     <dependencies>

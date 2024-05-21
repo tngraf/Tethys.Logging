@@ -29,7 +29,7 @@ namespace Tethys.Logging.Controls
     [ToolboxBitmap(typeof(RtfLogView), "RtfLogViewToolBoxBitmap")]
     public partial class RtfLogView : UserControl, ILogView
     {
-        // delegate to be used in case of callbacks comming from
+        // delegate to be used in case of callbacks coming from
         // other threads
 
         /// <summary>

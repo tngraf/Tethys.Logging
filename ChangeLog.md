@@ -93,7 +93,7 @@ SPDX-License-Identifier: Apache-2.0
 ## V0.7.x (2012-04-12)
 
 * Bugfix: When the check for the maximum size of the log output has been enabled, the clipboard is filled with log data every time the log exceeds this maximum size.
-* Bugfix: The NLog adapater now adds a CR\LF at the end of an expection text.
+* Bugfix: The NLog adapter now adds a CR\LF at the end of an exception text.
 * Improvement: The copy to clipboard functionality of RtfLogView now copies the text the same way to the clipboard as doing manually select all and copy.
 
 ## V0.6.x (2012-03-18)

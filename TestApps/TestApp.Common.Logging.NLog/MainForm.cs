@@ -69,7 +69,7 @@ namespace TestApplication.NLog
             // test for maximum log display
             this.rtfLogView.ShowDebugCheckBox = false;
 
-            // Note: without the folloing limitations, the system will after some
+            // Note: without the following limitations, the system will after some
             // time take ALL available time only to update the debug trace window
             // and the application will FREEZE!
             this.rtfLogView.MaxLogLength = 1000000; // 5000;
