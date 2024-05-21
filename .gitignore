@@ -187,3 +187,6 @@ FakesAssemblies/
 
 # Windows Image thumbnail database
 Thumbs.db
+
+# exclude internal stuff
+_internal_/
