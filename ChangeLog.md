@@ -5,9 +5,11 @@ SPDX-License-Identifier: Apache-2.0
 
 # Tethys.Logging Change Log
 
-## NEXT
+## V1.6.2 (2026-02-02)
 
 * Dropped support for .NET 5, added support for .NET 6.
+* Dropped support for .NET 6, added support for .NET 8.
+* 
 
 ## V1.6.1 (2021-06-06)
 

@@ -1,0 +1,39 @@
+﻿<!-- 
+SPDX-FileCopyrightText: (c) 2022-2026 T. Graf
+SPDX-License-Identifier: Apache-2.0
+-->
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0-windows7.0</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\Tethys.Logging\TethysLibKey.snk</AssemblyOriginatorKeyFile>
+    <CodeAnalysisRuleSet>..\Tethys.Logging.ruleset</CodeAnalysisRuleSet>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>E:\PROG\My_OSS\GitHub\Tethys.Logging\Tethys.Logging.Controls.NET8\Tethys.Logging.Controls.NET8.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tethys.Logging\Tethys.Logging.csproj" />
+  </ItemGroup>
+
+</Project>

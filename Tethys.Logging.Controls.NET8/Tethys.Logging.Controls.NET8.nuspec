@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!-- 
+SPDX-FileCopyrightText: (c) 2022-2026 T. Graf
+SPDX-License-Identifier: Apache-2.0
+-->
+<package >
+    <metadata>
+        <id>Tethys.Logging.Controls.NET8</id>
+        <version>$version$</version>
+        <title>Tethys.Logging.Controls.NET8</title>
+        <authors>Thomas Graf</authors>
+        <owners>Thomas Graf</owners>
+        <copyright>$copyright$</copyright>
+        <license type="expression">Apache-2.0</license>
+        <icon>tethys_icon.png</icon>
+        <projectUrl>https://github.com/tngraf/Tethys.Logging/</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Simple logging and enhancements for existing logging frameworks.</description>
+        <releaseNotes>WinForms controls for .NET 8 and later for Tethys.Logging.</releaseNotes>
+        <language>en-US</language>
+        <tags>Tethys Logging WinForms</tags>
+        <readme>README.md</readme>
+        <dependencies>
+            <group targetFramework="net8.0-windows7.0">
+                <dependency id="Tethys.Logging" version="$version$" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\tethys_icon.png" target="." />
+        <file src="..\README.md" target="." />
+
+        <file src="bin\Release\net8.0-windows7.0\Tethys.Logging.Controls.NET8.dll" target="lib\net8.0-windows7.0" />
+        <file src="bin\Release\net8.0-windows7.0\Tethys.Logging.Controls.NET8.xml" target="lib\net8.0-windows7.0" />
+        <file src="bin\Release\net8.0-windows7.0\Tethys.Logging.Controls.NET8.pdb" target="lib\net8.0-windows7.0" />
+    </files>
+</package>

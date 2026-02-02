@@ -1,9 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-# SPDX-FileCopyrightText: (c) 2022-2023 T. Graf
-# SPDX-License-Identifier: Apache-2.0
-VisualStudioVersion = 16.0.30711.63
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36811.4 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestApps", "TestApps", "{4138CC9D-07C2-441A-9B38-421BDDFD4A23}"
 EndProject
@@ -80,6 +78,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp.WPF.NET5", "TestApps\TestApp.WPF.NET5\TestApp.WPF.NET5.csproj", "{D5000DFC-8255-4B8E-8797-530624AB61BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tethys.Logging.Controls.Wpf.NET5", "Tethys.Logging.Controls.Wpf.NET5\Tethys.Logging.Controls.Wpf.NET5.csproj", "{9BFBAF01-66EA-4A85-B509-AF2F8879FC8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tethys.Logging.Controls.NET8", "Tethys.Logging.Controls.NET8\Tethys.Logging.Controls.NET8.csproj", "{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -587,6 +587,26 @@ Global
 		{9BFBAF01-66EA-4A85-B509-AF2F8879FC8C}.Release|x64.Build.0 = Release|Any CPU
 		{9BFBAF01-66EA-4A85-B509-AF2F8879FC8C}.Release|x86.ActiveCfg = Release|Any CPU
 		{9BFBAF01-66EA-4A85-B509-AF2F8879FC8C}.Release|x86.Build.0 = Release|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Debug|ARM.Build.0 = Debug|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Debug|x64.Build.0 = Debug|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Debug|x86.Build.0 = Debug|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Release|ARM.ActiveCfg = Release|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Release|ARM.Build.0 = Release|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Release|x64.ActiveCfg = Release|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Release|x64.Build.0 = Release|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Release|x86.ActiveCfg = Release|Any CPU
+		{1703D29D-16A6-4A94-87DE-B3C5FB1B859E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
