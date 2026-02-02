@@ -9,7 +9,7 @@ SPDX-License-Identifier: Apache-2.0
 
 * Dropped support for .NET 5, added support for .NET 6.
 * Dropped support for .NET 6, added support for .NET 8.
-* 
+* Have new sub-project Tethys.Logging.Controls.NET8.
 
 ## V1.6.1 (2021-06-06)
 

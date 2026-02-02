@@ -1,6 +1,6 @@
 ﻿// -------------------------------------------------------------------------------
 // <copyright file="GlobalAssemblyInfo.cs" company="Tethys">
-//   Copyright (C) 2009-2023 Thomas Graf
+//   Copyright (C) 2009-2026 Thomas Graf
 //   All Rights Reserved.
 // </copyright>
 //
@@ -23,15 +23,15 @@ using System.Reflection;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyCompany("Tethys")]
-[assembly: AssemblyCopyright("Copyright © 2009-2021 T. Graf")]
+[assembly: AssemblyCopyright("Copyright © 2009-2026 T. Graf")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Version information
-[assembly: AssemblyVersion("1.6.1.0")]
-[assembly: AssemblyFileVersion("1.6.1.0")]
+[assembly: AssemblyVersion("1.6.2.0")]
+[assembly: AssemblyFileVersion("1.6.2.0")]
 
 // AssemblyInformationalVersionAttribute is used for NuGet
-[assembly: AssemblyInformationalVersionAttribute("1.6.1")]
+[assembly: AssemblyInformationalVersionAttribute("1.6.2")]
 
 // =================================

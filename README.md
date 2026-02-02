@@ -1,5 +1,5 @@
 <!-- 
-SPDX-FileCopyrightText: (c) 2009-2023 T. Graf
+SPDX-FileCopyrightText: (c) 2009-2026 T. Graf
 SPDX-License-Identifier: Apache-2.0
 -->
 
@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 
 [![Build status](https://ci.appveyor.com/api/projects/status/wwv7i34nlv8h4g4i?svg=true)](https://ci.appveyor.com/project/tngraf/tethys-logging)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
-[![NuGet](https://img.shields.io/badge/nuget%20package-v1.6.0-blue.svg)](https://www.nuget.org/packages/Tethys.Logging/)
+[![NuGet](https://img.shields.io/badge/nuget%20package-v1.6.2-blue.svg)](https://www.nuget.org/packages/Tethys.Logging/)
 [![REUSE status](https://api.reuse.software/badge/git.fsfe.org/reuse/api)](https://api.reuse.software/info/git.fsfe.org/reuse/api)
 [![SBOM](https://img.shields.io/badge/SBOM-CycloneDX-brightgreen)](https://github.com/tngraf/Tethys.Logging/blob/master/SBOM/sbom.cyclonedx.xml)
 
@@ -28,6 +28,7 @@ Most of the enhancements target the simple display of log message. Yes, you coul
 * **Tethys.Logging.Console** - log output to console window (.Net Standard 2.0).
 * **Tethys.Logging.Controls** - Logging controls for WinForms (.NET Framework 4.72+).
 * **Tethys.Logging.Controls.NET5** - Logging controls for WinForms (.NET Core 3.1 and .NET 5 and later).
+* **Tethys.Logging.Controls.NET8** - Logging controls for WinForms (.NET 8 and later).
 * **Tethys.Logging.Controls.Wpf** - Logging controls for WPF (.NET Framework 4.72+)
 * **Tethys.Logging.Controls.Wpf.NET5** - Logging controls for WPF (.NET Core 3.1 and .NET 5 and later)
 * **Tethys.Logging.Log4Net** - Adapter for log4net 1.2.10 (.NET Framework 4.72+, log4net 1.2.11).
@@ -48,6 +49,7 @@ Most of the enhancements target the simple display of log message. Yes, you coul
 * **[https://www.nuget.org/packages/Tethys.Logging.Console/](https://www.nuget.org/packages/Tethys.Logging.Console/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Controls/](https://www.nuget.org/packages/Tethys.Logging.Controls/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Controls.NET5/](https://www.nuget.org/packages/Tethys.Logging.Controls.NET5/)**
+* **[https://www.nuget.org/packages/Tethys.Logging.Controls.NET8/](https://www.nuget.org/packages/Tethys.Logging.Controls.NET8/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf/](https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf.NET5/](https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf.NET5/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Log4Net/](https://www.nuget.org/packages/Tethys.Logging.Log4Net/)**
@@ -81,7 +83,7 @@ applications, see Overview.txt for details.
 
 ## License
 
-Copyright 2009-2023 T. Graf
+Copyright 2009-2026 T. Graf
 
 Licensed under the **Apache License, Version 2.0** (the "License");
 you may not use this file except in compliance with the License.
