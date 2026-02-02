@@ -1,5 +1,5 @@
 ﻿<!-- 
-SPDX-FileCopyrightText: (c) 2022-2023 T. Graf
+SPDX-FileCopyrightText: (c) 2022-2026 T. Graf
 SPDX-License-Identifier: Apache-2.0
 -->
 
@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <AssemblyOriginatorKeyFile>..\Tethys.Logging\TethysLibKey.snk</AssemblyOriginatorKeyFile>
     <CodeAnalysisRuleSet>..\..\Tethys.Logging.ruleset</CodeAnalysisRuleSet>
