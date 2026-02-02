@@ -1,15 +1,16 @@
 ﻿<!-- 
-SPDX-FileCopyrightText: (c) 2022-2023 T. Graf
+SPDX-FileCopyrightText: (c) 2022-2026 T. Graf
 SPDX-License-Identifier: Apache-2.0
 -->
 
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1;net6.0-windows</TargetFrameworks>
+    <TargetFrameworks>net8.0-windows7.0</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <AssemblyOriginatorKeyFile>..\Tethys.Logging\TethysLibKey.snk</AssemblyOriginatorKeyFile>
     <CodeAnalysisRuleSet>..\Tethys.Logging.ruleset</CodeAnalysisRuleSet>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -21,6 +22,13 @@ SPDX-License-Identifier: Apache-2.0
     <None Remove="Resources\Copy.png" />
     <None Remove="Resources\DeleteHS.png" />
     <None Remove="Resources\Save.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

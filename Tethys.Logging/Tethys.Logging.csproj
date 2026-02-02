@@ -16,6 +16,7 @@ SPDX-License-Identifier: Apache-2.0
     <PackageIcon>tethys_icon.png</PackageIcon>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -39,6 +40,10 @@ SPDX-License-Identifier: Apache-2.0
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\tethys_icon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
