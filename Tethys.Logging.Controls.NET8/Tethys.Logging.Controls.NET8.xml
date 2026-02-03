@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Tethys.Logging.Controls.NET5</name>
+        <name>Tethys.Logging.Controls.NET8</name>
     </assembly>
     <members>
         <member name="T:Tethys.Logging.Controls.DebugLogForm">
@@ -163,14 +163,6 @@
             </summary>
             <param name="sender">The sender.</param>
             <param name="e">The <see cref="T:System.EventArgs"/> instance containing
-            the event data.</param>
-        </member>
-        <member name="M:Tethys.Logging.Controls.RtfLogView.RtfLogViewOnLayout(System.Object,System.Windows.Forms.LayoutEventArgs)">
-            <summary>
-            Handles the Layout event of the RtfLogView control.
-            </summary>
-            <param name="sender">The source of the event.</param>
-            <param name="e">The <see cref="T:System.Windows.Forms.LayoutEventArgs"/> instance containing
             the event data.</param>
         </member>
         <member name="M:Tethys.Logging.Controls.RtfLogView.InitControl">
