@@ -300,11 +300,11 @@ namespace Tethys.Logging.Controls
             this.rtfView.Copy();
 
             // add to clipboard as normal text
-            Clipboard.SetData(DataFormats.Text, rtfView.Text);
+            // Clipboard.SetData(DataFormats.Text, rtfView.Text);
 
             // add to clipboard as rich text
             // If we'd do this, we can't copy to notepad....
-            Clipboard.SetData(DataFormats.Rtf, rtfView.Rtf);
+            // Clipboard.SetData(DataFormats.Rtf, rtfView.Rtf);
         } // CopyToClipBoard()
 
         /// <summary>
