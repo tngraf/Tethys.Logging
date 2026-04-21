@@ -1,9 +1,15 @@
 <!-- 
-SPDX-FileCopyrightText: (c) 2022-2023 T. Graf
+SPDX-FileCopyrightText: (c) 2022-2026 T. Graf
 SPDX-License-Identifier: Apache-2.0
 -->
 
 # Tethys.Logging Change Log
+
+## NEXT
+
+* Dropped support for Tethys.Logging.Common.Logging, Tethys.Logging.Common.Logging231,
+  Tethys.Logging.Common.Logging341, Tethys.Logging.NLog, Tethys.Logging.NLog310, Tethys.Logging.NLog4412,
+  Tethys.Logging.Log4Net, Tethys.Logging.Log4Net212.
 
 ## V1.6.2 (2026-02-02)
 

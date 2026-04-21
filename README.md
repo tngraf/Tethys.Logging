@@ -22,20 +22,12 @@ Most of the enhancements target the simple display of log message. Yes, you coul
 ## Libraries
 
 * **Tethys.Logging** - Platform independent basic logging support (.Net Standard 2.0).
-* **Tethys.Logging.Common.Logging** - Adapter for Common.Logging (.NET Framework 4.72+, Common.Logging 2.1.1).
-* **Tethys.Logging.Common.Logging231** - Adapter for Common.Logging (.NET Framework 4.72+, Common.Logging 2.3.1).
-* **Tethys.Logging.Common.Logging341** - Adapter for Common.Logging (.NET Framework 4.72+, Common.Logging 3.4.1).
 * **Tethys.Logging.Console** - log output to console window (.Net Standard 2.0).
 * **Tethys.Logging.Controls** - Logging controls for WinForms (.NET Framework 4.72+).
 * **Tethys.Logging.Controls.NET5** - Logging controls for WinForms (.NET Core 3.1 and .NET 5 and later).
 * **Tethys.Logging.Controls.NET8** - Logging controls for WinForms (.NET 8 and later).
 * **Tethys.Logging.Controls.Wpf** - Logging controls for WPF (.NET Framework 4.72+)
 * **Tethys.Logging.Controls.Wpf.NET5** - Logging controls for WPF (.NET Core 3.1 and .NET 5 and later)
-* **Tethys.Logging.Log4Net** - Adapter for log4net 1.2.10 (.NET Framework 4.72+, log4net 1.2.11).
-* **Tethys.Logging.Log4Net212** - Adapter for log4net 2.0.8 (.NET Framework 4.72+, log4net 2.0.12).
-* **Tethys.Logging.NLog** - Adapter for NLog (.NET Framework 4.72+, NLog 2.0).
-* **Tethys.Logging.NLog310** - Adapter for NLog (.NET Framework 4.72+, NLog 3.1.0).
-* **Tethys.Logging.NLog4412** - Adapter for NLog (.NET Framework 4.72+, NLog 4.4.12).
 * **Tethys.Logging.Win** - Adapter for Trace (.NET Framework 4.72+).
 
 ## Binaries
@@ -43,35 +35,17 @@ Most of the enhancements target the simple display of log message. Yes, you coul
 **Binaries are available on Nuget:**
 
 * **[http://www.nuget.org/packages/Tethys.Logging/](http://www.nuget.org/packages/Tethys.Logging/)**
-* **[https://www.nuget.org/packages/Tethys.Logging.Common.Logging/](https://www.nuget.org/packages/Tethys.Logging.Common.Logging/)**
-* **[https://www.nuget.org/packages/Tethys.Logging.Common.Logging231/](https://www.nuget.org/packages/Tethys.Logging.Common.Logging231/)**
-* **[https://www.nuget.org/packages/Tethys.Logging.Common.Logging341/](https://www.nuget.org/packages/Tethys.Logging.Common.Logging341/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Console/](https://www.nuget.org/packages/Tethys.Logging.Console/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Controls/](https://www.nuget.org/packages/Tethys.Logging.Controls/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Controls.NET5/](https://www.nuget.org/packages/Tethys.Logging.Controls.NET5/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Controls.NET8/](https://www.nuget.org/packages/Tethys.Logging.Controls.NET8/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf/](https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf.NET5/](https://www.nuget.org/packages/Tethys.Logging.Controls.Wpf.NET5/)**
-* **[https://www.nuget.org/packages/Tethys.Logging.Log4Net/](https://www.nuget.org/packages/Tethys.Logging.Log4Net/)**
-* **[https://www.nuget.org/packages/Tethys.Logging.Log4Net212/](https://www.nuget.org/packages/Tethys.Logging.Log4Net212/)**
-* **[https://www.nuget.org/packages/Tethys.Logging.NLog/](https://www.nuget.org/packages/Tethys.Logging.NLog/)**
-* **[https://www.nuget.org/packages/Tethys.Logging.NLog310/](https://www.nuget.org/packages/Tethys.Logging.NLog310/)**
-* **[https://www.nuget.org/packages/Tethys.Logging.NLog4412/](https://www.nuget.org/packages/Tethys.Logging.NLog4412/)**
 * **[https://www.nuget.org/packages/Tethys.Logging.Win/](https://www.nuget.org/packages/Tethys.Logging.Win/)**
 
 ## Test Applications
 
 * TestApp.LogView - .NET Client Framework 4, WinForms. 
-* TestApp.Common.Logging - .NET Client Framework 4, WinForms, Common.Logging 2.1.1. 
-* TestApp.Common.Logging231 - .NET Client Framework 4, WinForms, Common.Logging 2.3.1. 
-* TestApp.Common.Logging341 - .NET Client Framework 4, WinForms, Common.Logging 3.4.1. 
-* TestApp.Common.Logging.NLog - .NET Client Framework 4, WinForms, Common.Logging, NLog.
-* TestApp.log4net - .NET Framework 4, WinForms, log4net.
-* TestApp.log4net212 - .NET Framework 4, WinForms, log4net 2.0.12.
-* TestApp.NLog - .NET Client Framework 4, WinForms, NLog.
-* TestApp.NLog310 - .NET Client Framework 4, WinForms, NLog 3.1.0.
-* TestApp.NLog4412 - .NET Client Framework 4, WinForms, NLog 4.4.12.
-* TestApp.NLog2 - .NET Client Framework 4, WinForms, NLog.
 * TestApp.WindowsForms - .NET Client Framework 4, WinForms.
 * TestApp.WPF - .NET Client Framework 4, WPF, Common.Logging, NLog.
 
