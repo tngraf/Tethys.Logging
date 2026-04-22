@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 
 [![Build status](https://ci.appveyor.com/api/projects/status/wwv7i34nlv8h4g4i?svg=true)](https://ci.appveyor.com/project/tngraf/tethys-logging)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
-[![NuGet](https://img.shields.io/badge/nuget%20package-v1.6.2-blue.svg)](https://www.nuget.org/packages/Tethys.Logging/)
+[![NuGet](https://img.shields.io/badge/nuget%20package-v2.0.0-blue.svg)](https://www.nuget.org/packages/Tethys.Logging/)
 [![REUSE status](https://api.reuse.software/badge/git.fsfe.org/reuse/api)](https://api.reuse.software/info/git.fsfe.org/reuse/api)
 [![SBOM](https://img.shields.io/badge/SBOM-CycloneDX-brightgreen)](https://github.com/tngraf/Tethys.Logging/blob/master/SBOM/sbom.cyclonedx.xml)
 

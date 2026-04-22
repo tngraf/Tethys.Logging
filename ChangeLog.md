@@ -10,6 +10,7 @@ SPDX-License-Identifier: Apache-2.0
 * Dropped support for Tethys.Logging.Common.Logging, Tethys.Logging.Common.Logging231,
   Tethys.Logging.Common.Logging341, Tethys.Logging.NLog, Tethys.Logging.NLog310, Tethys.Logging.NLog4412,
   Tethys.Logging.Log4Net, Tethys.Logging.Log4Net212.
+* Create CycloneDX JSON SBOM instead of XML.
 
 ## V1.6.2 (2026-02-02)
 

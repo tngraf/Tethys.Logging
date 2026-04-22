@@ -1,0 +1,151 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:5f145375-e8a1-417b-8626-e73d13ba4983",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-04-22T17:49:03Z",
+    "tools": [
+      {
+        "vendor": "CycloneDX",
+        "name": "CycloneDX module for .NET",
+        "version": "4.0.0.0"
+      }
+    ],
+    "component": {
+      "type": "library",
+      "bom-ref": "Tethys.Logging@2.0.0",
+      "name": "Tethys.Logging",
+      "version": "2.0.0"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+      "authors": [
+        {
+          "name": "Microsoft"
+        }
+      ],
+      "name": "Microsoft.NETCore.Platforms",
+      "version": "1.1.0",
+      "description": "Provides runtime information required to resolve target framework, platform, and runtime specific implementations of .NETCore packages. \nWhen using NuGet 3.x this package requires at least version 3.4.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "6BF892C274596FE2C7164E3D8503B24E187F64D0B7BEC6D9B05EB95F04086FCEB7A85EA6B2685D42DC465C52F6F0E6F636C0B3FDDAC48F6F0125DFD83E92D106"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown - See URL",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=329770"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation.  All rights reserved.",
+      "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+      "externalReferences": [
+        {
+          "url": "https://dot.net/",
+          "type": "website"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/NETStandard.Library@2.0.3",
+      "authors": [
+        {
+          "name": "Microsoft"
+        }
+      ],
+      "name": "NETStandard.Library",
+      "version": "2.0.3",
+      "description": "A set of standard .NET APIs that are prescribed to be used and supported together. \n18a36291e48808fa7ef2d00a764ceb1ec95645a5 \nWhen using NuGet 3.x this package requires at least version 3.4.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "E78F0CEA69C14895B1B089644077DBCE8631A626055D96522F4D29E061D8BFC3E48AA1419E74FAF265B998612C03F721F5F0CEF4690F824150A5689764DEE601"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown - See URL",
+            "url": "https://github.com/dotnet/standard/blob/master/LICENSE.TXT"
+          }
+        }
+      ],
+      "copyright": ".NET Foundation and Contributors",
+      "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+      "externalReferences": [
+        {
+          "url": "https://dot.net/",
+          "type": "website"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/StyleCop.Analyzers@1.1.118",
+      "authors": [
+        {
+          "name": "Sam Harwell et. al."
+        }
+      ],
+      "name": "StyleCop.Analyzers",
+      "version": "1.1.118",
+      "description": "An implementation of StyleCop\u0027s rules using Roslyn analyzers and code fixes",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "398619762085FDBDCAFC0CC6590D8F2D01F9067411CD07C76DB520B9C32926A05EF63B0F4E7C9087DDA831A6DF7C571370147610EA49C8C729F43D397ECF32BC"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "Copyright 2015 Tunnel Vision Laboratories, LLC",
+      "purl": "pkg:nuget/StyleCop.Analyzers@1.1.118",
+      "externalReferences": [
+        {
+          "url": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers",
+          "type": "website"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/NETStandard.Library@2.0.3",
+      "dependsOn": [
+        "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/StyleCop.Analyzers@1.1.118",
+      "dependsOn": []
+    },
+    {
+      "ref": "Tethys.Logging@2.0.0",
+      "dependsOn": [
+        "pkg:nuget/NETStandard.Library@2.0.3",
+        "pkg:nuget/StyleCop.Analyzers@1.1.118"
+      ]
+    }
+  ]
+}

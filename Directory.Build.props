@@ -5,8 +5,8 @@ SPDX-License-Identifier: Apache-2.0
 
 <Project>
   <PropertyGroup>
-    <Version>1.6.2</Version>
-    <FileVersion>1.6.2.0</FileVersion>
+    <Version>2.0.0</Version>
+    <FileVersion>2.0.0.0</FileVersion>
     <Product>Tethys.Logging</Product>
     <Company></Company>
     <Copyright>Copyright © 2009-2026 T. Graf</Copyright>

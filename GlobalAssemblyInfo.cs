@@ -13,7 +13,7 @@
 // -------------------------------------------------------------------------------
 
 /* ---------------------------------------------------------------------------
- * Main goal of the Tethy.Logging library is to provide a platform
+ * Main goal of the Tethys.Logging library is to provide a platform
  * independent logging facade that can be used with different real loggers.
 --------------------------------------------------------------------------- */
 
@@ -28,10 +28,10 @@ using System.Reflection;
 [assembly: AssemblyCulture("")]
 
 // Version information
-[assembly: AssemblyVersion("1.6.2.0")]
-[assembly: AssemblyFileVersion("1.6.2.0")]
+[assembly: AssemblyVersion("2.0.0.0")]
+[assembly: AssemblyFileVersion("2.0.0.0")]
 
 // AssemblyInformationalVersionAttribute is used for NuGet
-[assembly: AssemblyInformationalVersionAttribute("1.6.2")]
+[assembly: AssemblyInformationalVersionAttribute("2.0.0")]
 
 // =================================
