@@ -5,7 +5,7 @@ SPDX-License-Identifier: Apache-2.0
 
 # Tethys.Logging Change Log
 
-## NEXT
+## V2.0.0 (2026-04-23)
 
 * Dropped support for Tethys.Logging.Common.Logging, Tethys.Logging.Common.Logging231,
   Tethys.Logging.Common.Logging341, Tethys.Logging.NLog, Tethys.Logging.NLog310, Tethys.Logging.NLog4412,
