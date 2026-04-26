@@ -33,10 +33,10 @@ jobs:
       uses: microsoft/setup-msbuild@v2
 
     - name: Restore dependencies
-      run: dotnet restore $Solution_Name
+      run: dotnet restore Tethys.Logging.Build.sln
 
     - name: Build
-      run: dotnet build $Solution_Name --no-restore
+      run: dotnet build Tethys.Logging.Build.sln --no-restore
 
     - name: Test
-      run: dotnet test $Solution_Name --no-build --verbosity normal
+      run: dotnet test Tethys.Logging.Build.sln --no-build --verbosity normal
