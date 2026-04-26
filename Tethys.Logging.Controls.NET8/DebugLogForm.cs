@@ -1,6 +1,6 @@
 ﻿// -------------------------------------------------------------------------------
 // <copyright file="DebugLogForm.cs" company="Tethys">
-//   Copyright (C) 2009-2023 Thomas Graf
+//   Copyright (C) 2009-2026 Thomas Graf
 //   All Rights Reserved.
 // </copyright>
 //
@@ -47,6 +47,10 @@ namespace Tethys.Logging.Controls
         /// </summary>
         public DebugLogForm()
         {
+            this.RtfLogView = new RtfLogView();
+            // ReSharper disable UnusedParameter.Local
+            this.HidingEvent = (sender, args) => { };
+            // ReSharper restore UnusedParameter.Local
             this.InitializeComponent();
         } // DebugLogForm()
         #endregion // CONSTRUCTION
@@ -70,11 +74,8 @@ namespace Tethys.Logging.Controls
             e.Cancel = true;
 
             // raise Hiding event
-            if (this.HidingEvent != null)
-            {
-                EventArgs ea = new EventArgs();
-                this.HidingEvent(this, ea);
-            } // if
+            var ea = EventArgs.Empty;
+            this.HidingEvent(this, ea);
 
             // hide form
             this.Hide();

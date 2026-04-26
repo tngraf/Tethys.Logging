@@ -1,6 +1,6 @@
 ﻿// -------------------------------------------------------------------------------
 // <copyright file="TableLogView.cs" company="Tethys">
-//   Copyright (C) 2009-2023 Thomas Graf
+//   Copyright (C) 2009-2026 Thomas Graf
 //   All Rights Reserved.
 // </copyright>
 //
@@ -62,7 +62,7 @@ namespace Tethys.Logging.Controls
         private const int ColWidthType = 60;
 
         /// <summary>
-        /// Default height of the tool bar.
+        /// Default height of the toolbar.
         /// </summary>
         private const int ToolbarHeight = 26;
 
@@ -116,10 +116,6 @@ namespace Tethys.Logging.Controls
         /// </summary>
         private bool showToolButtons = true;
 
-        /// <summary>
-        /// Culture to use.
-        /// </summary>
-        private CultureInfo culture;
         #endregion PRIVATE PROPERTIES
 
         //// ---------------------------------------------------------------------
@@ -131,25 +127,21 @@ namespace Tethys.Logging.Controls
         public const float AutoScaleBaseHeight = 13.0F;
 
         /// <summary>
-        /// Gets or sets the _culture for this control.
+        /// Gets or sets the culture for this control.
         /// </summary>
-        public CultureInfo Culture
-        {
-            get { return this.culture; }
-            set { this.culture = value; }
-        } // Culture
+        [Description("Gets/sets the culture")]
+        [DefaultValue(typeof(CultureInfo), "en-US")]
+        public CultureInfo Culture { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether to enable the Category column.
         /// </summary>
         [Description("Enables/disable the Category column")]
         [Category("Appearance")]
+        [DefaultValue(true)]
         public bool ColumnCategory
         {
-            get
-            {
-                return this.hasColType;
-            }
+            get => this.hasColType;
 
             set
             {
@@ -176,12 +168,10 @@ namespace Tethys.Logging.Controls
         /// </summary>
         [Description("Enables/disable the Date column")]
         [Category("Appearance")]
+        [DefaultValue(true)]
         public bool ColumnDate
         {
-            get
-            {
-                return this.hasColDate;
-            }
+            get => this.hasColDate;
 
             set
             {
@@ -208,12 +198,10 @@ namespace Tethys.Logging.Controls
         /// </summary>
         [Description("Enables/disable the Time column")]
         [Category("Appearance")]
+        [DefaultValue(true)]
         public bool ColumnTime
         {
-            get
-            {
-                return this.hasColTime;
-            }
+            get => this.hasColTime;
 
             set
             {
@@ -240,12 +228,10 @@ namespace Tethys.Logging.Controls
         /// </summary>
         [Description("Enables/disable the Category buttons")]
         [Category("Appearance")]
+        [DefaultValue(true)]
         public bool ShowCategoryButtons
         {
-            get
-            {
-                return this.showCategoryButtons;
-            }
+            get => this.showCategoryButtons;
 
             set
             {
@@ -268,12 +254,10 @@ namespace Tethys.Logging.Controls
         /// </summary>
         [Description("Enables/disable the tool buttons")]
         [Category("Appearance")]
+        [DefaultValue(true)]
         public bool ShowToolButtons
         {
-            get
-            {
-                return this.showToolButtons;
-            }
+            get => this.showToolButtons;
 
             set
             {
@@ -296,10 +280,11 @@ namespace Tethys.Logging.Controls
         /// </summary>
         [Description("The date column header text")]
         [Category("Appearance")]
+        [DefaultValue("Date")]
         public string DateColumnHeader
         {
-            get { return this.colDate.Text; }
-            set { this.colDate.Text = value; }
+            get => this.colDate.Text;
+            set => this.colDate.Text = value;
         } // DateColumnHeader
 
         /// <summary>
@@ -307,10 +292,11 @@ namespace Tethys.Logging.Controls
         /// </summary>
         [Description("The time column header text")]
         [Category("Appearance")]
+        [DefaultValue("Time")]
         public string TimeColumnHeader
         {
-            get { return this.colTime.Text; }
-            set { this.colTime.Text = value; }
+            get => this.colTime.Text;
+            set => this.colTime.Text = value;
         } // TimeColumnHeader
 
         /// <summary>
@@ -318,10 +304,11 @@ namespace Tethys.Logging.Controls
         /// </summary>
         [Description("The category column header text")]
         [Category("Appearance")]
+        [DefaultValue("Category")]
         public string CategoryColumnHeader
         {
-            get { return this.colType.Text; }
-            set { this.colType.Text = value; }
+            get => this.colType.Text;
+            set => this.colType.Text = value;
         } // CategoryColumnHeader
 
         /// <summary>
@@ -329,10 +316,11 @@ namespace Tethys.Logging.Controls
         /// </summary>
         [Description("The message column header text")]
         [Category("Appearance")]
+        [DefaultValue("Message")]
         public string MessageColumnHeader
         {
-            get { return this.colMessage.Text; }
-            set { this.colMessage.Text = value; }
+            get => this.colMessage.Text;
+            set => this.colMessage.Text = value;
         } // MessageColumnHeader
 
         /// <summary>
@@ -340,10 +328,11 @@ namespace Tethys.Logging.Controls
         /// </summary>
         [Description("the 'show debug events' button text")]
         [Category("Appearance")]
+        [DefaultValue("Show Debug Events")]
         public string ShowDebugButtonText
         {
-            get { return this.checkShowDebug.Text; }
-            set { this.checkShowDebug.Text = value; }
+            get => this.checkShowDebug.Text;
+            set => this.checkShowDebug.Text = value;
         } // ShowDebugButtonText
 
         /// <summary>
@@ -351,10 +340,11 @@ namespace Tethys.Logging.Controls
         /// </summary>
         [Description("the 'show error events' button text")]
         [Category("Appearance")]
+        [DefaultValue("Show Error Events")]
         public string ShowErrorButtonText
         {
-            get { return this.checkShowErrors.Text; }
-            set { this.checkShowErrors.Text = value; }
+            get => this.checkShowErrors.Text;
+            set => this.checkShowErrors.Text = value;
         } // ShowErrorButtonText
 
         /// <summary>
@@ -362,10 +352,11 @@ namespace Tethys.Logging.Controls
         /// </summary>
         [Description("the 'show info events' button text")]
         [Category("Appearance")]
+        [DefaultValue("Show Info Events")]
         public string ShowInfoButtonText
         {
-            get { return this.checkShowInfo.Text; }
-            set { this.checkShowInfo.Text = value; }
+            get => this.checkShowInfo.Text;
+            set => this.checkShowInfo.Text = value;
         } // ShowInfoButtonText
 
         /// <summary>
@@ -373,10 +364,11 @@ namespace Tethys.Logging.Controls
         /// </summary>
         [Description("the 'show warning events' button text")]
         [Category("Appearance")]
+        [DefaultValue("Show Warning Events")]
         public string ShowWarningButtonText
         {
-            get { return this.checkShowWarnings.Text; }
-            set { this.checkShowWarnings.Text = value; }
+            get => this.checkShowWarnings.Text;
+            set => this.checkShowWarnings.Text = value;
         } // ShowWarningButtonText
 
         /// <summary>
@@ -386,6 +378,7 @@ namespace Tethys.Logging.Controls
         [Description("Defines whether new event are added at the tail or "
          + "at the head of the list.")]
         [Category("Logging")]
+        [DefaultValue(true)]
         public bool AddAtTail { get; set; } = true;
 
         /// <summary>
@@ -396,6 +389,7 @@ namespace Tethys.Logging.Controls
         [Description("Gets or sets the max number of log entries displayed. "
          + "A value of -1 means no length check.")]
         [Category("Logging")]
+        [DefaultValue(-1)]
         public int MaxLogEntries { get; set; }
         #endregion PUBLIC PROPERTIES
 
@@ -408,9 +402,42 @@ namespace Tethys.Logging.Controls
         public TableLogView()
         {
             this.InitializeComponent();
-            this.InitControl();
 
-            this.culture = CultureInfo.CurrentCulture;
+            // create columns
+            this.colIcon = new ColumnHeader();
+            this.colIcon.Text = string.Empty;
+            this.colIcon.Width = ColWidthIcon;
+            this.colIcon.TextAlign = HorizontalAlignment.Left;
+
+            this.colDate = new ColumnHeader();
+            this.colDate.Text = @"Date";
+            this.colDate.Width = ColWidthDate;
+            this.colDate.TextAlign = HorizontalAlignment.Left;
+
+            this.colTime = new ColumnHeader();
+            this.colTime.Text = @"Time";
+            this.colTime.Width = ColWidthTime;
+            this.colTime.TextAlign = HorizontalAlignment.Left;
+
+            this.colType = new ColumnHeader();
+            this.colType.Text = @"Category";
+            this.colType.Width = ColWidthType;
+            this.colType.TextAlign = HorizontalAlignment.Left;
+
+            this.colMessage = new ColumnHeader();
+            this.colMessage.Text = @"Message";
+            this.colMessage.Width = 255;
+            this.colMessage.TextAlign = HorizontalAlignment.Left;
+
+            this.listView.Columns.Add(this.colIcon);
+            this.listView.Columns.Add(this.colDate);
+            this.listView.Columns.Add(this.colTime);
+            this.listView.Columns.Add(this.colType);
+            this.listView.Columns.Add(this.colMessage);
+
+            this.CheckTableWidth();
+
+            this.Culture = CultureInfo.CurrentCulture;
             this.MaxLogEntries = -1;
         } // TableLogView()
         #endregion CONSTRUCTOR
@@ -525,46 +552,6 @@ namespace Tethys.Logging.Controls
         } // GetImageIndex()
 
         /// <summary>
-        /// Initializes this control.
-        /// </summary>
-        private void InitControl()
-        {
-            // create columns
-            this.colIcon = new ColumnHeader();
-            this.colIcon.Text = string.Empty;
-            this.colIcon.Width = ColWidthIcon;
-            this.colIcon.TextAlign = HorizontalAlignment.Left;
-
-            this.colDate = new ColumnHeader();
-            this.colDate.Text = @"Date";
-            this.colDate.Width = ColWidthDate;
-            this.colDate.TextAlign = HorizontalAlignment.Left;
-
-            this.colTime = new ColumnHeader();
-            this.colTime.Text = @"Time";
-            this.colTime.Width = ColWidthTime;
-            this.colTime.TextAlign = HorizontalAlignment.Left;
-
-            this.colType = new ColumnHeader();
-            this.colType.Text = @"Category";
-            this.colType.Width = ColWidthType;
-            this.colType.TextAlign = HorizontalAlignment.Left;
-
-            this.colMessage = new ColumnHeader();
-            this.colMessage.Text = @"Message";
-            this.colMessage.Width = 255;
-            this.colMessage.TextAlign = HorizontalAlignment.Left;
-
-            this.listView.Columns.Add(this.colIcon);
-            this.listView.Columns.Add(this.colDate);
-            this.listView.Columns.Add(this.colTime);
-            this.listView.Columns.Add(this.colType);
-            this.listView.Columns.Add(this.colMessage);
-
-            this.CheckTableWidth();
-        } // InitControl()
-
-        /// <summary>
         /// Transforms the event log to a text file.
         /// </summary>
         /// <param name="separator">The separator.</param>
@@ -639,10 +626,7 @@ namespace Tethys.Logging.Controls
                 width -= ColWidthType;
             } // if
 
-            if (this.colMessage != null)
-            {
-                this.colMessage.Width = width;
-            } // if
+            this.colMessage.Width = width;
         } // CheckListHeight()
 
         /// <summary>
@@ -683,11 +667,11 @@ namespace Tethys.Logging.Controls
         {
             if (disposing)
             {
-                this.colDate?.Dispose();
-                this.colTime?.Dispose();
-                this.colType?.Dispose();
-                this.colMessage?.Dispose();
-                this.colIcon?.Dispose();
+                this.colDate.Dispose();
+                this.colTime.Dispose();
+                this.colType.Dispose();
+                this.colMessage.Dispose();
+                this.colIcon.Dispose();
             } // if
         } // Dispose()
         #endregion  // PROTECTED METHODS
@@ -812,8 +796,10 @@ namespace Tethys.Logging.Controls
 
                 this.CheckMaxLength();
 
-                var item = new ListViewItem();
-                item.ImageIndex = GetImageIndex(logEvent.Level);
+                var item = new ListViewItem
+                {
+                    ImageIndex = GetImageIndex(logEvent.Level),
+                };
                 if (this.hasColDate)
                 {
                     item.SubItems.Add(logEvent.Timestamp.ToShortDateString());
@@ -821,7 +807,7 @@ namespace Tethys.Logging.Controls
 
                 if (this.hasColTime)
                 {
-                    item.SubItems.Add(logEvent.Timestamp.ToString("T", this.culture));
+                    item.SubItems.Add(logEvent.Timestamp.ToString("T", this.Culture));
                 } // if
 
                 if (this.hasColType)
