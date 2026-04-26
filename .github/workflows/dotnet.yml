@@ -33,10 +33,10 @@ jobs:
       uses: microsoft/setup-msbuild@v2
 
     - name: Restore dependencies
-      run: dotnet $Solution_Name restore
+      run: dotnet restore $Solution_Name
 
     - name: Build
-      run: dotnet $Solution_Name build --no-restore
+      run: dotnet build $Solution_Name --no-restore
 
     - name: Test
-      run: dotnet $Solution_Name test --no-build --verbosity normal
+      run: dotnet test $Solution_Name --no-build --verbosity normal
