@@ -12,17 +12,31 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
+
+    env:
+      Solution_Name: Tethys.Logging.Build.sln
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+
+    # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
+    - name: Setup MSBuild.exe
+      uses: microsoft/setup-msbuild@v2
+
     - name: Restore dependencies
       run: dotnet restore
+
     - name: Build
       run: dotnet build --no-restore
+
     - name: Test
       run: dotnet test --no-build --verbosity normal
