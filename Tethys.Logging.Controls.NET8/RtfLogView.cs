@@ -1,6 +1,6 @@
 // -------------------------------------------------------------------------------
 // <copyright file="RtfLogView.cs" company="Tethys">
-//   Copyright (C) 2009-2023 Thomas Graf
+//   Copyright (C) 2009-2026 Thomas Graf
 //   All Rights Reserved.
 // </copyright>
 //
@@ -70,17 +70,15 @@ namespace Tethys.Logging.Controls
         /// </summary>
         [Description("Text color to be used for default text output.")]
         [Category("Appearance")]
+        [DefaultValue(typeof(Color), "0x000000")]
         public Color TextColor
         {
-            get
-            {
-                return this.defaultTextColor;
-            }
+            get => this.defaultTextColor;
 
             set
             {
                 this.defaultTextColor = value;
-                this.rtfView.SelectionColor = this.defaultTextColor;
+                this.RtfControl.SelectionColor = this.defaultTextColor;
             }
         } // TextColor
 
@@ -92,10 +90,7 @@ namespace Tethys.Logging.Controls
         [DefaultValue(true)]
         public bool ShowToolButtons
         {
-            get
-            {
-                return this.toolbarVisible;
-            }
+            get => this.toolbarVisible;
 
             set
             {
@@ -120,26 +115,14 @@ namespace Tethys.Logging.Controls
         /// </summary>
         [Description("The text contained in the control.")]
         [Category("Appearance")]
-        public override string Text
-        {
-            get
-            {
-                return this.rtfView.Text;
-            }
-        } // Text
+        public override string Text => this.RtfControl.Text;
 
         /// <summary>
         /// Gets the underlying RichTextBox control.
         /// </summary>
         [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Hidden)]
-        public RichTextBox RtfControl
-        {
-            get
-            {
-                return this.rtfView;
-            }
-        } // RtfControl
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public RichTextBox RtfControl { get; private set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether new event are added at the tail or
@@ -148,6 +131,7 @@ namespace Tethys.Logging.Controls
         [Description("Defines whether new event are added at the tail or "
          + "at the head of the list.")]
         [Category("Logging")]
+        [DefaultValue(true)]
         public bool AddAtTail { get; set; } = true;
 
         /// <summary>
@@ -155,10 +139,11 @@ namespace Tethys.Logging.Controls
         /// </summary>
         [Description("Log view label text.")]
         [Category("Appearance")]
+        [DefaultValue("Status:")]
         public string LabelText
         {
-            get { return this.lblStatus.Text; }
-            set { this.lblStatus.Text = value; }
+            get => this.lblStatus.Text;
+            set => this.lblStatus.Text = value;
         } // LabelText
 
         /// <summary>
@@ -169,6 +154,7 @@ namespace Tethys.Logging.Controls
         [Description("Gets or sets the max length of log text displayed. "
          + "A value of -1 means no length check.")]
         [Category("Logging")]
+        [DefaultValue(-1)]
         public int MaxLogLength { get; set; }
 
         /// <summary>
@@ -179,10 +165,7 @@ namespace Tethys.Logging.Controls
         [DefaultValue(true)]
         public bool ShowDebugCheckBox
         {
-            get
-            {
-                return this.checkDebug.Visible && this.toolbarVisible;
-            }
+            get => this.checkDebug.Visible && this.toolbarVisible;
 
             set
             {
@@ -201,8 +184,8 @@ namespace Tethys.Logging.Controls
         [DefaultValue(true)]
         public bool ShowDebugEvents
         {
-            get { return this.checkDebug.Checked; }
-            set { this.checkDebug.Checked = value; }
+            get => this.checkDebug.Checked;
+            set => this.checkDebug.Checked = value;
         } // ShowDebugCheckBox
         #endregion PUBLIC PROPERTIES
 
@@ -214,6 +197,7 @@ namespace Tethys.Logging.Controls
         /// </summary>
         public RtfLogView()
         {
+            this.RtfControl = new RichTextBox();
             this.InitControl();
             this.MaxLogLength = -1;
         } // RtfLogView()
@@ -267,7 +251,7 @@ namespace Tethys.Logging.Controls
             this.InitializeComponent();
 
             // store default text color
-            this.defaultTextColor = this.rtfView.SelectionColor;
+            this.defaultTextColor = this.RtfControl.SelectionColor;
             this.AddAtTail = true;
             this.toolbarVisible = true;
         } // InitControl()
@@ -280,14 +264,14 @@ namespace Tethys.Logging.Controls
             if (!this.toolbarVisible)
             {
                 // enlarge table
-                this.rtfView.Top = 0;
-                this.rtfView.Height = this.Height;
+                this.RtfControl.Top = 0;
+                this.RtfControl.Height = this.Height;
             }
             else
             {
                 // default size
-                this.rtfView.Top = ToolbarHeight;
-                this.rtfView.Height = this.Height - ToolbarHeight;
+                this.RtfControl.Top = ToolbarHeight;
+                this.RtfControl.Height = this.Height - ToolbarHeight;
             } // if
         } // CheckListHeight()
 
@@ -296,8 +280,8 @@ namespace Tethys.Logging.Controls
         /// </summary>
         private void CopyToClipboard()
         {
-            this.rtfView.SelectAll();
-            this.rtfView.Copy();
+            this.RtfControl.SelectAll();
+            this.RtfControl.Copy();
 
             // add to clipboard as normal text
             // Clipboard.SetData(DataFormats.Text, rtfView.Text);
@@ -345,7 +329,7 @@ namespace Tethys.Logging.Controls
         private void WriteTextFile(string fileName)
         {
             using var sw = new StreamWriter(fileName);
-            foreach (var line in this.rtfView.Lines)
+            foreach (var line in this.RtfControl.Lines)
             {
                 sw.WriteLine(line);
             } // foreach
@@ -354,13 +338,13 @@ namespace Tethys.Logging.Controls
         } // WriteTextFile()
 
         /// <summary>
-        /// Write the log window contents to a RTF file.
+        /// Write the log window contents to an RTF file.
         /// </summary>
         /// <param name="fileName">Name of the file to write to.</param>
         private void WriteRichTextFile(string fileName)
         {
             using var sw = new StreamWriter(fileName);
-            sw.Write(this.rtfView.Rtf);
+            sw.Write(this.RtfControl.Rtf);
             sw.Flush();
         } // WriteRichTextFile()
 
@@ -370,11 +354,11 @@ namespace Tethys.Logging.Controls
         private void CheckForMaxSize()
         {
             if ((this.MaxLogLength > 0) &&
-              (this.rtfView.TextLength > this.MaxLogLength + MaxLogLengthChunk))
+              (this.RtfControl.TextLength > this.MaxLogLength + MaxLogLengthChunk))
             {
-                this.rtfView.SelectionStart = 0;
-                this.rtfView.Select(0, MaxLogLengthChunk);
-                this.rtfView.SelectedText = string.Empty;
+                this.RtfControl.SelectionStart = 0;
+                this.RtfControl.Select(0, MaxLogLengthChunk);
+                this.RtfControl.SelectedText = string.Empty;
             } // if
         } // CheckForMaxSize()
 
@@ -389,23 +373,23 @@ namespace Tethys.Logging.Controls
 
             if (!this.AddAtTail)
             {
-                this.rtfView.SelectionStart = 0;
-                this.rtfView.SelectionColor = color;
-                this.rtfView.SelectedText = text;
+                this.RtfControl.SelectionStart = 0;
+                this.RtfControl.SelectionColor = color;
+                this.RtfControl.SelectedText = text;
             }
             else
             {
-                this.rtfView.SelectionStart = 2000000000;
-                this.rtfView.SelectionColor = color;
-                this.rtfView.SelectedText = text;
+                this.RtfControl.SelectionStart = 2000000000;
+                this.RtfControl.SelectionColor = color;
+                this.RtfControl.SelectedText = text;
             } // if
 
-            this.rtfView.SelectionColor = this.defaultTextColor;
+            this.RtfControl.SelectionColor = this.defaultTextColor;
 
             if (this.AddAtTail)
             {
-                this.rtfView.Select(this.rtfView.TextLength, 0);
-                this.rtfView.ScrollToCaret();
+                this.RtfControl.Select(this.RtfControl.TextLength, 0);
+                this.RtfControl.ScrollToCaret();
             } // if
         } // AppendTextInternal()
         #endregion // PRIVATE METHODS
@@ -448,7 +432,7 @@ namespace Tethys.Logging.Controls
         /// </summary>
         public void Clear()
         {
-            this.rtfView.Text = string.Empty;
+            this.RtfControl.Text = string.Empty;
         } // Clear()
 
         /// <summary>

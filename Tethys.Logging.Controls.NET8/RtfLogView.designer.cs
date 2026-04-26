@@ -63,6 +63,7 @@ namespace Tethys.Logging.Controls
             btnSave.Size = new System.Drawing.Size(27, 27);
             btnSave.TabIndex = 27;
             btnSave.Click += BtnSaveClick;
+            btnSave.UseVisualStyleBackColor = true;
             // 
             // imageList
             // 
@@ -87,6 +88,7 @@ namespace Tethys.Logging.Controls
             btnCopy.Size = new System.Drawing.Size(27, 27);
             btnCopy.TabIndex = 26;
             btnCopy.Click += BtnCopyClick;
+            btnCopy.UseVisualStyleBackColor = true;
             // 
             // btnClear
             // 
@@ -99,6 +101,7 @@ namespace Tethys.Logging.Controls
             btnClear.Size = new System.Drawing.Size(27, 27);
             btnClear.TabIndex = 25;
             btnClear.Click += BtnClearClick;
+            btnClear.UseVisualStyleBackColor = true;
             // 
             // lblStatus
             // 
