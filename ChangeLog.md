@@ -8,6 +8,8 @@ SPDX-License-Identifier: Apache-2.0
 ## NEXT
 
 * Fix warning about `GenerateResourceWarnOnBinaryFormatterUse`.
+* Remove all code that uses Log4Net in order to no longer
+  receive any Log4Net security vulnerabily alerts. 
 
 ## V2.0.0 (2026-04-23)
 
